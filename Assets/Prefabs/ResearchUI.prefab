@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 4999030626131678483}
   - component: {fileID: 9168426291644739775}
   - component: {fileID: 255958972560972859}
-  - component: {fileID: 5615610847914769050}
+  - component: {fileID: 6592864049825914018}
   m_Layer: 5
   m_Name: MoreCash
   m_TagString: Untagged
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea58ef49f296f44a9b2c52eb6ead339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5615610847914769050
+--- !u!114 &6592864049825914018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -406,17 +406,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 280900410303193997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe3794de49fa46a48bf6c24d58346c11, type: 3}
+  m_Script: {fileID: 11500000, guid: fbc2c9a18b20bb44b98294cec71c59ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 4921036129249215093}
+  - {fileID: 4642510048316279623}
+  - {fileID: 7577964650972171391}
   m_bought: 0
-  m_cost: 50
-  m_details: Unlocks option to buy cake for your pandas, lucky them!
-  m_researchName: Cake unlock
-  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
-    type: 3}
+  m_cost: 300
+  m_details: People discovered you made Panda Tea out of pandas excrements.....the
+    sales doubled!
+  m_researchName: Panda Tea+
+  value: 20
+  statType: 4
 --- !u!1 &357698034825334165
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +519,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0c2c76f4b7151074881e6834e5b2ae34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97219e20da0ec2c48837f9d3752b6e3b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -672,13 +674,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 1986066899}
+  - {fileID: 8358408881441121432}
+  - {fileID: 5087641064069319216}
   m_bought: 0
-  m_cost: 100
+  m_cost: 200
   m_details: Unlocks option to buy XXX item that spawns TV which...em...educates
-    Pandas on how to "Hug" properlly
-  m_researchName: XXX item unlock
-  itemPrefab: {fileID: -5098641659138202524, guid: a86526592b0ab3c41bc57e6cfc8c0044,
+    Pandas on how to "Hug" properl this time it comes with dozen of pandas hugging
+    all toghether how sweet!y
+  m_researchName: XXX+ item unlock
+  itemPrefab: {fileID: -5098641659138202524, guid: aecc0e03d7b79a644923d8db83aae6da,
     type: 3}
 --- !u!1 &1356425502937512845
 GameObject:
@@ -825,13 +829,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 1986066899}
+  - {fileID: 7492515981650516694}
+  - {fileID: 7225528599036863198}
   m_bought: 0
-  m_cost: 100
-  m_details: Unlocks option to buy XXX item that spawns TV which...em...educates
-    Pandas on how to "Hug" properlly
-  m_researchName: XXX item unlock
-  itemPrefab: {fileID: -5098641659138202524, guid: a86526592b0ab3c41bc57e6cfc8c0044,
+  m_cost: 250
+  m_details: Unlocks more potent "Hugging" drug. Making your Pandas more potent....to
+    hug
+  m_researchName: Love drug + unlock
+  itemPrefab: {fileID: -8295652081798239358, guid: d24cd83d956436a42bbf14b2ee43588d,
     type: 3}
 --- !u!1 &1697977254392277826
 GameObject:
@@ -978,13 +983,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 1986066899}
+  - {fileID: 794609259544862302}
+  - {fileID: 8091939345860450138}
   m_bought: 0
-  m_cost: 100
-  m_details: Unlocks option to buy XXX item that spawns TV which...em...educates
-    Pandas on how to "Hug" properlly
-  m_researchName: XXX item unlock
-  itemPrefab: {fileID: -5098641659138202524, guid: a86526592b0ab3c41bc57e6cfc8c0044,
+  m_cost: 350
+  m_details: Unlocks option to buy even better Hp drug! Sience wonder when one stop
+    being Panda and start being Zombie well some mysteries are better left untouched.
+  m_researchName: Hp drug+ unlocked
+  itemPrefab: {fileID: -8295652081798239358, guid: a6d137bd1d48e344681164a18ec89d03,
     type: 3}
 --- !u!1 &1805979450580367134
 GameObject:
@@ -1204,12 +1210,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 4921036129249215093}
+  - {fileID: 5491937390786045875}
+  - {fileID: 1616670485889837668}
   m_bought: 0
-  m_cost: 50
-  m_details: Unlocks option to buy cake for your pandas, lucky them!
-  m_researchName: Cake unlock
-  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
+  m_cost: 250
+  m_details: Unlocks option to buy food drug+, used on food it makes it taste soooo
+    gooooood, just...cant...stop....eating
+  m_researchName: Food drug + unlock
+  itemPrefab: {fileID: -8295652081798239358, guid: fb020a03c767fd74c9612099e4b3b6b8,
     type: 3}
 --- !u!1 &2249177460528935385
 GameObject:
@@ -1274,7 +1282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 97219e20da0ec2c48837f9d3752b6e3b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a71d14d625b57a642a4970c3c5fce7b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1432,10 +1440,11 @@ MonoBehaviour:
   - {fileID: 8989564934078941082}
   - {fileID: 1793501132}
   m_bought: 0
-  m_cost: 50
-  m_details: Unlocks option to buy cake for your pandas, lucky them!
-  m_researchName: Cake unlock
-  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
+  m_cost: 150
+  m_details: Unlocks option to buy cake for your pandas and its made out of bamboo!
+    Dont ask what previous cakes were made of....
+  m_researchName: Bamboo cake unlock
+  itemPrefab: {fileID: 3848149340301170095, guid: 6fbd6e33f6da6b64eabf6955082ec8ca,
     type: 3}
 --- !u!1 &2365180179534473713
 GameObject:
@@ -1450,7 +1459,7 @@ GameObject:
   - component: {fileID: 1000255568558040053}
   - component: {fileID: 3268345501421320024}
   - component: {fileID: 5111356958367755953}
-  - component: {fileID: 8746480319720266113}
+  - component: {fileID: 5491937390786045875}
   m_Layer: 5
   m_Name: MaxFood+
   m_TagString: Untagged
@@ -1569,7 +1578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea58ef49f296f44a9b2c52eb6ead339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8746480319720266113
+--- !u!114 &5491937390786045875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1578,17 +1587,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2365180179534473713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe3794de49fa46a48bf6c24d58346c11, type: 3}
+  m_Script: {fileID: 11500000, guid: fbc2c9a18b20bb44b98294cec71c59ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 4921036129249215093}
+  - {fileID: 8339843889900398655}
   m_bought: 0
-  m_cost: 50
-  m_details: Unlocks option to buy cake for your pandas, lucky them!
-  m_researchName: Cake unlock
-  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
-    type: 3}
+  m_cost: 200
+  m_details: Your pandas have bigger stomages letting them eat less frequently leaving
+    them m,ore time for...other activities OwO
+  m_researchName: More Max Food+ unlock
+  value: 20
+  statType: 2
 --- !u!1 &2407664794998986877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,7 +1868,7 @@ GameObject:
   - component: {fileID: 8125891999487527055}
   - component: {fileID: 5419183354674270326}
   - component: {fileID: 6575131741566764131}
-  - component: {fileID: 1321355338959984114}
+  - component: {fileID: 3650828212796905678}
   m_Layer: 5
   m_Name: LessEro
   m_TagString: Untagged
@@ -1977,7 +1987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea58ef49f296f44a9b2c52eb6ead339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1321355338959984114
+--- !u!114 &3650828212796905678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1986,18 +1996,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2637465366961020746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe3794de49fa46a48bf6c24d58346c11, type: 3}
+  m_Script: {fileID: 11500000, guid: fbc2c9a18b20bb44b98294cec71c59ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
+  - {fileID: 6592864049825914018}
   - {fileID: 8091939345860450138}
-  - {fileID: 5615610847914769050}
   m_bought: 0
-  m_cost: 50
-  m_details: Unlocks option to buy cake for your pandas, lucky them!
-  m_researchName: Cake unlock
-  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
-    type: 3}
+  m_cost: 350
+  m_details: This upgrade let panda get to the hot...steaming..."Hugging"  faster!
+    Wow if only this wasn't last upgrade how inconvinient!
+  m_researchName: Less "Hugging" energy required
+  value: -20
+  statType: 1
 --- !u!1 &3369323472726468073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,13 +2154,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 1986066899}
+  - {fileID: 8358408881441121432}
   m_bought: 0
-  m_cost: 100
-  m_details: Unlocks option to buy XXX item that spawns TV which...em...educates
-    Pandas on how to "Hug" properlly
-  m_researchName: XXX item unlock
-  itemPrefab: {fileID: -5098641659138202524, guid: a86526592b0ab3c41bc57e6cfc8c0044,
+  m_cost: 200
+  m_details: Unlocks option to buy Underwear+? Just like in video games, less fabric
+    = more effective!
+  m_researchName: Underwear+ item unlock
+  itemPrefab: {fileID: -5098641659138202524, guid: b8bd32b238097d74a843de773de52c54,
     type: 3}
 --- !u!1 &3450086641981193618
 GameObject:
@@ -2164,9 +2175,9 @@ GameObject:
   - component: {fileID: 1041319494644981539}
   - component: {fileID: 8451581099136715701}
   - component: {fileID: 2739992498641916557}
-  - component: {fileID: 3875258949762884821}
+  - component: {fileID: 794609259544862302}
   m_Layer: 5
-  m_Name: LessSick
+  m_Name: More HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2283,7 +2294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea58ef49f296f44a9b2c52eb6ead339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3875258949762884821
+--- !u!114 &794609259544862302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2292,17 +2303,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3450086641981193618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe3794de49fa46a48bf6c24d58346c11, type: 3}
+  m_Script: {fileID: 11500000, guid: fbc2c9a18b20bb44b98294cec71c59ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 4921036129249215093}
+  - {fileID: 2099045607755457582}
+  - {fileID: 1147456393661222914}
   m_bought: 0
-  m_cost: 50
-  m_details: Unlocks option to buy cake for your pandas, lucky them!
-  m_researchName: Cake unlock
-  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
-    type: 3}
+  m_cost: 300
+  m_details: Your pandas are more resistance to sickness!! Sick!
+  m_researchName: More HP upgrade
+  value: 20
+  statType: 0
 --- !u!1 &3787464927486654926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,11 +2535,11 @@ MonoBehaviour:
   m_requirements:
   - {fileID: 868171115}
   m_bought: 0
-  m_cost: 100
+  m_cost: 150
   m_details: Unlocks option to buy Underwear? So apparently studies say that leaving
     some underwear around gets pandas in some mood...for...some..."Hugging"
   m_researchName: Underwear unlock
-  itemPrefab: {fileID: -5098641659138202524, guid: a86526592b0ab3c41bc57e6cfc8c0044,
+  itemPrefab: {fileID: -5098641659138202524, guid: 7ae64c3a95c46b649a9a795eaaec2e4e,
     type: 3}
 --- !u!1 &3985178629066434609
 GameObject:
@@ -2931,13 +2943,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
+  - {fileID: 8339843889900398655}
   - {fileID: 157289261284189289}
-  - {fileID: 6179207029040255865}
   m_bought: 0
-  m_cost: 50
-  m_details: Unlocks option to buy cake for your pandas, lucky them!
-  m_researchName: Cake unlock
-  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
+  m_cost: 200
+  m_details: Unlocks option to buy genetivly modified bamboo, twice the taste, twice
+    the waste!
+  m_researchName: Genetic bamboo unlock
+  itemPrefab: {fileID: 3848149340301170095, guid: 96037ca5c346bd246a0f9b80be1e52b9,
     type: 3}
 --- !u!1 &4711601069572147366
 GameObject:
@@ -4391,7 +4404,7 @@ MonoBehaviour:
   m_requirements:
   - {fileID: 4921036129249215093}
   m_bought: 0
-  m_cost: 30
+  m_cost: 50
   m_details: Unlocks the special "Hugging" drug OwO . Use it on placed food item
     to spike it with some...love...
   m_researchName: '"Hugging" drug'
@@ -4838,7 +4851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a71d14d625b57a642a4970c3c5fce7b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2ac56d7e7ca51784489d41375bb3bf52, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5220,12 +5233,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 4921036129249215093}
+  - {fileID: 1616670485889837668}
+  - {fileID: 444396184137420461}
   m_bought: 0
-  m_cost: 50
-  m_details: Unlocks option to buy cake for your pandas, lucky them!
-  m_researchName: Cake unlock
-  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
+  m_cost: 250
+  m_details: Unlocks option to buy fruit ice creams, mmmmm makes me want to eat one
+    aswell!
+  m_researchName: Fruit ice cream unlock
+  itemPrefab: {fileID: 3848149340301170095, guid: 6c31758b175e98f4da16287d1943ada9,
     type: 3}
 --- !u!1 &5282864320219643623
 GameObject:
@@ -5375,11 +5390,11 @@ MonoBehaviour:
   - {fileID: 868171115}
   - {fileID: 1793501132}
   m_bought: 0
-  m_cost: 30
-  m_details: Unlocks the special "Hugging" drug OwO . Use it on placed food item
-    to spike it with some...love...
-  m_researchName: '"Hugging" drug'
-  itemPrefab: {fileID: -8295652081798239358, guid: b7a0140f37a20514fa7899fc8d3a8377,
+  m_cost: 150
+  m_details: Unlocks the special magazines about "Hugging"! How sweet just leave
+    them lying around motives Pandas to hug more often
+  m_researchName: xPanda
+  itemPrefab: {fileID: -5098641659138202524, guid: c8c0a31ca639d334da9eb059eff10bfa,
     type: 3}
 --- !u!1 &5617153406772337126
 GameObject:
@@ -5711,13 +5726,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 4921036129249215093}
+  - {fileID: 444396184137420461}
+  - {fileID: 7225528599036863198}
   m_bought: 0
-  m_cost: 30
-  m_details: Unlocks the special "Hugging" drug OwO . Use it on placed food item
-    to spike it with some...love...
-  m_researchName: '"Hugging" drug'
-  itemPrefab: {fileID: -8295652081798239358, guid: b7a0140f37a20514fa7899fc8d3a8377,
+  m_cost: 250
+  m_details: 'Unlocks even better magazines for your pandas. Very interesting articles
+    like: Top 5 "Hugging" tip while your Panda husband is at work'
+  m_researchName: PandaBoy
+  itemPrefab: {fileID: -5098641659138202524, guid: cd348c9bf12e48a43899e5d8f29437de,
     type: 3}
 --- !u!1 &7528288076900331144
 GameObject:
@@ -5864,14 +5880,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
-  - {fileID: 1986066899}
-  - {fileID: 330359241}
+  - {fileID: 1147456393661222914}
+  - {fileID: 7577964650972171391}
   m_bought: 0
-  m_cost: 100
-  m_details: Unlocks option to buy food drug, use it on placed food to make it more
-    filling, how convienient!
-  m_researchName: Food drug unlock
-  itemPrefab: {fileID: -8295652081798239358, guid: 211393837feb0e54dbe05c5c7b732ff6,
+  m_cost: 300
+  m_details: Unlocks option to buy hp drug, it lets you regenerate your pandas Hp
+    while eating! Heroes never die!
+  m_researchName: Hp drug unlock
+  itemPrefab: {fileID: -8295652081798239358, guid: 79ff7516126680d48a4e9b7edc769c54,
     type: 3}
 --- !u!1 &7732745407710052473
 GameObject:
@@ -6315,13 +6331,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbc2c9a18b20bb44b98294cec71c59ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_requirements: []
+  m_requirements:
+  - {fileID: 157289261284189289}
+  - {fileID: 5087641064069319216}
   m_bought: 0
-  m_cost: 500
+  m_cost: 200
   m_details: You start selling famoust Panda Tea (possible made out of Pandas excrements)
     its a hit! get 50 more cash per tick
   m_researchName: Panda Tea
-  healthBoost: 0
+  value: 20
+  statType: 4
 --- !u!1 &8253145856202000004
 GameObject:
   m_ObjectHideFlags: 0
@@ -6335,7 +6354,7 @@ GameObject:
   - component: {fileID: 1825176321112014692}
   - component: {fileID: 2346247180645826041}
   - component: {fileID: 462133121094558422}
-  - component: {fileID: 6179207029040255865}
+  - component: {fileID: 8339843889900398655}
   m_Layer: 5
   m_Name: MaxFood
   m_TagString: Untagged
@@ -6454,7 +6473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aea58ef49f296f44a9b2c52eb6ead339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6179207029040255865
+--- !u!114 &8339843889900398655
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6463,17 +6482,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 8253145856202000004}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe3794de49fa46a48bf6c24d58346c11, type: 3}
+  m_Script: {fileID: 11500000, guid: fbc2c9a18b20bb44b98294cec71c59ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_requirements:
   - {fileID: 8989564934078941082}
   m_bought: 0
-  m_cost: 50
-  m_details: Unlocks option to buy cake for your pandas, lucky them!
-  m_researchName: Cake unlock
-  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
-    type: 3}
+  m_cost: 150
+  m_details: Your pandas have bigger stomages letting them eat less frequently leaving
+    them m,ore time for...other activities OwO
+  m_researchName: More Max Food unlock
+  value: 20
+  statType: 2
 --- !u!1 &8503499270705342456
 GameObject:
   m_ObjectHideFlags: 0
