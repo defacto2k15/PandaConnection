@@ -23,4 +23,14 @@ public class BaseEroConsumable : BaseConsumable
     public int MEroNutritionalValue => m_eroNutritionalValue;
 
     public int TimeGivingNutrition => timeGivingNutrition;
+
+    public override bool CanPlace()
+    {
+        return Util.RaycastFoodPile()==null;
+    }
+
+    public override void PlaceInWorld()
+    {
+        //TODO: ero pile?
+    }
 }

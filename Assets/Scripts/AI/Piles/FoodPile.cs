@@ -84,6 +84,20 @@ namespace Assets.Scripts.AI
                 return c.Food.range * c.Amount;
             }) * 0.1f * Mathf.Max(0, 10 - panda.GetFullness());
         }
+
+        public void PlaceFood(BaseFoodConsumable food)
+        {
+            for(int i =0; i<food.timeGivingNutrition; i++)
+            {
+                var spawnedFood = GameObject.Instantiate<BaseFoodConsumable>(food, this.transform);
+                FoodConsumables.Add(new FoodWithItsAmount() { Amount = 1, Food = spawnedFood });
+            }
+        }
+
+        public void PlaceDrug(BaseDrugConsumable drug)
+        {
+            Drug = drug;
+        }
     }
 
     public class ConsumableWithDrug

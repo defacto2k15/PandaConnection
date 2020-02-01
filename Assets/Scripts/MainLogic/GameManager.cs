@@ -1,9 +1,18 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.AI;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    public Camera mainCamera { get; set; }
+    public LayerMask foodPileMask;
+    public LayerMask floorMask;
+    public LayerMask pandaMask;
+
+    public FoodPile foodPilePrefab;
+
     public static GameManager instance;
 
     [SerializeField]
@@ -49,6 +58,7 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this);
+            mainCamera = Camera.main;
         }
         else
         {

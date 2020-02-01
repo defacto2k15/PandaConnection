@@ -39,9 +39,21 @@ namespace Assets.Scripts.AI.Conditions
         {
             get
             {
-                var toRet = _activeForceFields.Any() &&
-                            _activeForceFields.Select(c =>
-                                Mathf.Abs(AttractionModifiedByDistanceFactor(c, (c.WorldSpacePosition - transform.position).magnitude))).Sum() > 0.1f;
+                var toRet = false;
+                float forceFieldSum = 0;
+                for (int i = _activeForceFields.Count - 1; i >= 0; i--)
+                {
+                    if (_activeForceFields[i] == null || (_activeForceFields[i] as MonoBehaviour)==null )
+                    {
+                        _activeForceFields.RemoveAt(i);
+                    }
+                    else
+                    {
+                        var c = _activeForceFields[i];
+                        forceFieldSum += Mathf.Abs(AttractionModifiedByDistanceFactor(c, (c.WorldSpacePosition - transform.position).magnitude));
+                    }
+                }
+                toRet = forceFieldSum > 0.1f;
                 return toRet;
             }
         }

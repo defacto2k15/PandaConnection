@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 976633311684230595}
   - component: {fileID: 3473265076329357227}
   - component: {fileID: 1610549589895209740}
+  - component: {fileID: 8231352850314746878}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -47,9 +48,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2966fd275e0e7374a9dbd8434576af54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodPileMask:
+    serializedVersion: 2
+    m_Bits: 512
+  floorMask:
+    serializedVersion: 2
+    m_Bits: 256
+  pandaMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  foodPilePrefab: {fileID: 5829526294633941283, guid: 174ec064d28ab3f479b6066d3e98aca5,
+    type: 3}
   m_moneyManager: {fileID: 976633311684230592}
   m_consumableManager: {fileID: 3473265076329357227}
   m_shopManager: {fileID: 1610549589895209740}
+  pandaManager: {fileID: 8231352850314746878}
   researchUIManager: {fileID: 0}
   notificationManager: {fileID: 976633311684230595}
 --- !u!114 &976633311684230592
@@ -64,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe3bd93b2df53234b8ce0e68c03e59b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_money: 0
+  m_money: 1000
 --- !u!114 &976633311684230595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,7 +102,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc6ea7594dc1ec48b820e1b81c5d9d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_startingFoodConsumables: []
+  m_startingFoodConsumables:
+  - consumablePrefab: {fileID: 3848149340301170095, guid: 5f427aebf93806f409cb4d98b742946b,
+      type: 3}
+    quantity: 1
+  - consumablePrefab: {fileID: 3848149340301170095, guid: 6fbd6e33f6da6b64eabf6955082ec8ca,
+      type: 3}
+    quantity: 1
   m_startingDrugConsumables: []
   m_startingEroticConsumables: []
 --- !u!114 &1610549589895209740
@@ -105,3 +124,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_startingConsumables: []
+--- !u!114 &8231352850314746878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976633311684230604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3d3862602d8f04e8fed60b1015c215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaximumFullness: 10000
+  MaximumEro: 1000
