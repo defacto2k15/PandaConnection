@@ -23,7 +23,7 @@ public class BaseDrugConsumable : BaseConsumable
         switch (drugType)
         {
             case DrugType.ero:
-                panda.SetEro(m_drugValue);
+                panda.ChangeEro(m_drugValue);
                 break;
 
             case DrugType.hp:

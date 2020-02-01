@@ -10,6 +10,8 @@ namespace Assets.Scripts.AI
     public class DummyPanda : MonoBehaviour, IPanda
     {
         [SerializeField] public float Fullness;
+        [SerializeField] public float Ero;
+        
         private PandaStats _stats;
 
         void Awake()
@@ -63,15 +65,20 @@ namespace Assets.Scripts.AI
             return GetFullness() < GameManager.instance.pandaManager.GetMaximumFullness();
         }
 
-
         public float GetEro()
         {
-            throw new NotImplementedException();
+            return Ero;
         }
 
-        public void SetEro(float deltaEro)
+        public void ChangeEro(float deltaEro)
         {
-            throw new NotImplementedException();
+            Ero += deltaEro;
+            Ero = Mathf.Min(Ero, GameManager.instance.pandaManager.GetMaximumEro());
+        }
+
+        public bool CanMate()
+        {
+            return Ero > 10;
         }
     }
 }

@@ -12,7 +12,7 @@ public interface IPanda
 
     float GetEro();
 
-    void SetEro(float deltaEro);
+    void ChangeEro(float deltaEro);
 
     float GetFullness();
 

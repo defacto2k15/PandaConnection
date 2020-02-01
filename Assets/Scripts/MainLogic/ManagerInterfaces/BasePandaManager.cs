@@ -3,6 +3,7 @@
 public class BasePandaManager : MonoBehaviour, IPandaManager
 {
     [SerializeField] private float MaximumFullness;
+    [SerializeField] private float MaximumEro;
 
     public PandaStats ComputePairingStats(IPanda panda1, IPanda panda2)
     {
@@ -37,5 +38,10 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
     public float GetMaximumFullness()
     {
         return MaximumFullness;
+    }
+
+    public float GetMaximumEro()
+    {
+        return MaximumEro;
     }
 }
