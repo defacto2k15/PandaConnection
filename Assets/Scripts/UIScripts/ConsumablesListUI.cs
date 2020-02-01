@@ -2,60 +2,109 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 public class ConsumablesListUI : MonoBehaviour
 {
-    [SerializeField]
-    private ConsumableItemUI m_consumablePrefab;
 
     [SerializeField]
-    private Transform m_consumablesParent;
+    protected BaseConsumableItemUI m_consumablePrefab;
 
-    private List<ConsumableItemUI> m_spawnedPrefabs = new List<ConsumableItemUI>();
+    [SerializeField]
+    protected Transform m_foodsParent;
 
-    private void Awake()
+    [SerializeField]
+    protected Transform m_drugsParent;
+
+    [SerializeField]
+    protected Transform m_eroticsParent;
+
+    protected List<BaseConsumableItemUI> m_spawnedFoods = new List<BaseConsumableItemUI>();
+
+    protected List<BaseConsumableItemUI> m_spawnedDrugs = new List<BaseConsumableItemUI>();
+
+    protected List<BaseConsumableItemUI> m_spawnedErotics = new List<BaseConsumableItemUI>();
+
+    protected virtual void Start()
     {
         GameManager.instance.notificationManager.OnConsumablesChanged += RefreshConsumablesList;
+        RefreshConsumablesList();
     }
 
-    private void RefreshConsumablesList()
+    protected virtual List<IConsumable> GetDrugConsumables()
     {
-        var drugConsumables = GameManager.instance.ConsumableManager.GetDrugConsumables();
-        var foodConsumables = GameManager.instance.ConsumableManager.GetFoodConsumables();
-        for (int i = m_spawnedPrefabs.Count - 1; i >= 0; i--)
+        return GameManager.instance.ConsumableManager.GetDrugConsumables();
+    }
+
+    protected virtual List<IConsumable> GetFoodConsumables()
+    {
+        return GameManager.instance.ConsumableManager.GetFoodConsumables();
+    }
+
+    protected virtual List<IConsumable> GetEroticConsumables()
+    {
+        return GameManager.instance.ConsumableManager.GetEroticConsumables(); 
+    }
+
+    protected void RefreshConsumablesList()
+    {
+        var drugConsumables = GetDrugConsumables();
+        var foodConsumables = GetFoodConsumables();
+        var eroticConsumables = GetEroticConsumables();
+        CheckShouldDelete(m_spawnedFoods, foodConsumables);
+        CheckShouldDelete(m_spawnedDrugs, drugConsumables);
+        CheckShouldDelete(m_spawnedErotics, eroticConsumables);
+
+        CheckShouldAdd(m_spawnedFoods, foodConsumables);
+        CheckShouldAdd(m_spawnedDrugs, drugConsumables);
+        CheckShouldAdd(m_spawnedErotics, eroticConsumables);
+    }
+
+    private void CheckShouldAdd(List<BaseConsumableItemUI> spawnedItems, List<IConsumable> consumablesList)
+    {
+        for (int i = 0; i < consumablesList.Count; i++)
         {
-            if (m_spawnedPrefabs[i] == null)
+            if (!spawnedItems.Exists(x => x.Consumable == consumablesList[i]))
             {
-                m_spawnedPrefabs.RemoveAt(i);
-            }
-            else if (!drugConsumables.Contains(m_spawnedPrefabs[i].consumable) && !foodConsumables.Contains(m_spawnedPrefabs[i].consumable))
-            {
-                m_spawnedPrefabs[i].StartConsumeAnimation();
+                InstantiateUIPrefab(consumablesList[i]);
             }
         }
+    }
 
-        for (int i = 0; i < drugConsumables.Count; i++)
+    private void CheckShouldDelete(List<BaseConsumableItemUI> spawnedItems, List<IConsumable> consumablesList)
+    {
+        for (int i = spawnedItems.Count - 1; i >= 0; i--)
         {
-            if (!m_spawnedPrefabs.Exists(x => x.consumable == drugConsumables[i]))
+            if (spawnedItems[i] == null)
             {
-                InstantiateUIPrefab(drugConsumables[i]);
+                spawnedItems.RemoveAt(i);
             }
-        }
-
-        for(int i=0; i<foodConsumables.Count; i++)
-        {
-            if (!m_spawnedPrefabs.Exists(x => x.consumable == foodConsumables[i]))
+            else if (!consumablesList.Contains(spawnedItems[i].Consumable))
             {
-                InstantiateUIPrefab(foodConsumables[i]);
+                spawnedItems[i].StartConsumeAnimation();
             }
         }
     }
 
     private void InstantiateUIPrefab(IConsumable consumable)
     {
-        var spawnedPrefab = GameObject.Instantiate<ConsumableItemUI>(m_consumablePrefab);
-        spawnedPrefab.consumable = consumable;
-        spawnedPrefab.transform.SetParent(m_consumablesParent);
-        m_spawnedPrefabs.Add(spawnedPrefab);
+        var spawnedPrefab = GameObject.Instantiate<BaseConsumableItemUI>(m_consumablePrefab);
+        spawnedPrefab.Init(consumable);
+        if (consumable is BaseFoodConsumable)
+        {
+            spawnedPrefab.transform.SetParent(m_foodsParent);
+            m_spawnedFoods.Add(spawnedPrefab);
+        }
+        else if(consumable is BaseDrugConsumable)
+        {
+            spawnedPrefab.transform.SetParent(m_drugsParent);
+            m_spawnedDrugs.Add(spawnedPrefab);
+        }
+        else
+        {
+            spawnedPrefab.transform.SetParent(m_eroticsParent);
+            m_spawnedErotics.Add(spawnedPrefab);
+        }
+        spawnedPrefab.transform.localScale = Vector3.one;
     }
 }

@@ -11,7 +11,7 @@ public class ResearchButtonUI : MonoBehaviour
     //aktualnie po prostu researchItem dodany do tego obiektu
     private IResearchItem researchItem;
 
-    private void Awake()
+    private void Start()
     {
         //TODO: jakbysmy spawnowali te drzewka, to research itemy mogly by byc trzymane w zupelnie innym miejscu
         researchItem = GetComponent<IResearchItem>();

@@ -28,7 +28,7 @@ public class BaseResearchItem : MonoBehaviour, IResearchItem
         private set
         {
             m_bought = value;
-            GameManager.instance.notificationManager.OnResearchUnlocked();
+            GameManager.instance.notificationManager.OnResearchUnlocked?.Invoke();
         }
     }
 

@@ -9,8 +9,9 @@ public interface IConsumableManager
 {
     List<IConsumable> GetFoodConsumables();
     List<IConsumable> GetDrugConsumables();
+    List<IConsumable> GetEroticConsumables();
 
-     void Consume(IConsumable consumable);
+    void Consume(IConsumable consumable);
      bool Add(IConsumable consumable);
 }
 

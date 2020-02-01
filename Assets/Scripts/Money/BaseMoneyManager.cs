@@ -16,7 +16,7 @@ public class BaseMoneyManager : MonoBehaviour, IMoneyManager
         private set
         {
             m_money = value;
-            GameManager.instance.notificationManager.OnMoneyChanged();
+            GameManager.instance.notificationManager.OnMoneyChanged?.Invoke();
         }
     }
 

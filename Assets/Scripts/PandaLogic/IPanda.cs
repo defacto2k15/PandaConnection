@@ -9,6 +9,8 @@ public interface IPanda
     void SetHealth(float deltaHealth);
     float GetFood();
     void SetFood(float deltaFood);
+    float GetErotic();
+    void SetErotic(float deltaErotic);
     void GetPrimaryColor();
     void GetSecondaryColor();
     void GetBodyPartSize(BodyPart part);

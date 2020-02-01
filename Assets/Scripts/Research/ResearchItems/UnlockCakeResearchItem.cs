@@ -7,6 +7,6 @@ public class UnlockConsumableResearchItem : BaseResearchItem
     public BaseConsumable itemPrefab;
     public override void DoEffect()
     {
-        GameManager.instance.shopManager.AddConsumable(itemPrefab);
+        GameManager.instance.ShopManager.AddConsumable(itemPrefab);
     }
 }

@@ -7,7 +7,7 @@ public class MoneyUI : MonoBehaviour
 {
     public TMPro.TMP_Text moneyText;
 
-    private void Awake()
+    private void Start()
     {
         OnMoneyChanged();
         GameManager.instance.notificationManager.OnMoneyChanged += OnMoneyChanged;
