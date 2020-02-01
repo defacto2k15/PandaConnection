@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_icon: {fileID: 21300000, guid: b24ed813767b8c14bbec7a870872fa20, type: 3}
-  m_name: Fruits
+  m_name: Fruit basket
   m_price: 20
   range: 1
   m_foodNutritionalValue: 10

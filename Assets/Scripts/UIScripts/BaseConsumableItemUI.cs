@@ -7,13 +7,16 @@ public class BaseConsumableItemUI : MonoBehaviour
 {
     [SerializeField]
     protected Button m_button;
+
     [SerializeField]
     protected Image m_sprite;
+
     [SerializeField]
     protected TMPro.TMP_Text m_name;
+
     public IConsumable Consumable { get; private set; }
 
-    public void Init(IConsumable consumable)
+    public virtual void Init(IConsumable consumable)
     {
         this.Consumable = consumable;
         m_name.SetText(consumable.GetName());
@@ -23,9 +26,7 @@ public class BaseConsumableItemUI : MonoBehaviour
 
     public virtual void DoAction()
     {
-
     }
-
 
     public virtual void StartConsumeAnimation()
     {

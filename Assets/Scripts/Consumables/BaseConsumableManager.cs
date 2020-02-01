@@ -14,8 +14,10 @@ public class BaseConsumableManager : MonoBehaviour, IConsumableManager
 
     [SerializeField]
     private List<ConsumablePrefabQuantityList> m_startingFoodConsumables = new List<ConsumablePrefabQuantityList>();
+
     [SerializeField]
     private List<ConsumablePrefabQuantityList> m_startingDrugConsumables = new List<ConsumablePrefabQuantityList>();
+
     [SerializeField]
     private List<ConsumablePrefabQuantityList> m_startingEroticConsumables = new List<ConsumablePrefabQuantityList>();
 
@@ -25,10 +27,10 @@ public class BaseConsumableManager : MonoBehaviour, IConsumableManager
 
     private void Awake()
     {
-        for(int i =0; i<m_startingFoodConsumables.Count; i++)
+        for (int i = 0; i < m_startingFoodConsumables.Count; i++)
         {
             var consumable = m_startingFoodConsumables[i];
-            for(int j =0; j<consumable.quantity; j++)
+            for (int j = 0; j < consumable.quantity; j++)
             {
                 m_foodConsumables.Add(GameObject.Instantiate<BaseConsumable>(consumable.consumablePrefab, this.transform));
             }
@@ -55,21 +57,24 @@ public class BaseConsumableManager : MonoBehaviour, IConsumableManager
     bool IConsumableManager.Add(IConsumable consumable)
     {
         (consumable as BaseConsumable).transform.SetParent(this.transform);
-        if(consumable is BaseFoodConsumable)
+        if (consumable is BaseFoodConsumable)
         {
             m_foodConsumables.Add(consumable as BaseConsumable);
+
             GameManager.instance.notificationManager.OnConsumablesChanged?.Invoke();
             return true;
         }
-        else if(consumable is BaseDrugConsumable)
+        else if (consumable is BaseDrugConsumable)
         {
             m_drugConsumables.Add(consumable as BaseConsumable);
+
             GameManager.instance.notificationManager.OnConsumablesChanged?.Invoke();
             return true;
         }
         else
         {
             m_eroticConsumables.Add(consumable as BaseConsumable);
+
             GameManager.instance.notificationManager.OnConsumablesChanged?.Invoke();
             return true;
         }
