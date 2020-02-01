@@ -298,6 +298,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventoryConsumablesUI
       objectReference: {fileID: 0}
+    - target: {fileID: 3030471630893189748, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3030471631323732873, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -337,6 +342,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe54b9b2ce22f3449a88c4a5ae508b90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &330359240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4921036127568409069, guid: b06f8dd175af47b45ace2e1c07a995e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4921036127812767781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &330359241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330359240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe3794de49fa46a48bf6c24d58346c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_requirements:
+  - {fileID: 2145882704}
+  m_bought: 0
+  m_cost: 50
+  m_details: Unlocks option to buy cake for your pandas, lucky them!
+  m_researchName: Cake unlock
+  itemPrefab: {fileID: 3848149340301170095, guid: 2b046a09fb97bbb4090ce099c4b5d227,
+    type: 3}
 --- !u!1 &347038421
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +500,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 10
+--- !u!1 &443384808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 443384809}
+  - component: {fileID: 443384811}
+  - component: {fileID: 443384810}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &443384809
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443384808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.8, y: 1.8, z: 1}
+  m_Children: []
+  m_Father: {fileID: 868171114}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 65, y: 65}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &443384810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443384808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b4a0bbef64da88946a1e13da5b04a706, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &443384811
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443384808}
+  m_CullTransparentMesh: 0
 --- !u!1 &535469745
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +833,165 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796990263}
   m_CullTransparentMesh: 0
+--- !u!1 &868171113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868171114}
+  - component: {fileID: 868171119}
+  - component: {fileID: 868171118}
+  - component: {fileID: 868171117}
+  - component: {fileID: 868171116}
+  - component: {fileID: 868171115}
+  m_Layer: 5
+  m_Name: XXX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &868171114
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868171113}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 443384809}
+  m_Father: {fileID: 1062616075}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -295, y: -406}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &868171115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868171113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe3794de49fa46a48bf6c24d58346c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_requirements:
+  - {fileID: 1986066899}
+  m_bought: 0
+  m_cost: 100
+  m_details: Unlocks option to buy food drug, use it on placed food to make it more
+    filling, how convienient!
+  m_researchName: Food drug unlock
+  itemPrefab: {fileID: -8295652081798239358, guid: 211393837feb0e54dbe05c5c7b732ff6,
+    type: 3}
+--- !u!114 &868171116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868171113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea58ef49f296f44a9b2c52eb6ead339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &868171117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868171113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 868171118}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &868171118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868171113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &868171119
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868171113}
+  m_CullTransparentMesh: 0
+--- !u!224 &1062616075 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4921036128170208302, guid: b06f8dd175af47b45ace2e1c07a995e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4921036127812767781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1063979622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,6 +1267,150 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633020002}
   m_CullTransparentMesh: 0
+--- !u!1001 &1704083391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312464, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864437983312468, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_Name
+      value: MoneyUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864439269793139, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864439269793139, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864439269793139, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864439269793139, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651864439269793139, guid: 767da8ba855f65a48a2ab907f032a8e5,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 767da8ba855f65a48a2ab907f032a8e5, type: 3}
 --- !u!1001 &1790325520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1161,6 +1568,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopConsumablesUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2945477916972844980, guid: 0dd83be9e7659554f885abbfc8f58ed7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2945477917322566426, guid: 0dd83be9e7659554f885abbfc8f58ed7,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1208,6 +1620,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dd83be9e7659554f885abbfc8f58ed7, type: 3}
+--- !u!1 &1793501129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4921036129601484780, guid: b06f8dd175af47b45ace2e1c07a995e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4921036127812767781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1793501132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793501129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe3794de49fa46a48bf6c24d58346c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_requirements:
+  - {fileID: 1986066899}
+  - {fileID: 330359241}
+  m_bought: 0
+  m_cost: 100
+  m_details: Unlocks option to buy food drug, use it on placed food to make it more
+    filling, how convienient!
+  m_researchName: Food drug unlock
+  itemPrefab: {fileID: -8295652081798239358, guid: 211393837feb0e54dbe05c5c7b732ff6,
+    type: 3}
+--- !u!1 &1986066898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4921036129123445239, guid: b06f8dd175af47b45ace2e1c07a995e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4921036127812767781}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1986066899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986066898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe3794de49fa46a48bf6c24d58346c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_requirements:
+  - {fileID: 2145882704}
+  m_bought: 0
+  m_cost: 30
+  m_details: Unlocks the special "Hugging" drug OwO . Use it on placed food item
+    to spike it with some...love...
+  m_researchName: '"Hugging" drug'
+  itemPrefab: {fileID: -8295652081798239358, guid: b7a0140f37a20514fa7899fc8d3a8377,
+    type: 3}
+--- !u!114 &2145882704 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4921036129249215093, guid: b06f8dd175af47b45ace2e1c07a995e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4921036127812767781}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9001cc90f5734f2419596fe1e9ce13d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &976633313450596346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1503,7 +1982,7 @@ PrefabInstance:
     - target: {fileID: 4921036127892319383, guid: b06f8dd175af47b45ace2e1c07a995e3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4921036127944453309, guid: b06f8dd175af47b45ace2e1c07a995e3,
         type: 3}
@@ -1735,5 +2214,8 @@ PrefabInstance:
       value: Unlocks option to buy food drug, use it on placed food to make it more
         filling, how convienient!
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4921036127568409068, guid: b06f8dd175af47b45ace2e1c07a995e3, type: 3}
+    - {fileID: 4921036129601484777, guid: b06f8dd175af47b45ace2e1c07a995e3, type: 3}
+    - {fileID: 4921036129123445238, guid: b06f8dd175af47b45ace2e1c07a995e3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b06f8dd175af47b45ace2e1c07a995e3, type: 3}
