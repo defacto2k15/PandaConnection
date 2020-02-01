@@ -857,6 +857,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2966fd275e0e7374a9dbd8434576af54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodPileMask:
+    serializedVersion: 2
+    m_Bits: 0
+  floorMask:
+    serializedVersion: 2
+    m_Bits: 0
+  pandaMask:
+    serializedVersion: 2
+    m_Bits: 0
+  foodPilePrefab: {fileID: 0}
   m_moneyManager: {fileID: 1981007572}
   m_consumableManager: {fileID: 1981007571}
   m_shopManager: {fileID: 1981007570}
@@ -1029,6 +1039,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: EroPile
       objectReference: {fileID: 0}
+    - target: {fileID: 5394329104701774334, guid: d26fc8c90247af4428c39136b1cb2168,
+        type: 3}
+      propertyPath: _eroConsumable
+      value: 
+      objectReference: {fileID: -5098641659138202524, guid: 7ae64c3a95c46b649a9a795eaaec2e4e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d26fc8c90247af4428c39136b1cb2168, type: 3}
 --- !u!1001 &5829526294801048469
