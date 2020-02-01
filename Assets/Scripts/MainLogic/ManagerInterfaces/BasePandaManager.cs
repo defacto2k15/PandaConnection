@@ -2,6 +2,8 @@
 
 public class BasePandaManager : MonoBehaviour, IPandaManager
 {
+    [SerializeField] private float MaximumFullness;
+
     public PandaStats ComputePairingStats(IPanda panda1, IPanda panda2)
     {
         throw new System.NotImplementedException();
@@ -34,6 +36,6 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
 
     public float GetMaximumFullness()
     {
-        return 100;
+        return MaximumFullness;
     }
 }

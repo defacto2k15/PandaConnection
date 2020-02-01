@@ -27,11 +27,16 @@ namespace Assets.Scripts.AI
             {
                 var panda = other.gameObject.GetComponentNotNull<IPanda>();
                 var pandaActivityFlag = other.gameObject.GetComponentNotNull<PandaActivityFlag>();
-                if (CanApplyPile() && !_eatingPandas.Contains(panda))
+                if (CanApplyPile() && !_eatingPandas.Contains(panda) && PandaIsHungry(panda))
                 {
                     StartCoroutine(Eating(panda, pandaActivityFlag));
                 }
             }
+        }
+
+        private bool PandaIsHungry(IPanda panda)
+        {
+            return panda.IsNotFull();
         }
 
         private IEnumerator Eating(IPanda panda, PandaActivityFlag activityFlag)
@@ -39,7 +44,7 @@ namespace Assets.Scripts.AI
             Assert.IsFalse(_eatingPandas.Contains(panda));
             _eatingPandas.Add(panda);
             activityFlag.AddActivity(this);
-            while (CanApplyPile())
+            while (CanApplyPile() && PandaIsHungry(panda))
             {
                 var mostAttractiveFood = Pile.FoodConsumables.OrderByDescending(c => c.Food.range).First();
                 mostAttractiveFood.Amount--;

@@ -35,7 +35,7 @@ namespace Assets.Scripts.AI
 
         public float RetriveAttraction(IPanda panda)
         {
-            var attractionFactor = _pile.FoodConsumables.Sum(c => c.Food.range * c.Amount) * 0.1f * (1 - panda.GetFullness());
+            var attractionFactor = _pile.FoodConsumables.Sum(c => c.Food.range * c.Amount) * 0.1f * Mathf.Max(0, 10 - panda.GetFullness());
             return attractionFactor;
         }
 

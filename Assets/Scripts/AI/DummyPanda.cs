@@ -58,6 +58,11 @@ namespace Assets.Scripts.AI
             throw new NotImplementedException();
         }
 
+        public bool IsNotFull()
+        {
+            return GetFullness() < GameManager.instance.pandaManager.GetMaximumFullness();
+        }
+
 
         public float GetEro()
         {

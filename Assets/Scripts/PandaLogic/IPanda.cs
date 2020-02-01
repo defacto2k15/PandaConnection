@@ -23,4 +23,5 @@ public interface IPanda
     void GetSecondaryColor();
 
     void GetBodyPartSize(BodyPart part);
+    bool IsNotFull();
 }
