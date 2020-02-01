@@ -58,7 +58,7 @@ namespace Assets.Scripts.AI
 
         public bool IsNotFull()
         {
-            return GetFullness() < GameManager.instance.pandaManager.GetMaximumFullness();
+            return GetFullness() < GameManager.instance.pandaManager?.GetMaximumFullness();
         }
 
         public Gender GetGender()

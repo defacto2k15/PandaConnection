@@ -37,7 +37,16 @@ namespace Assets.Scripts.AI
         }
 
         public float Radius => _collider.radius;
-        public Vector3 WorldSpacePosition => transform.position;
+        public Vector3 WorldSpacePosition {
+            get
+            {
+                if (this.transform != null)
+                {
+                    return this.transform.position;
+                }
+                return Vector3.zero * int.MinValue;
+            }
+        }
     }
 
     [Serializable]

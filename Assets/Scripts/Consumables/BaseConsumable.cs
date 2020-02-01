@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.AI;
 
 public class BaseConsumable : MonoBehaviour, IConsumable
 {
+
     [SerializeField]
     protected Sprite m_icon;
 
@@ -18,7 +20,12 @@ public class BaseConsumable : MonoBehaviour, IConsumable
         return true;
     }
 
-    bool IConsumable.CanPlace(Vector2 placementLocation)
+    public virtual void PlaceInWorld()
+    {
+
+    }
+
+    public virtual bool CanPlace()
     {
         return true;
     }

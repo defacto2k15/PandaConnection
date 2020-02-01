@@ -17,4 +17,20 @@ public class BaseEroConsumable : BaseConsumable
     {
         panda.ChangeEro(m_eroNutritionalValue);
     }
+
+    public int Range => range;
+
+    public int MEroNutritionalValue => m_eroNutritionalValue;
+
+    public int TimeGivingNutrition => timeGivingNutrition;
+
+    public override bool CanPlace()
+    {
+        return Util.RaycastFoodPile()==null;
+    }
+
+    public override void PlaceInWorld()
+    {
+        //TODO: ero pile?
+    }
 }

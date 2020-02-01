@@ -365,6 +365,8 @@ MonoBehaviour:
   m_button: {fileID: 2212977583434953825}
   m_sprite: {fileID: 8183568385194882365}
   m_name: {fileID: 4482020355368437339}
+  foodPlaceSeeker: {fileID: 8544741997503365839, guid: 377999fb99409c5499a4b49f281d0420,
+    type: 3}
   m_count: {fileID: 2002044915791202149}
   count: 0
 --- !u!1 &7111583607868848874

@@ -20,7 +20,8 @@ public interface IConsumable
     int GetPrice();
     Sprite GetIcon();
     string GetName();
-    bool CanPlace(Vector2 placementLocation);
+    bool CanPlace();
+    void PlaceInWorld();
     void Consume(IPanda panda);
     bool CanConsume(IPanda panda);
 }

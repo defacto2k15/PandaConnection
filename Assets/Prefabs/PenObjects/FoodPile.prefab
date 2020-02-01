@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5829526293742183735}
   - component: {fileID: 5829526293742183734}
   - component: {fileID: 5829526293742183729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FoodActivityArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 5829526294633941282}
   - component: {fileID: 5829526294633941283}
   - component: {fileID: 5829526294633941280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FoodPile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

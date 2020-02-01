@@ -89,14 +89,17 @@ public class BaseConsumableManager : MonoBehaviour, IConsumableManager
         var eroticConsumable = m_eroticConsumables.Find(x => ((IConsumable)x).GetName() == consumable.GetName());
         if (foodConsumable!=null)
         {
+            foodConsumable.PlaceInWorld();
             m_foodConsumables.Remove(foodConsumable);
         }
         else if (drugConsumable!=null)
         {
+            drugConsumable.PlaceInWorld();
             m_drugConsumables.Remove(drugConsumable);
         }
         else if (eroticConsumable!=null)
         {
+            eroticConsumable.PlaceInWorld();
             m_eroticConsumables.Remove(eroticConsumable);
         }
         GameManager.instance.notificationManager.OnConsumablesChanged?.Invoke();

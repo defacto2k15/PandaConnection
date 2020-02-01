@@ -35,4 +35,21 @@ public class BaseDrugConsumable : BaseConsumable
                 break;
         }
     }
+
+    public override bool CanPlace()
+    {
+        var foodPile = Util.RaycastFoodPile();
+        return (foodPile != null && foodPile.Drug == null);
+    }
+
+    public override void PlaceInWorld()
+    {
+        var foodPile = Util.RaycastFoodPile();
+        if (foodPile == null || foodPile.Drug!=null)
+        {
+            Debug.LogError("My method failed - no foodpile to place or drug already on pile");
+            return;
+        }
+        foodPile.Drug = this;
+    }
 }
