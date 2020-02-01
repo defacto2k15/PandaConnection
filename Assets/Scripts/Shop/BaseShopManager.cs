@@ -9,7 +9,7 @@ public class BaseShopManager : MonoBehaviour, IShopManager
 
     private List<IConsumable> m_consumables = new List<IConsumable>();
 
-    void Awake()
+    private void Awake()
     {
         m_consumables.AddRange(m_startingConsumables);
     }
@@ -25,6 +25,7 @@ public class BaseShopManager : MonoBehaviour, IShopManager
         GameManager.instance.MoneyManager.RemoveMoney(type.GetPrice());
         var baseConsumable = type as BaseConsumable;
         var instance = GameObject.Instantiate<BaseConsumable>(baseConsumable) as IConsumable;
+        GameManager.instance.ConsumableManager.Add(instance);
         return instance;
     }
 
