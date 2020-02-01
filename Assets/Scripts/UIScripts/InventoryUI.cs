@@ -76,7 +76,7 @@ public class InventoryUI : MonoBehaviour
             {
                 spawnedItems.RemoveAt(i);
             }
-            else if (!consumablesList.Contains(spawnedItems[i].Consumable))
+            else if (!consumablesList.Exists(x=>x.GetName()==spawnedItems[i].Consumable.GetName()))
             {
                 spawnedItems[i].StartConsumeAnimation();
             }

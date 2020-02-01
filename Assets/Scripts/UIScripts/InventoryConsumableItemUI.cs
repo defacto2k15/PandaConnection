@@ -28,4 +28,14 @@ public class InventoryConsumableItemUI : BaseConsumableItemUI
         //na razie obchodze ten proces, i po prostu wywoluje konsumpcje
         GameManager.instance.ConsumableManager.Consume(Consumable);
     }
+
+    public override void StartConsumeAnimation()
+    {
+        count--;
+        RefreshUI();
+        if (count == 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

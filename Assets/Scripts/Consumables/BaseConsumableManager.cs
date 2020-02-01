@@ -84,17 +84,20 @@ public class BaseConsumableManager : MonoBehaviour, IConsumableManager
     void IConsumableManager.Consume(IConsumable consumable)
     {
         var baseConsumable = consumable as BaseConsumable;
-        if (m_foodConsumables.Contains(baseConsumable))
+        var foodConsumable = m_foodConsumables.Find(x => ((IConsumable)x).GetName() == consumable.GetName());
+        var drugConsumable = m_drugConsumables.Find(x => ((IConsumable)x).GetName() == consumable.GetName());
+        var eroticConsumable = m_eroticConsumables.Find(x => ((IConsumable)x).GetName() == consumable.GetName());
+        if (foodConsumable!=null)
         {
-            m_foodConsumables.Remove(baseConsumable);
+            m_foodConsumables.Remove(foodConsumable);
         }
-        else if (m_drugConsumables.Contains(baseConsumable))
+        else if (drugConsumable!=null)
         {
-            m_drugConsumables.Remove(baseConsumable);
+            m_drugConsumables.Remove(drugConsumable);
         }
-        else if (m_eroticConsumables.Contains(baseConsumable))
+        else if (eroticConsumable!=null)
         {
-            m_eroticConsumables.Remove(baseConsumable);
+            m_eroticConsumables.Remove(eroticConsumable);
         }
         GameManager.instance.notificationManager.OnConsumablesChanged?.Invoke();
     }
