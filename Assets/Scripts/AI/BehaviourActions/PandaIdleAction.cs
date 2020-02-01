@@ -23,7 +23,7 @@ namespace Assets.Scripts.AI.BehaviourActions
         public override void OnStart()
         {
             _idleStartTime = Time.time;
-            gameObject.GetComponentInChildren<Animator>().Play("pandaidle");
+            gameObject.GetComponentInChildren<Animator>().Play("pandaIdle");
         }
 
         public override TaskStatus OnUpdate()
