@@ -27,7 +27,7 @@ namespace Assets.Scripts.AI
             {
                 var panda = other.gameObject.GetComponentNotNull<IPanda>();
                 var pandaActivityFlag = other.gameObject.GetComponentNotNull<PandaActivityFlag>();
-                if (CanApplyPile() && !_eatingPandas.Contains(panda) && PandaIsHungry(panda))
+                if (CanApplyPile(panda) && !_eatingPandas.Contains(panda) && PandaIsHungry(panda))
                 {
                     StartCoroutine(Eating(panda, pandaActivityFlag));
                 }
@@ -44,32 +44,32 @@ namespace Assets.Scripts.AI
             Assert.IsFalse(_eatingPandas.Contains(panda));
             _eatingPandas.Add(panda);
             activityFlag.AddActivity(this);
-            while (CanApplyPile() && PandaIsHungry(panda))
+            while (CanApplyPile(panda) && PandaIsHungry(panda))
             {
-                var mostAttractiveFood = Pile.FoodConsumables.OrderByDescending(c => c.Food.range).First();
-                mostAttractiveFood.Amount--;
-                if (mostAttractiveFood.Amount <= 0)
-                {
-                    Pile.FoodConsumables.Remove(mostAttractiveFood);
-                }
+                var foodToEat = Pile.RetriveFoodFromPile();
 
-                Debug.Log("EATING: " + mostAttractiveFood.Food);
-                yield return new WaitForSeconds(mostAttractiveFood.Food.timeGivingNutrition);
-                Debug.Log("EATEN: " + mostAttractiveFood.Food);
-                ((IConsumable) mostAttractiveFood.Food).Consume(panda);
+                Debug.Log("EATING: " + foodToEat.Food);
+                yield return new WaitForSeconds(foodToEat.Food.timeGivingNutrition);
+                Debug.Log("EATEN: " +  foodToEat.Food);
+                ((IConsumable) foodToEat.Food).Consume(panda);
+                if (foodToEat.Drug != null)
+                {
+                    if (((IConsumable) foodToEat.Drug).CanConsume(panda))
+                    {
+                        Debug.Log("Consuming drug: "+foodToEat.Drug);
+                        ((IConsumable)foodToEat.Drug).Consume(panda);
+                    }
+                }
             }
 
             activityFlag.RemoveActivity(this);
             _eatingPandas.Remove(panda);
-            if (!Pile.FoodConsumables.Any() && !_eatingPandas.Any())
-            {
-                Pile.DestroyPile();
-            }
+            Pile.ThereAreNoEatinPandasLeft();
         }
 
-        private bool CanApplyPile()
+        private bool CanApplyPile(IPanda panda)
         {
-            return Pile.FoodConsumables.Any(c => c.Amount > 0);
+            return Pile.HasEadibleFoodForPanda(panda);
         }
     }
 }

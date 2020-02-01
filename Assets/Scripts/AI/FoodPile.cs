@@ -2,18 +2,29 @@
 using System.Linq;
 using Assets.Scripts.Utils;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace Assets.Scripts.AI
 {
-    [RequireComponent(typeof(MeshRenderer))]
     public class FoodPile : MonoBehaviour
     {
-        private MeshRenderer _renderer;
-        public List<FoodWithItsAmount> FoodConsumables;
+        [SerializeField] private List<FoodWithItsAmount> FoodConsumables;
+        public BaseDrugConsumable Drug;
 
-        void Awake()
+        public float MaxRange
         {
-            _renderer = this.GetComponentNotNull<MeshRenderer>();
+            get
+            {
+
+            if (! FoodConsumables.Any())
+            {
+                return 0;
+            }
+            else
+            {
+                return FoodConsumables.Max(c => c.Food.range);
+            }
+            }
         }
 
         void Update()
@@ -26,9 +37,58 @@ namespace Assets.Scripts.AI
             GameObject.Destroy(gameObject);
         }
 
-        public void RemoveVisualObject()
+        public ConsumableWithDrug RetriveFoodFromPile()
         {
-            _renderer.enabled = false;
+            Assert.IsTrue(FoodConsumables.Any());
+            var bestFood = FoodConsumables.OrderByDescending(c => c.Food.range).First();
+            bestFood.Amount--;
+            if (bestFood.Amount <= 0)
+            {
+                FoodConsumables = FoodConsumables.Where(c => c.Food != bestFood.Food).ToList();
+            }
+
+            return new ConsumableWithDrug()
+            {
+                Food = bestFood.Food,
+                Drug = Drug
+            };
         }
+
+        public void ThereAreNoEatinPandasLeft()
+        {
+            if (!FoodConsumables.Any())
+            {
+                DestroyPile();
+            }
+        }
+
+        public bool HasEadibleFoodForPanda(IPanda panda)
+        {
+            return FoodConsumables.Any(c => PandaCanConsumeFood(panda, c));
+        }
+
+        private static bool PandaCanConsumeFood(IPanda panda, FoodWithItsAmount c)
+        {
+            return ((IConsumable) c.Food).CanConsume(panda);
+        }
+
+        public float RetriveAttractionForPanda(IPanda panda)
+        {
+
+            return FoodConsumables.Sum(c =>
+            {
+                if (!PandaCanConsumeFood(panda, c))
+                {
+                    return 0;
+                }
+                return c.Food.range * c.Amount;
+            }) * 0.1f * Mathf.Max(0, 10 - panda.GetFullness());
+        }
+    }
+
+    public class ConsumableWithDrug
+    {
+        public BaseFoodConsumable Food;
+        public BaseDrugConsumable Drug;
     }
 }

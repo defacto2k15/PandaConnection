@@ -23,20 +23,12 @@ namespace Assets.Scripts.AI
 
         private void UpdateRadius()
         {
-            if (!_pile.FoodConsumables.Any())
-            {
-                _collider.radius = 0;
-            }
-            else
-            {
-                _collider.radius = _pile.FoodConsumables.Max(c => c.Food.range);
-            }
+            _collider.radius = _pile.MaxRange;
         }
 
         public float RetriveAttraction(IPanda panda)
         {
-            var attractionFactor = _pile.FoodConsumables.Sum(c => c.Food.range * c.Amount) * 0.1f * Mathf.Max(0, 10 - panda.GetFullness());
-            return attractionFactor;
+            return _pile.RetriveAttractionForPanda(panda);
         }
 
         void Update()
