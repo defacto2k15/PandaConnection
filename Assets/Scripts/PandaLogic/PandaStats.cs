@@ -1,13 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[SerializeField]
+[Serializable]
 public class PandaStats
 {
     public string name;
     public int birthdate;
-    public List<Tuple<IChromosome, IChromosome>> chromosomes; 
+    public List<Tuple<IChromosome, IChromosome>> chromosomes;
+    public Gender gender;
 }
 
 public enum BodyPart
@@ -20,6 +22,11 @@ public enum BodyPart
     head,
     eyes,
     muzzle
+}
+
+public enum Gender
+{
+    Male, Female
 }
 
 

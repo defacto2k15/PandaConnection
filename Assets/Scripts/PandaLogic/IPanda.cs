@@ -8,7 +8,7 @@ public interface IPanda
 
     float GetHealth();
 
-    void SetHealth(float deltaHealth);
+    void ChangeHealth(float deltaHealth);
 
     float GetEro();
 
@@ -24,4 +24,5 @@ public interface IPanda
 
     void GetBodyPartSize(BodyPart part);
     bool IsNotFull();
+    Gender GetGender();
 }

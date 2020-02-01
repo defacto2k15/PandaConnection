@@ -5,6 +5,7 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
 {
     [SerializeField] private float MaximumFullness;
     [SerializeField] private float MaximumEro;
+    [SerializeField] private float MaximumHealth;
 
     public PandaStats ComputePairingStats(IPanda panda1, IPanda panda2)
     {
@@ -64,5 +65,10 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
     public float GetMaximumEro()
     {
         return MaximumEro;
+    }
+
+    public float GetMaximumHealth()
+    {
+        return MaximumHealth;
     }
 }

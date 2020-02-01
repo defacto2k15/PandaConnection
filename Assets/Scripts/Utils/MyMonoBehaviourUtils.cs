@@ -23,5 +23,18 @@ namespace Assets.Scripts.Utils
             return @this.gameObject.GetComponentNotNull<T>();
         }
 
+        public static T GetComponentInChildrenNotNull<T>(this GameObject @this) where T : class
+        {
+            var component = @this.GetComponentInChildren<T>();
+            Assert.IsNotNull(component, $"There is no component of type {typeof(T)} in object {@this.name}");
+
+            return component;
+        }
+
+        public static T GetComponentInChildrenNotNull<T>(this MonoBehaviour @this) where T: class
+        {
+            return @this.gameObject.GetComponentNotNull<T>();
+        }
+
     }
 }

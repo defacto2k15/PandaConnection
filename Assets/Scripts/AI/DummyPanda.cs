@@ -11,13 +11,8 @@ namespace Assets.Scripts.AI
     {
         [SerializeField] public float Fullness;
         [SerializeField] public float Ero;
-        
-        private PandaStats _stats;
-
-        void Awake()
-        {
-            _stats = new PandaStats();
-        }
+        [SerializeField] public float Health;
+        [SerializeField] PandaStats _stats;
 
         public PandaStats GetStats()
         {
@@ -26,12 +21,13 @@ namespace Assets.Scripts.AI
 
         public float GetHealth()
         {
-            throw new NotImplementedException();
+            return Health;
         }
 
-        public void SetHealth(float deltaHealth)
+        public void ChangeHealth(float deltaHealth)
         {
-            throw new NotImplementedException();
+            Health += deltaHealth;
+            Health = Mathf.Clamp(Health, 0, GameManager.instance.pandaManager.GetMaximumHealth());
         }
 
         public float GetFullness()
@@ -42,7 +38,7 @@ namespace Assets.Scripts.AI
         public void ChangeFullness(float deltaFood)
         {
             Fullness += deltaFood;
-            Fullness = Mathf.Min(Fullness, GameManager.instance.pandaManager.GetMaximumFullness());
+            Fullness = Mathf.Clamp(Fullness,0, GameManager.instance.pandaManager.GetMaximumFullness());
         }
 
         public void GetPrimaryColor()
@@ -65,6 +61,11 @@ namespace Assets.Scripts.AI
             return GetFullness() < GameManager.instance.pandaManager.GetMaximumFullness();
         }
 
+        public Gender GetGender()
+        {
+            return _stats.gender;
+        }
+
         public float GetEro()
         {
             return Ero;
@@ -73,12 +74,7 @@ namespace Assets.Scripts.AI
         public void ChangeEro(float deltaEro)
         {
             Ero += deltaEro;
-            Ero = Mathf.Min(Ero, GameManager.instance.pandaManager.GetMaximumEro());
-        }
-
-        public bool CanMate()
-        {
-            return Ero > 10;
+            Ero = Mathf.Clamp(Ero,0, GameManager.instance.pandaManager.GetMaximumEro());
         }
     }
 }

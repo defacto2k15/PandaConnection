@@ -27,7 +27,7 @@ public class BaseDrugConsumable : BaseConsumable
                 break;
 
             case DrugType.hp:
-                panda.SetHealth(m_drugValue);
+                panda.ChangeHealth(m_drugValue);
                 break;
 
             case DrugType.food:
