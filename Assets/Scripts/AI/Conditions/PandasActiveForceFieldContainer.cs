@@ -35,9 +35,16 @@ namespace Assets.Scripts.AI.Conditions
             }
         }
 
-        public bool IsInActiveFieldArea => _activeForceFields.Any() &&
-                                           _activeForceFields.Select(c =>
-                                               Mathf.Abs(AttractionModifiedByDistanceFactor(c, (c.WorldSpacePosition - transform.position).magnitude))).Sum() > 0.1f;
+        public bool IsInActiveFieldArea
+        {
+            get
+            {
+                var toRet = _activeForceFields.Any() &&
+                            _activeForceFields.Select(c =>
+                                Mathf.Abs(AttractionModifiedByDistanceFactor(c, (c.WorldSpacePosition - transform.position).magnitude))).Sum() > 0.1f;
+                return toRet;
+            }
+        }
 
         private float AttractionModifiedByDistanceFactor(IForceField c, float distance)
         {

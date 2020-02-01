@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[SerializeField]
 public class PandaStats
 {
-    string name;
-    int birthdate;
-    List<Tuple<IChromosome, IChromosome>> chromosomes; 
+    public string name;
+    public int birthdate;
+    public List<Tuple<IChromosome, IChromosome>> chromosomes; 
 }
 
 public enum BodyPart

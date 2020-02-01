@@ -48,4 +48,4 @@ MonoBehaviour:
   m_price: 10
   range: 2
   m_foodNutritionalValue: 10
-  timeGivingNutrition: 10
+  timeGivingNutrition: 3

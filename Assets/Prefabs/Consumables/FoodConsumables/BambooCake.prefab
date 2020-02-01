@@ -47,5 +47,5 @@ MonoBehaviour:
   m_name: BambooCake
   m_price: 30
   range: 2
-  m_foodNutritionalValue: 10
-  timeGivingNutrition: 25
+  m_foodNutritionalValue: 0.1
+  timeGivingNutrition: 0.2

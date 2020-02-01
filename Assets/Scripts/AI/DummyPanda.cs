@@ -9,9 +9,19 @@ namespace Assets.Scripts.AI
 {
     public class DummyPanda : MonoBehaviour, IPanda
     {
+        [SerializeField] public float Fullness;
+        [SerializeField] public float Ero;
+        
+        private PandaStats _stats;
+
+        void Awake()
+        {
+            _stats = new PandaStats();
+        }
+
         public PandaStats GetStats()
         {
-            throw new NotImplementedException();
+            return _stats;
         }
 
         public float GetHealth()
@@ -24,14 +34,15 @@ namespace Assets.Scripts.AI
             throw new NotImplementedException();
         }
 
-        public float GetFood()
+        public float GetFullness()
         {
-            throw new NotImplementedException();
+            return Fullness;
         }
 
-        public void SetFood(float deltaFood)
+        public void ChangeFullness(float deltaFood)
         {
-            throw new NotImplementedException();
+            Fullness += deltaFood;
+            Fullness = Mathf.Min(Fullness, GameManager.instance.pandaManager.GetMaximumFullness());
         }
 
         public void GetPrimaryColor()
@@ -49,14 +60,25 @@ namespace Assets.Scripts.AI
             throw new NotImplementedException();
         }
 
-        public float GetEro()
+        public bool IsNotFull()
         {
-            throw new NotImplementedException();
+            return GetFullness() < GameManager.instance.pandaManager.GetMaximumFullness();
         }
 
-        public void SetEro(float deltaEro)
+        public float GetEro()
         {
-            throw new NotImplementedException();
+            return Ero;
+        }
+
+        public void ChangeEro(float deltaEro)
+        {
+            Ero += deltaEro;
+            Ero = Mathf.Min(Ero, GameManager.instance.pandaManager.GetMaximumEro());
+        }
+
+        public bool CanMate()
+        {
+            return Ero > 10;
         }
     }
 }

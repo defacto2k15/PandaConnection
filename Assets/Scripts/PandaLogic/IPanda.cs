@@ -12,15 +12,16 @@ public interface IPanda
 
     float GetEro();
 
-    void SetEro(float deltaEro);
+    void ChangeEro(float deltaEro);
 
-    float GetFood();
+    float GetFullness();
 
-    void SetFood(float deltaFood);
+    void ChangeFullness(float deltaFood);
 
     void GetPrimaryColor();
 
     void GetSecondaryColor();
 
     void GetBodyPartSize(BodyPart part);
+    bool IsNotFull();
 }

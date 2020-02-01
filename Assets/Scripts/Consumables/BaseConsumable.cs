@@ -31,7 +31,6 @@ public class BaseConsumable : MonoBehaviour, IConsumable
 
     protected virtual void DoAction(IPanda panda)
     {
-
     }
 
     Sprite IConsumable.GetIcon()

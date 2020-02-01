@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public IPandaManager pandaManager;
+    public BasePandaManager pandaManager;
     public ResearchUIManager researchUIManager;
     public NotificationManager notificationManager;
 

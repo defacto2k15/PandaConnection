@@ -15,6 +15,6 @@ public class BaseEroConsumable : BaseConsumable
 
     protected override void DoAction(IPanda panda)
     {
-        panda.SetEro(m_eroNutritionalValue);
+        panda.ChangeEro(m_eroNutritionalValue);
     }
 }

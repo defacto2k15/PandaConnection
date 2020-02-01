@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UnityEngine;
 
-namespace Assets.Scripts.AI
+namespace Assets.Scripts.AI.Activity
 {
-    public class PandaActivityFlag : MonoBehaviour
+    public class PandaMatingActivity
     {
-        public bool IsDuringActivity;
     }
 }
