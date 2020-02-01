@@ -18,7 +18,9 @@ public class BaseResearchItem : MonoBehaviour, IResearchItem
 
     [SerializeField]
     protected bool m_bought;
-    public bool Bought {
+
+    public bool Bought
+    {
         get
         {
             return m_bought;
@@ -32,10 +34,34 @@ public class BaseResearchItem : MonoBehaviour, IResearchItem
 
     [SerializeField]
     protected int m_cost;
-    public int Cost {
+
+    public int Cost
+    {
         get
         {
             return m_cost;
+        }
+    }
+
+    [SerializeField]
+    protected string m_details;
+
+    public string details
+    {
+        get
+        {
+            return m_details;
+        }
+    }
+
+    [SerializeField]
+    protected string m_researchName;
+
+    public string researchName
+    {
+        get
+        {
+            return m_researchName;
         }
     }
 
@@ -43,13 +69,13 @@ public class BaseResearchItem : MonoBehaviour, IResearchItem
     {
         GameManager.instance.MoneyManager.RemoveMoney(Cost);
         Bought = true;
+        GameManager.instance.researchUIManager.buyButton.interactable = false;
         DoEffect();
         //todo: notify UI
     }
 
     public virtual void DoEffect()
     {
-
     }
 
     public virtual bool IsBuyable()
@@ -58,7 +84,7 @@ public class BaseResearchItem : MonoBehaviour, IResearchItem
         canBuy &= !Bought;
         int currentMoney = GameManager.instance.MoneyManager.GetCurrentMoney();
         canBuy &= currentMoney >= Cost;
-        canBuy &= (m_requirements==null || !m_requirements.Exists(x => !x.Bought));
+        canBuy &= (m_requirements == null || !m_requirements.Exists(x => !x.Bought));
         return canBuy;
     }
 }

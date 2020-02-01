@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
     [SerializeField]
     private BaseMoneyManager m_moneyManager;
+
     public IMoneyManager MoneyManager
     {
         get
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private BaseConsumableManager m_consumableManager;
+
     public IConsumableManager ConsumableManager
     {
         get
@@ -25,6 +28,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public ResearchUIManager researchUIManager;
     public IShopManager shopManager;
     public IPandaManager pandaManager;
 
