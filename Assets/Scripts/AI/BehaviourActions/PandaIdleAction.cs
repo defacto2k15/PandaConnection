@@ -15,7 +15,7 @@ namespace Assets.Scripts.AI.BehaviourActions
     [Help("Rotate as idle for parametrized number of seconds")]
     public class PandaIdleAction : GOAction
     {
-        [InParam("IdleDuration", DefaultValue=30)]
+        [InParam("IdleDuration", DefaultValue = 30)]
         public float IdleDuration;
 
         private float _idleStartTime;
@@ -23,6 +23,7 @@ namespace Assets.Scripts.AI.BehaviourActions
         public override void OnStart()
         {
             _idleStartTime = Time.time;
+            gameObject.GetComponentInChildren<Animator>().Play("pandaidle");
         }
 
         public override TaskStatus OnUpdate()
@@ -41,7 +42,7 @@ namespace Assets.Scripts.AI.BehaviourActions
 
         private void AnimatePanda(float elapsedTime)
         {
-            gameObject.transform.RotateAround(gameObject.transform.position, gameObject.transform.up, Time.deltaTime*300);
+            // gameObject.transform.RotateAround(gameObject.transform.position, gameObject.transform.up, Time.deltaTime*300);
         }
     }
 }

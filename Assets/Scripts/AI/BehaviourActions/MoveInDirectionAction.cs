@@ -16,18 +16,18 @@ namespace Assets.Scripts.AI.BehaviourActions
     public class MoveInDirectionAction : GOAction
     {
         [InParam("DestinationVector")]
-        Vector3 DestinationVector;
+        private Vector3 DestinationVector;
 
-        [InParam("SuccessDistance")] float SuccessDistance;
+        [InParam("SuccessDistance")] private float SuccessDistance;
 
         private NavMeshAgent _agent;
 
-        private Vector3 _destinationPosition; 
-        
+        private Vector3 _destinationPosition;
 
         public override void OnStart()
         {
             _agent = gameObject.GetComponentNotNull<NavMeshAgent>();
+            gameObject.GetComponentInChildren<Animator>().Play("pandaMoving");
             CreateGoal();
         }
 

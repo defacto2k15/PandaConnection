@@ -16,18 +16,19 @@ namespace Assets.Scripts.AI.BehaviourActions
     [Action("MyActions/SetDestinationVectorAffectedByForceFields")]
     public class SetDestinationVectorAffectedByForceFieldsAction : GOAction
     {
-        [OutParam("DestinationVector")] Vector3 DestinationVector;
+        [OutParam("DestinationVector")] private Vector3 DestinationVector;
 
         private PandasActiveForceFieldContainer _fieldsContainer;
 
         public override void OnStart()
         {
             _fieldsContainer = gameObject.GetComponentNotNull<PandasActiveForceFieldContainer>();
+            gameObject.GetComponentInChildren<Animator>().Play("pandaMoving");
         }
 
         public override TaskStatus OnUpdate()
         {
-            DestinationVector = _fieldsContainer.ForceVector ;
+            DestinationVector = _fieldsContainer.ForceVector;
             return TaskStatus.COMPLETED;
         }
     }
