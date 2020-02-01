@@ -46,7 +46,7 @@ namespace Assets.Scripts.AI.Conditions
                 {
                     var positionDelta = c.WorldSpacePosition - transform.position;
 
-                    var distanceFactor = Mathf.InverseLerp(c.Radius, 0, positionDelta.magnitude);
+                    var distanceFactor = Mathf.InverseLerp(c.Radius+3, 0, positionDelta.magnitude);
                     return (distanceFactor * c.RetriveAttraction(_panda)) * positionDelta.normalized;
                 }).Aggregate(Vector3.zero, (a, b) => a + b) / _activeForceFields.Count).normalized;
 

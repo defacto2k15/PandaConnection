@@ -13,25 +13,21 @@ using TaskStatus = Pada1.BBCore.Tasks.TaskStatus;
 
 namespace Assets.Scripts.AI.BehaviourActions
 {
-    public class SetDestinationAffectedByForceFieldsAction : GOAction
+    [Action("MyActions/SetDestinationVectorAffectedByForceFields")]
+    public class SetDestinationVectorAffectedByForceFieldsAction : GOAction
     {
-        [InParam("StepLength")] float StepLength;
-
-        [OutParam("Destination")] Vector3 Destination;
+        [OutParam("DestinationVector")] Vector3 DestinationVector;
 
         private PandasActiveForceFieldContainer _fieldsContainer;
-        //private NavMeshAgent _agent;
 
         public override void OnStart()
         {
             _fieldsContainer = gameObject.GetComponentNotNull<PandasActiveForceFieldContainer>();
-            //_agent = gameObject.GetComponentNotNull<NavMeshAgent>();
         }
 
         public override TaskStatus OnUpdate()
         {
-            //_agent.destination = _fieldsContainer.ForceVector * StepLength;
-            Destination = _fieldsContainer.ForceVector * StepLength;
+            DestinationVector = _fieldsContainer.ForceVector ;
             return TaskStatus.COMPLETED;
         }
     }
