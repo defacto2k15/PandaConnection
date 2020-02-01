@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class ShopUI : ConsumablesListUI
+public class ShopUI : BaseConsumablesListUI
 {
     // Start is called before the first frame update
     protected override void Start()

@@ -283,7 +283,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 6
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -312,7 +312,7 @@ MonoBehaviour:
     spaceCount: 0
     wordCount: 1
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 4
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -467,7 +467,7 @@ MonoBehaviour:
     spaceCount: 0
     wordCount: 1
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1189,9 +1189,8 @@ GameObject:
   - component: {fileID: 3030471630893189739}
   - component: {fileID: 3030471630893189738}
   - component: {fileID: 3030471630893189749}
-  - component: {fileID: 3030471630893189737}
   m_Layer: 5
-  m_Name: InventoryConsumableUI
+  m_Name: InventoryConsumablesUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1278,23 +1277,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3030471630893189737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3030471630893189748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf3a05a525b9f624eba227c896565242, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_consumablePrefab: {fileID: 8111831845027018569, guid: 414ee75a6369c3941ba1450ce7804f42,
-    type: 3}
-  m_foodsParent: {fileID: 3030471629286250847}
-  m_drugsParent: {fileID: 3030471629979057709}
-  m_eroticsParent: {fileID: 3030471630104568413}
 --- !u!1 &3030471631113804108
 GameObject:
   m_ObjectHideFlags: 0
