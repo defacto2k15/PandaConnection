@@ -14,9 +14,9 @@ public interface IPanda
 
     void SetEro(float deltaEro);
 
-    float GetFood();
+    float GetFullness();
 
-    void SetFood(float deltaFood);
+    void ChangeFullness(float deltaFood);
 
     void GetPrimaryColor();
 

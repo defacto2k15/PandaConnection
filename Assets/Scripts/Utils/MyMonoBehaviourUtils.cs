@@ -13,7 +13,15 @@ namespace Assets.Scripts.Utils
         public static T GetComponentNotNull<T>(this GameObject @this) where T: class
         {
             var component = @this.GetComponent<T>();
-            Assert.IsNotNull(component, $"There is no component of type {typeof(T)} in object {@this.name}");
+            try
+            {
+                Assert.IsNotNull(component, $"There is no component of type {typeof(T)} in object {@this.name}");
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+
             return component;
         }
 

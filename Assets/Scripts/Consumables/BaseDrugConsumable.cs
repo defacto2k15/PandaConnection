@@ -31,7 +31,7 @@ public class BaseDrugConsumable : BaseConsumable
                 break;
 
             case DrugType.food:
-                panda.SetFood(m_drugValue);
+                panda.ChangeFullness(m_drugValue);
                 break;
         }
     }

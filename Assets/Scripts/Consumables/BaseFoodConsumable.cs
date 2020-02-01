@@ -5,16 +5,16 @@ using UnityEngine;
 public class BaseFoodConsumable : BaseConsumable
 {
     [SerializeField]
-    private int range;
+    public int range;
 
     [SerializeField]
     private int m_foodNutritionalValue;
 
     [SerializeField]
-    private int timeGivingNutrition;
+    public int timeGivingNutrition;
 
     protected override void DoAction(IPanda panda)
     {
-        panda.SetFood(m_foodNutritionalValue);
+        panda.ChangeFullness(m_foodNutritionalValue);
     }
 }

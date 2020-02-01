@@ -9,5 +9,6 @@ namespace Assets.Scripts
     public static class TagNames
     {
         public static string ForceField = "ForceField";
+        public static string Panda = "Panda";
     }
 }

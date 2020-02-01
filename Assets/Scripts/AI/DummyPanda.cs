@@ -9,9 +9,17 @@ namespace Assets.Scripts.AI
 {
     public class DummyPanda : MonoBehaviour, IPanda
     {
+        [SerializeField] public float Fullness;
+        private PandaStats _stats;
+
+        void Awake()
+        {
+            _stats = new PandaStats();
+        }
+
         public PandaStats GetStats()
         {
-            throw new NotImplementedException();
+            return _stats;
         }
 
         public float GetHealth()
@@ -24,14 +32,15 @@ namespace Assets.Scripts.AI
             throw new NotImplementedException();
         }
 
-        public float GetFood()
+        public float GetFullness()
         {
-            throw new NotImplementedException();
+            return Fullness;
         }
 
-        public void SetFood(float deltaFood)
+        public void ChangeFullness(float deltaFood)
         {
-            throw new NotImplementedException();
+            Fullness += deltaFood;
+            Fullness = Mathf.Min(Fullness, GameManager.instance.pandaManager.GetMaximumFullness());
         }
 
         public void GetPrimaryColor()
@@ -48,6 +57,7 @@ namespace Assets.Scripts.AI
         {
             throw new NotImplementedException();
         }
+
 
         public float GetEro()
         {
