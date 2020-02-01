@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 using System;
 
-public class ConsumablesListUI : MonoBehaviour
+public class BaseConsumablesListUI : MonoBehaviour
 {
 
     [SerializeField]
