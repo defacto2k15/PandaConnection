@@ -14,14 +14,14 @@ public class BaseFoodConsumable : BaseConsumable
     [SerializeField]
     public float timeGivingNutrition;
 
-    protected override void DoAction(IPanda panda)
+    public override void DoAction(IPanda panda)
     {
         panda.ChangeFullness(m_foodNutritionalValue);
     }
 
     public override bool CanPlace()
     {
-        return Util.RaycastFoodPile()==null && Util.RaycastEroPile()==null;
+        return Util.RaycastFoodPile()==null && Util.RaycastEroPile()==null && Util.CalculateRaycastPosition().z>-2000;
     }
 
     public override void PlaceInWorld()
@@ -30,5 +30,10 @@ public class BaseFoodConsumable : BaseConsumable
         var foodPile = GameObject.Instantiate<FoodPile>(GameManager.instance.foodPilePrefab);
         foodPile.transform.position = place;
         foodPile.PlaceFood(this);
+    }
+
+    public override float GetRange()
+    {
+        return range;
     }
 }

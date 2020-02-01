@@ -12,6 +12,7 @@ namespace Assets.Scripts.AI
     public class FoodPileForceField : MonoBehaviour, IForceField
     {
         [SerializeField] private FoodPile _pile;
+        [SerializeField] private Transform _radiusSignalizer;
 
         private CapsuleCollider _collider;
 
@@ -23,7 +24,9 @@ namespace Assets.Scripts.AI
 
         private void UpdateRadius()
         {
-            _collider.radius = _pile.MaxRange;
+            var range = _pile.MaxRange;
+            _radiusSignalizer.localScale = Vector3.one * range;
+            _collider.radius = range;
         }
 
         public float RetriveAttraction(IPanda panda)
