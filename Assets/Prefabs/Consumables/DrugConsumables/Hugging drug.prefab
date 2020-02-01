@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6430570379002088555
+--- !u!1 &6152749361732972652
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6430570379002088554}
-  - component: {fileID: 3848149340301170095}
+  - component: {fileID: 5054185245447688582}
+  - component: {fileID: -8295652081798239358}
   m_Layer: 0
-  m_Name: Bamboo
+  m_Name: BaseDrug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6430570379002088554
+--- !u!4 &5054185245447688582
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6430570379002088555}
+  m_GameObject: {fileID: 6152749361732972652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 212.72942, y: 237.86374, z: -191.03029}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,21 +31,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3848149340301170095
+--- !u!114 &-8295652081798239358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6430570379002088555}
+  m_GameObject: {fileID: 6152749361732972652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 545bcc81be6d62e42b1e8105ec351693, type: 3}
+  m_Script: {fileID: 11500000, guid: be9a7039eac33184b90feda2a60bc1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_icon: {fileID: 21300000, guid: 9647773288701bd47b47ec28c6f20811, type: 3}
-  m_name: Bamboo
-  m_price: 10
-  range: 2
-  m_foodNutritionalValue: 10
-  timeGivingNutrition: 10
+  m_icon: {fileID: 21300000, guid: 4a2017e8d917d4f41855d73b7d625b59, type: 3}
+  m_name: '"Hugging" drug'
+  m_price: 30
+  m_drugValue: 5
+  drugType: 1

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5054185245447688582}
   - component: {fileID: -8295652081798239358}
   m_Layer: 0
-  m_Name: BaseDrug
+  m_Name: HP drug+
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be9a7039eac33184b90feda2a60bc1b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_icon: {fileID: 21300000, guid: ff08b5e262b402344977b40287bb2304, type: 3}
-  m_name: Pill
-  m_price: 10
-  m_drugHealingValue: 10
+  m_icon: {fileID: 21300000, guid: 1f63072e5b0afbc489fe50f4b35768a0, type: 3}
+  m_name: HP drug
+  m_price: 120
+  m_drugValue: 8
+  drugType: 0

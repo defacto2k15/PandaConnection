@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6430570379002088554}
   - component: {fileID: 3848149340301170095}
   m_Layer: 0
-  m_Name: Bamboo
+  m_Name: FruitIceCream
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,9 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545bcc81be6d62e42b1e8105ec351693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_icon: {fileID: 21300000, guid: 9647773288701bd47b47ec28c6f20811, type: 3}
-  m_name: Bamboo
-  m_price: 10
-  range: 2
-  m_foodNutritionalValue: 10
-  timeGivingNutrition: 10
+  m_icon: {fileID: 21300000, guid: 5fab1f7e66cfb734caa0f9f26cbef706, type: 3}
+  m_name: FruitIceCream
+  m_price: 50
+  range: 4
+  m_foodNutritionalValue: 5
+  timeGivingNutrition: 50

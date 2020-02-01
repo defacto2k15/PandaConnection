@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6430570379002088554}
-  - component: {fileID: 3848149340301170095}
+  - component: {fileID: -5098641659138202524}
   m_Layer: 0
-  m_Name: Bamboo
+  m_Name: XXX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3848149340301170095
+--- !u!114 &-5098641659138202524
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,12 +40,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6430570379002088555}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 545bcc81be6d62e42b1e8105ec351693, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c81bc2fe5058b746ad5690f3909045e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_icon: {fileID: 21300000, guid: 9647773288701bd47b47ec28c6f20811, type: 3}
-  m_name: Bamboo
-  m_price: 10
-  range: 2
-  m_foodNutritionalValue: 10
+  m_icon: {fileID: 21300000, guid: b4a0bbef64da88946a1e13da5b04a706, type: 3}
+  m_name: XXX
+  m_price: 60
+  range: 1
+  m_eroNutritionalValue: 10
   timeGivingNutrition: 10
