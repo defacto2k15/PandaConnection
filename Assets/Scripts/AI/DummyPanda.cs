@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.AI
 {
-    public class DummyPanda : MonoBehaviour,  IPanda
+    public class DummyPanda : MonoBehaviour, IPanda
     {
         public PandaStats GetStats()
         {
@@ -45,6 +45,16 @@ namespace Assets.Scripts.AI
         }
 
         public void GetBodyPartSize(BodyPart part)
+        {
+            throw new NotImplementedException();
+        }
+
+        public float GetEro()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetEro(float deltaEro)
         {
             throw new NotImplementedException();
         }

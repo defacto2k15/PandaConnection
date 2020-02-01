@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+
 public class ShopUI : ConsumablesListUI
 {
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class ShopUI : ConsumablesListUI
 
     protected override List<IConsumable> GetEroticConsumables()
     {
-        return GameManager.instance.ShopManager.GetAvailableConsumables().Where(x => x is BaseEroticConsumable).ToList();
+        return GameManager.instance.ShopManager.GetAvailableConsumables().Where(x => x is BaseEroConsumable).ToList();
     }
 
     protected override List<IConsumable> GetFoodConsumables()
