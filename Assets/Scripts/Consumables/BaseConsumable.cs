@@ -4,33 +4,48 @@ using UnityEngine;
 
 public class BaseConsumable : MonoBehaviour, IConsumable
 {
-    void IConsumable.CanConsume(IPanda panda)
+    [SerializeField]
+    protected Sprite m_icon;
+
+    [SerializeField]
+    protected string m_name;
+
+    [SerializeField]
+    protected int m_price;
+
+    bool IConsumable.CanConsume(IPanda panda)
     {
-        throw new System.NotImplementedException();
+        return true;
     }
 
     bool IConsumable.CanPlace(Vector2 placementLocation)
     {
-        throw new System.NotImplementedException();
+        return true;
     }
 
     void IConsumable.Consume(IPanda panda)
     {
-        throw new System.NotImplementedException();
+        DoAction(panda);
+        GameManager.instance.ConsumableManager.Consume(this);
+    }
+
+    protected virtual void DoAction(IPanda panda)
+    {
+
     }
 
     Sprite IConsumable.GetIcon()
     {
-        throw new System.NotImplementedException();
+        return m_icon;
     }
 
     string IConsumable.GetName()
     {
-        throw new System.NotImplementedException();
+        return m_name;
     }
 
     int IConsumable.GetPrice()
     {
-        throw new System.NotImplementedException();
+        return m_price;
     }
 }

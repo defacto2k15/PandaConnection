@@ -15,6 +15,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    private BaseConsumableManager m_consumableManager;
+    public IConsumableManager ConsumableManager
+    {
+        get
+        {
+            return m_consumableManager;
+        }
+    }
+
     public IShopManager shopManager;
     public IPandaManager pandaManager;
 

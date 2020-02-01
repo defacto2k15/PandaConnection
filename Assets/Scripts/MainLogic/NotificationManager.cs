@@ -13,4 +13,5 @@ public class NotificationManager : MonoBehaviour
     public Action OnResearchUnlocked;
     public Action<IPanda> OnPandaSelected;
     public Action OnShopItemsChanged;
+    public Action OnConsumablesChanged;
 }

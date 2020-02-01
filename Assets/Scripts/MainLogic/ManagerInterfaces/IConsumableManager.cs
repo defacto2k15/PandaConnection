@@ -10,8 +10,8 @@ public interface IConsumableManager
     List<IConsumable> GetFoodConsumables();
     List<IConsumable> GetDrugConsumables();
 
-    IConsumable ReturnConsumable();
-     bool AddConsumable(IConsumable consumable);
+     void Consume(IConsumable consumable);
+     bool Add(IConsumable consumable);
 }
 
 public interface IConsumable
@@ -21,5 +21,5 @@ public interface IConsumable
     string GetName();
     bool CanPlace(Vector2 placementLocation);
     void Consume(IPanda panda);
-    void CanConsume(IPanda panda);
+    bool CanConsume(IPanda panda);
 }
