@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class BasePandaManager : MonoBehaviour, IPandaManager
 {
@@ -20,6 +21,11 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
         throw new System.NotImplementedException();
     }
 
+    internal void ChangeCashMultiplier(int value)
+    {
+        throw new NotImplementedException();
+    }
+
     public void Unselect(int slot)
     {
         throw new System.NotImplementedException();
@@ -30,9 +36,24 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
         throw new System.NotImplementedException();
     }
 
+    internal void ChangeInfectionChange(int value)
+    {
+        throw new NotImplementedException();
+    }
+
     public IPanda GetSecondSelectedPanda()
     {
         throw new System.NotImplementedException();
+    }
+
+    internal void BoostMaxFood(int value)
+    {
+        throw new NotImplementedException();
+    }
+
+    internal void BoostMaxEro(int value)
+    {
+        throw new NotImplementedException();
     }
 
     public float GetMaximumFullness()
