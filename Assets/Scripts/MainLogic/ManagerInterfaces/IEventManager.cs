@@ -11,6 +11,6 @@ public interface IEvent
 {
     bool CanBeDone();
     void DoEvent();
-    bool done { get; }
-    string eventText { get; }
+    bool Done { get; }
+    string EventText { get; }
 }

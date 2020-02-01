@@ -6,40 +6,19 @@ using System.Linq;
 public class BaseResearchItem : MonoBehaviour, IResearchItem
 {
     [SerializeField]
-    protected List<BaseResearchItem> m_children;
-
-    public List<IResearchItem> children
-    {
-        get
-        {
-            List<IResearchItem> result = new List<IResearchItem>();
-            for(int i =0; i<m_children.Count; i++)
-            {
-                result.Add(m_children[i]);
-            }
-            return result;
-        }
-    }
-
-    [SerializeField]
     protected List<BaseResearchItem> m_requirements;
 
-    public List<IResearchItem> requirements
+    public List<IResearchItem> Requirements
     {
         get
         {
-            List<IResearchItem> result = new List<IResearchItem>();
-            for (int i = 0; i < m_requirements.Count; i++)
-            {
-                result.Add(m_requirements[i]);
-            }
-            return result;
+            return m_requirements.Cast<IResearchItem>().ToList();
         }
     }
 
     [SerializeField]
     protected bool m_bought;
-    public bool bought {
+    public bool Bought {
         get
         {
             return m_bought;
@@ -47,12 +26,13 @@ public class BaseResearchItem : MonoBehaviour, IResearchItem
         private set
         {
             m_bought = value;
+            GameManager.instance.notificationManager.OnResearchUnlocked();
         }
     }
 
     [SerializeField]
     protected int m_cost;
-    public int cost {
+    public int Cost {
         get
         {
             return m_cost;
@@ -61,8 +41,8 @@ public class BaseResearchItem : MonoBehaviour, IResearchItem
 
     public void Buy()
     {
-        GameManager.instance.moneyManager.RemoveMoney(cost);
-        bought = true;
+        GameManager.instance.MoneyManager.RemoveMoney(Cost);
+        Bought = true;
         DoEffect();
         //todo: notify UI
     }
@@ -75,8 +55,10 @@ public class BaseResearchItem : MonoBehaviour, IResearchItem
     public virtual bool IsBuyable()
     {
         bool canBuy = true;
-        canBuy &= GameManager.instance.moneyManager.GetCurrentMoney() >= cost;
-        canBuy &= m_requirements.Exists(x => !x.bought);
+        canBuy &= !Bought;
+        int currentMoney = GameManager.instance.MoneyManager.GetCurrentMoney();
+        canBuy &= currentMoney >= Cost;
+        canBuy &= (m_requirements==null || !m_requirements.Exists(x => !x.Bought));
         return canBuy;
     }
 }

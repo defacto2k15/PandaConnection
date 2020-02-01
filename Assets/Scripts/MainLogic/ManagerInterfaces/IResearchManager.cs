@@ -4,15 +4,14 @@ using UnityEngine;
 
 public interface IResearchManager 
 {
-    List<IResearchItem> startingItems { get; }
+    List<IResearchItem> StartingItems { get; }
 }
 
 public interface IResearchItem
 {
-    List<IResearchItem> children { get; }
-    List<IResearchItem> requirements { get; }
-    bool bought { get; }
+    List<IResearchItem> Requirements { get; }
+    bool Bought { get; }
     bool IsBuyable();
     void Buy();
-    int cost { get; }
+    int Cost { get; }
 }
