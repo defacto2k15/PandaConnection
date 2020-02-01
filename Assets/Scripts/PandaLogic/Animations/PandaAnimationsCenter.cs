@@ -8,6 +8,7 @@ public class PandaAnimationsCenter : MonoBehaviour
     public string idleAnimation;
     public string walkAnimation;
     public string eatAnimation;
+    public string sexAnimation;
 
     public void StartIdle()
     {
@@ -22,5 +23,10 @@ public class PandaAnimationsCenter : MonoBehaviour
     public void StartWalk()
     {
         pandaAnimator.Play(walkAnimation);
+    }
+
+    public void StartSexing()
+    {
+        pandaAnimator.Play(sexAnimation);
     }
 }

@@ -300,6 +300,7 @@ MonoBehaviour:
   idleAnimation: pandaIdle
   walkAnimation: pandaWalk
   eatAnimation: pandaEat
+  sexAnimation: pandaSex
 --- !u!1001 &598183569251192633
 PrefabInstance:
   m_ObjectHideFlags: 0
