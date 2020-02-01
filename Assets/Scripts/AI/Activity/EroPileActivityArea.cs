@@ -20,6 +20,20 @@ namespace Assets.Scripts.AI
 
         void Awake()
         {
+            if (_eroConsumable != null)
+            {
+                Init();
+            }
+        }
+
+        public void SetEroConsumable(BaseEroConsumable consumable)
+        {
+            _eroConsumable = consumable;
+            Init();
+        }
+
+        private void Init()
+        {
             _sphereCollider = this.GetComponentNotNull<CapsuleCollider>();
             _sphereCollider.radius = _eroConsumable.Range;
             _meshRenderer = this.GetComponentNotNull<MeshRenderer>();
@@ -63,7 +77,7 @@ namespace Assets.Scripts.AI
             if (other.CompareTag(TagNames.Panda))
             {
                 var panda = other.gameObject.GetComponentNotNull<IPanda>();
-                if (_usingPandas.Contains(panda))
+                if (_usingPandas!=null && _usingPandas.Contains(panda))
                 {
                     _usingPandas.Remove(panda);
                     TryDestroyingActivityArea();

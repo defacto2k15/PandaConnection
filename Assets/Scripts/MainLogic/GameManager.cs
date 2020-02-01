@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public LayerMask pandaMask;
 
     public FoodPile foodPilePrefab;
+    public EroPileActivityArea eroPilePrefab;
 
     public static GameManager instance;
 

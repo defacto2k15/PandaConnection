@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts.AI;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,6 +32,9 @@ public class BaseEroConsumable : BaseConsumable
 
     public override void PlaceInWorld()
     {
-        //TODO: ero pile?
+        var place = Util.CalculateRaycastPosition();
+        var eroPile = GameObject.Instantiate<EroPileActivityArea>(GameManager.instance.eroPilePrefab);
+        eroPile.transform.position = place;
+        eroPile.SetEroConsumable(this);
     }
 }

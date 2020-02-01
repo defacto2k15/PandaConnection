@@ -59,6 +59,8 @@ MonoBehaviour:
     m_Bits: 1024
   foodPilePrefab: {fileID: 5829526294633941283, guid: 174ec064d28ab3f479b6066d3e98aca5,
     type: 3}
+  eroPilePrefab: {fileID: 5394329104701774334, guid: d26fc8c90247af4428c39136b1cb2168,
+    type: 3}
   m_moneyManager: {fileID: 976633311684230592}
   m_consumableManager: {fileID: 3473265076329357227}
   m_shopManager: {fileID: 1610549589895209740}
@@ -138,3 +140,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaximumFullness: 10000
   MaximumEro: 1000
+  MaximumHealth: 0

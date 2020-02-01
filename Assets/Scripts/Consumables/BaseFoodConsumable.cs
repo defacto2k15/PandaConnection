@@ -21,7 +21,7 @@ public class BaseFoodConsumable : BaseConsumable
 
     public override bool CanPlace()
     {
-        return Util.RaycastFoodPile()==null;
+        return Util.RaycastFoodPile()==null && Util.RaycastEroPile()==null;
     }
 
     public override void PlaceInWorld()

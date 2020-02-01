@@ -40,6 +40,19 @@ public class Util
         return null;
     }
 
+    public static EroPileActivityArea RaycastEroPile()
+    {
+        Ray ray = GameManager.instance.mainCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 1000, GameManager.instance.foodPileMask))
+        {
+            var selectedFoodPile = hit.collider.GetComponentInParent<EroPileActivityArea>();
+            return selectedFoodPile;
+        }
+
+        return null;
+    }
+
     public static IPanda RaycastPanda()
     {
         Ray ray = GameManager.instance.mainCamera.ScreenPointToRay(Input.mousePosition);

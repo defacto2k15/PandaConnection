@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5394329104701774335}
   - component: {fileID: 5394329104701774334}
   - component: {fileID: 5394329104701774329}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EroPile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
