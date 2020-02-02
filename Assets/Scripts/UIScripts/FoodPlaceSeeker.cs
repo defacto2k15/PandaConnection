@@ -12,7 +12,10 @@ public class FoodPlaceSeeker : MonoBehaviour
 
     private void Start()
     {
-        rangeIndicator.transform.localScale = Vector3.one*Consumable.GetRange();
+        //magiczny float ze skalowania range dla food pile
+        var range = Consumable.GetRange() * 2.3046f;
+        Debug.LogError(range);
+        rangeIndicator.transform.localScale = Vector3.one*Consumable.GetRange()* 2.3046f;
     }
 
     // Update is called once per frame
