@@ -389,6 +389,7 @@ namespace Assets.Scripts.AI
             }
 
             GameManager.instance.pandaManager.pandasOnDisplay.Add(this);
+            GameManager.instance.notificationManager.OnPandaAdded?.Invoke();
         }
 
         private void OnDestroy()
@@ -396,6 +397,7 @@ namespace Assets.Scripts.AI
             if (GameManager.instance != null && GameManager.instance.pandaManager != null)
             {
                 GameManager.instance.pandaManager.pandasOnDisplay.Remove(this);
+                GameManager.instance.notificationManager.OnPandaAdded?.Invoke();
             }
 
             SoundManager.instance.TryStopSustainedTheme(gameObject, SoundType.Walking);

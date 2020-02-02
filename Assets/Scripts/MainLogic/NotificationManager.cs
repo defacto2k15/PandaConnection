@@ -15,4 +15,6 @@ public class NotificationManager : MonoBehaviour
     public Action<IPanda> OnPandaDeSelected;
     public Action OnShopItemsChanged;
     public Action OnConsumablesChanged;
+    public Action OnPandaAdded;
+    public Action OnPandaReleased;
 }

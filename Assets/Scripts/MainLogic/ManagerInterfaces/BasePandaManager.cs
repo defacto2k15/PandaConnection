@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BasePandaManager : MonoBehaviour, IPandaManager
 {
@@ -8,6 +9,7 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
     [SerializeField] private float MaximumEro;
     [SerializeField] private float MaximumHealth;
     [SerializeField] private float MinimumFullnessForMating;
+
     public List<string> randomNames = new List<string>();
 
     public PandaStats ComputePairingStats(IPanda panda1, IPanda panda2)

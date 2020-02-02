@@ -28,6 +28,7 @@ public class ReleaseToForrestButton : MonoBehaviour
                 SoundManager.instance.PlayOneShotSound( SoundType.Yay);
             currentPanda.GoToForest();
             GameManager.instance.pandaManager.pandasReleasedToForrest++;
+            GameManager.instance.notificationManager.OnPandaReleased?.Invoke();
             progress.fillAmount = (float)GameManager.instance.pandaManager.pandasReleasedToForrest / (float)GameManager.instance.pandaManager.pandasToWin;
             myButton.interactable = false;
             currentPanda = null;
