@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Assets.Scripts.PandaLogic.Genetics;
 using Assets.Scripts.Utils;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Assertions;
 
 namespace Assets.Scripts.AI.Activity
@@ -90,8 +91,11 @@ namespace Assets.Scripts.AI.Activity
         {
             _flag.AddActivity(otherPandaMatingActivityArea);
             _thisPanda.ChangeEro(_SexEroCost);
+            _thisPanda.GetComponentNotNull<NavMeshAgent>().velocity = Vector3.zero;
+            _thisPanda.GetComponentNotNull<NavMeshAgent>().isStopped = true;
             Debug.Log("Fucky-fucky");
             yield return new WaitForSeconds(_SexTime); 
+            _thisPanda.GetComponentNotNull<NavMeshAgent>().isStopped = false;
             if (_thisPanda.GetGender() == Gender.Female)
             {
                 Debug.Log("Created child");
