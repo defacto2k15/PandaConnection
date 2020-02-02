@@ -24,7 +24,6 @@ namespace Assets.Scripts.AI.BehaviourActions
         public override void OnStart()
         {
             _idleStartTime = Time.time;
-            gameObject.GetComponentInChildren<Animator>().Play("pandaIdle");
             gameObject.GetComponentNotNull<DummyPanda>().StartAnimationState(PandaAnimationState.Idle);
         }
 

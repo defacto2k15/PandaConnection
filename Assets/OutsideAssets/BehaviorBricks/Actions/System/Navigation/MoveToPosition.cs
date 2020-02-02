@@ -30,11 +30,11 @@ namespace BBUnity.Actions
             }
             navAgent.SetDestination(target);
 
-            #if UNITY_5_6_OR_NEWER
-                navAgent.isStopped = false;
-            #else
+#if UNITY_5_6_OR_NEWER
+            navAgent.isStopped = false;
+#else
                 navAgent.Resume();
-            #endif
+#endif
         }
 
         /// <summary>Method of Update of MoveToPosition </summary>
@@ -53,12 +53,12 @@ namespace BBUnity.Actions
         public override void OnAbort()
         {
 #if UNITY_5_6_OR_NEWER
-            if(navAgent!=null)
+            if (navAgent != null)
                 navAgent.isStopped = true;
 #else
             if (navAgent != null)
                 navAgent.Stop();
-            #endif
+#endif
         }
     }
 }

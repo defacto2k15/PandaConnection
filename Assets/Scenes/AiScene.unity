@@ -590,6 +590,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Panda-Female '
       objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870505, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2426071198132870510, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_LocalPosition.x

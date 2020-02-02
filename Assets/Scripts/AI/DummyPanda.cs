@@ -30,9 +30,8 @@ namespace Assets.Scripts.AI
         public void StopAnimationState(PandaAnimationState state)
         {
             _animationState = PandaAnimationState.Walking;
-            _animationStateToAction[state].Invoke();
+            _animationStateToAction[_animationState].Invoke();
         }
-
 
         public PandaStats GetStats()
         {

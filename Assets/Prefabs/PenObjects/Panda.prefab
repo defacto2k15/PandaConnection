@@ -5404,7 +5404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pandaAnimator: {fileID: 2327096680001801402}
   idleAnimation: pandaIdle
-  walkAnimation: pandaWalk
+  walkAnimation: pandaMoving
   eatAnimation: pandaEat
   sexAnimation: pandaSex
   deathAnimation: pandaDeath

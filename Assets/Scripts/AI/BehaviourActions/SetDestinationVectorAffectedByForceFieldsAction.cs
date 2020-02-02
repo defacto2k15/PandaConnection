@@ -23,7 +23,6 @@ namespace Assets.Scripts.AI.BehaviourActions
         public override void OnStart()
         {
             _fieldsContainer = gameObject.GetComponentNotNull<PandasActiveForceFieldContainer>();
-            gameObject.GetComponentInChildren<Animator>().Play("pandaMoving");
         }
 
         public override TaskStatus OnUpdate()

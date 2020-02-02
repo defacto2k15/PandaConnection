@@ -27,7 +27,6 @@ namespace Assets.Scripts.AI.BehaviourActions
         public override void OnStart()
         {
             _agent = gameObject.GetComponentNotNull<NavMeshAgent>();
-            gameObject.GetComponentInChildren<Animator>().Play("pandaMoving");
             CreateGoal();
         }
 
