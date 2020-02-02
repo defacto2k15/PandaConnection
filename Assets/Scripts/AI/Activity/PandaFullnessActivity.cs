@@ -34,6 +34,10 @@ namespace Assets.Scripts.AI.Activity
             while (true)
             {
                 yield return new WaitForSeconds(TimeBetweenFullnessChanges);
+                if (_panda == null)
+                {
+                    break;
+                }
                 _panda.ChangeFullness(FullnessChangeDelta);
 
                 if (_panda.GetFullness() <= 0)
