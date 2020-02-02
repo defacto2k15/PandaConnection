@@ -9,6 +9,7 @@ public class ResearchUIManager : MonoBehaviour
     public TMPro.TMP_Text price;
     public TMPro.TMP_Text desciption;
     public Button buyButton;
+    public Button exitButton;
     public Color activeColor;
     public Color unactiveColor;
     public Color boughtColor;
@@ -26,6 +27,13 @@ public class ResearchUIManager : MonoBehaviour
     public void Show()
     {
         this.gameObject.SetActive(true);
+        exitButton.onClick.AddListener(Resume);
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1;
+        Hide();
     }
 
     public void Hide()

@@ -11,6 +11,7 @@ public class ShopUI : BaseConsumablesListUI
     public TMPro.TMP_Text consumableRange;
     public TMPro.TMP_Text consumablePrice;
     public Button buyButon;
+    public Button exitButton;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -38,6 +39,13 @@ public class ShopUI : BaseConsumablesListUI
     public void Show()
     {
         this.gameObject.SetActive(true);
+        exitButton.onClick.AddListener(Resume);
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1;
+        Hide();
     }
 
     public void Hide()

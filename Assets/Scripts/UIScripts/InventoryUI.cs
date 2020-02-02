@@ -40,13 +40,13 @@ public class InventoryUI : MonoBehaviour
 
     private void GoToShop()
     {
-        GameManager.instance.shopUIManager.gameObject.SetActive(true);
+        GameManager.instance.shopUIManager.Show();
         Time.timeScale = 0;
     }
 
     private void GoToResearch()
     {
-        GameManager.instance.researchUIManager.gameObject.SetActive(true);
+        GameManager.instance.researchUIManager.Show();
         Time.timeScale = 0;
     }
 
