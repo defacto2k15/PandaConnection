@@ -79,7 +79,8 @@ namespace Assets.Scripts.PandaLogic.Genetics
         [TraitSingleValueCharacteristic(2, 1f)] White,
         [TraitSingleValueCharacteristic(3, 2f)] Brown,
         [TraitSingleValueCharacteristic(2, 3f)] Gray,
-        [TraitSingleValueCharacteristic(1, 4f)] Yellow
+        [TraitSingleValueCharacteristic(1, 4f)] Yellow,
+        [TraitSingleValueCharacteristic(1, 5f)] Pink
     }
 
     [SingleTraitAttribute(GeneticTrait.SecendaryColor)]
@@ -89,7 +90,8 @@ namespace Assets.Scripts.PandaLogic.Genetics
         [TraitSingleValueCharacteristic(2, 1f)] White,
         [TraitSingleValueCharacteristic(3, 2f)] Brown,
         [TraitSingleValueCharacteristic(2, 3f)] Gray,
-        [TraitSingleValueCharacteristic(3, 4f)] Yellow
+        [TraitSingleValueCharacteristic(3, 4f)] Yellow,
+        [TraitSingleValueCharacteristic(3, 5f)] Pink
     }
 }
 

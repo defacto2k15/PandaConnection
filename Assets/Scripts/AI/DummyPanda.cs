@@ -130,6 +130,12 @@ namespace Assets.Scripts.AI
                 case PandaLogic.Genetics.SecondaryColorTrait.Yellow:
                     secondaryColor = Color.yellow;
                     break;
+
+                case PandaLogic.Genetics.SecondaryColorTrait.Pink:
+
+                    secondaryColor = new Color(1.00f, 0.40f, 0.70f);
+
+                    break;
             }
             pandaSprites.secondaryColor1.color = secondaryColor;
             pandaSprites.secondaryColor2.color = secondaryColor;
@@ -156,6 +162,12 @@ namespace Assets.Scripts.AI
                 case PandaLogic.Genetics.PrimaryBodyColorTrait.Brown:
 
                     primaryColor = new Color(0.60f, 0.20f, 0.00f);
+
+                    break;
+
+                case PandaLogic.Genetics.PrimaryBodyColorTrait.Pink:
+
+                    primaryColor = new Color(1.00f, 0.40f, 0.70f);
 
                     break;
 
