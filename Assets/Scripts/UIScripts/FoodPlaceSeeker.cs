@@ -10,12 +10,24 @@ public class FoodPlaceSeeker : MonoBehaviour
 
     private bool done = false;
 
+    private static FoodPlaceSeeker instance;
+
     private void Start()
     {
         //magiczny float ze skalowania range dla food pile
         var range = Consumable.GetRange() * 2.3046f;
-        Debug.LogError(range);
         rangeIndicator.transform.localScale = Vector3.one*Consumable.GetRange()* 2.3046f;
+
+        //retard singleton
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            GameObject.Destroy(instance.gameObject);
+            instance = this;
+        }
     }
 
     // Update is called once per frame
@@ -25,7 +37,8 @@ public class FoodPlaceSeeker : MonoBehaviour
         {
             return;
         }
-        this.transform.position = Util.CalculateRaycastPosition();
+        var newPosition = Util.CalculateRaycastPosition();
+        this.transform.position = new Vector3(newPosition.x, this.transform.position.y, newPosition.z);
         bool canPlace = (Consumable?.CanPlace()).GetValueOrDefault();
         if (canPlace)
         {
