@@ -693,7 +693,7 @@ PrefabInstance:
     - target: {fileID: 759733010856386593, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 984140735808679305, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
@@ -963,7 +963,7 @@ PrefabInstance:
     - target: {fileID: 5326704288681894102, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5375817190697095868, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
@@ -983,7 +983,7 @@ PrefabInstance:
     - target: {fileID: 6062978454719235467, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6257868867813731235, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
@@ -1324,6 +1324,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   foodPilePrefab: {fileID: 0}
+  eroPilePrefab: {fileID: 0}
   m_moneyManager: {fileID: 1981007572}
   m_consumableManager: {fileID: 1981007571}
   m_shopManager: {fileID: 1981007570}
@@ -1374,7 +1375,7 @@ PrefabInstance:
     - target: {fileID: 759733010856386593, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 984140735808679305, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
@@ -1639,7 +1640,7 @@ PrefabInstance:
     - target: {fileID: 5326704288681894102, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5375817190697095868, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
@@ -1659,7 +1660,7 @@ PrefabInstance:
     - target: {fileID: 6062978454719235467, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6257868867813731235, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
