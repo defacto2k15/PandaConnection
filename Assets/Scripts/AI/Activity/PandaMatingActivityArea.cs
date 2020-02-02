@@ -72,12 +72,15 @@ namespace Assets.Scripts.AI.Activity
             {
                 foreach (var otherPanda in _hotPandasInThisArea)
                 {
-                    var otherPandaMatingActivity = otherPanda.gameObject.GetComponentInChildrenNotNull<PandaMatingActivityArea>();
-                    if (CanMateWith(otherPanda) && otherPandaMatingActivity.CanMateWith(_thisPanda))
+                    if (!(otherPanda == null))
                     {
-                        StartMating(otherPandaMatingActivity);
-                        otherPandaMatingActivity.StartMating(this);
-                        return;
+                        var otherPandaMatingActivity = otherPanda.gameObject.GetComponentInChildrenNotNull<PandaMatingActivityArea>();
+                        if (CanMateWith(otherPanda) && otherPandaMatingActivity.CanMateWith(_thisPanda))
+                        {
+                            StartMating(otherPandaMatingActivity);
+                            otherPandaMatingActivity.StartMating(this);
+                            return;
+                        }
                     }
                 }
             }

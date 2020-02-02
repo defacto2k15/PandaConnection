@@ -51,5 +51,4 @@ public class ReleaseToForrestButton : MonoBehaviour
             myButton.interactable = false;
         }
     }
-
 }

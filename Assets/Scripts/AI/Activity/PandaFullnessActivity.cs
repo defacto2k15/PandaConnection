@@ -58,6 +58,10 @@ namespace Assets.Scripts.AI.Activity
                 SoundManager.instance.PlayOneShotSound( SoundType.Dying);
             yield return new WaitForSeconds(DyingTime);
             Debug.Log("Killing panda becouse of hunger");
+            if (FindObjectsOfType<DummyPanda>().ToList().Count <= 2)
+            {
+                FindObjectOfType<GameOverScreen>()?.MakeVisible();
+            }
             GameObject.Destroy(gameObject);
         }
     }
