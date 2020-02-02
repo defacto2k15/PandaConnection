@@ -364,6 +364,16 @@ namespace Assets.Scripts.AI
 
                     break;
             }
+
+            GameManager.instance.pandaManager.pandasOnDisplay.Add(this);
+        }
+
+        private void OnDestroy()
+        {
+            if(GameManager.instance!=null && GameManager.instance.pandaManager != null)
+            {
+                GameManager.instance.pandaManager.pandasOnDisplay.Remove(this);
+            }
         }
 
         public void Select(int i)

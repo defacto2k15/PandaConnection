@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BasePandaManager : MonoBehaviour, IPandaManager
@@ -78,4 +79,8 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
         return MinimumFullnessForMating;
     }
 
+    [HideInInspector]
+    public List<IPanda> pandasOnDisplay = new List<IPanda>();
+
+    public int timeGenesMutated = 0;
 }

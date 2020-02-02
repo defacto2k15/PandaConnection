@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3473265076329357227}
   - component: {fileID: 1610549589895209740}
   - component: {fileID: 8231352850314746878}
+  - component: {fileID: 2504616203823143151}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -48,7 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2966fd275e0e7374a9dbd8434576af54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pandaStatisticsUI: {fileID: 0}
   foodPileMask:
     serializedVersion: 2
     m_Bits: 512
@@ -62,11 +62,13 @@ MonoBehaviour:
     type: 3}
   eroPilePrefab: {fileID: 5394329104701774334, guid: d26fc8c90247af4428c39136b1cb2168,
     type: 3}
+  crowdManager: {fileID: 2504616203823143151}
   m_moneyManager: {fileID: 976633311684230592}
   m_consumableManager: {fileID: 3473265076329357227}
   m_shopManager: {fileID: 1610549589895209740}
   pandaManager: {fileID: 8231352850314746878}
   researchUIManager: {fileID: 0}
+  pandaStatisticsUI: {fileID: 0}
   notificationManager: {fileID: 976633311684230595}
 --- !u!114 &976633311684230592
 MonoBehaviour:
@@ -143,3 +145,20 @@ MonoBehaviour:
   MaximumFullness: 100
   MaximumEro: 100
   MaximumHealth: 100
+  MinimumFullnessForMating: 15
+  timeGenesMutated: 0
+--- !u!114 &2504616203823143151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976633311684230604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ee94c3d7f5fe94dac42a0d12888092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  giveMoneyTimeInterval: 5
+  minMoneyToGive: 1
+  maxMoneyToGive: 200

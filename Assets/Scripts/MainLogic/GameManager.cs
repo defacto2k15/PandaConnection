@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public PandaStatisticsUI pandaStatisticsUI;
+
 
     private Camera _mainCamera;
 
@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 
     public FoodPile foodPilePrefab;
     public EroPileActivityArea eroPilePrefab;
+
+    public BaseCrowdManager crowdManager;
 
     public static GameManager instance;
 
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
 
     public BasePandaManager pandaManager;
     public ResearchUIManager researchUIManager;
+    public PandaStatisticsUI pandaStatisticsUI;
     public NotificationManager notificationManager;
 
     private void Awake()
