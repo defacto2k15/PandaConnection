@@ -16,17 +16,16 @@ namespace Assets.Scripts.AI
 
         private List<IPanda> _eatingPandas;
 
-        void Awake()
+        private void Awake()
         {
             _eatingPandas = new List<IPanda>();
         }
 
-        void Start()
+        private void Start()
         {
-
         }
 
-        void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag(TagNames.Panda))
             {
@@ -53,17 +52,17 @@ namespace Assets.Scripts.AI
             {
                 var foodToEat = Pile.RetriveFoodFromPile();
 
-                this.GetComponentNotNull<DummyPanda>().StartAnimationState(PandaAnimationState.Eating);
+                (panda as DummyPanda).StartAnimationState(PandaAnimationState.Eating);
                 Debug.Log("EATING: " + foodToEat.Food);
                 yield return new WaitForSeconds(foodToEat.Food.timeGivingNutrition);
-                Debug.Log("EATEN: " +  foodToEat.Food);
-                this.GetComponentNotNull<DummyPanda>().StopAnimationState(PandaAnimationState.Eating);
-                ((IConsumable) foodToEat.Food).Consume(panda);
+                Debug.Log("EATEN: " + foodToEat.Food);
+                (panda as DummyPanda).StopAnimationState(PandaAnimationState.Eating);
+                ((IConsumable)foodToEat.Food).Consume(panda);
                 if (foodToEat.Drug != null)
                 {
-                    if (((IConsumable) foodToEat.Drug).CanConsume(panda))
+                    if (((IConsumable)foodToEat.Drug).CanConsume(panda))
                     {
-                        Debug.Log("Consuming drug: "+foodToEat.Drug);
+                        Debug.Log("Consuming drug: " + foodToEat.Drug);
                         ((IConsumable)foodToEat.Drug).Consume(panda);
                     }
                 }
