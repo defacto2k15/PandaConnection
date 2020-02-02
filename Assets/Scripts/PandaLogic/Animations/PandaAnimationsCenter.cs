@@ -22,27 +22,39 @@ public class PandaAnimationsCenter : MonoBehaviour
     public void StartEat()
     {
         Debug.Log("StartEat animation");
-        pandaAnimator.Play(eatAnimation);
+        if (pandaAnimator != null)
+        {
+            pandaAnimator.Play(eatAnimation);
+        }
         eatParticle.Emit(20);
     }
 
     public void StartWalk()
     {
-        pandaAnimator.Play(walkAnimation);
+        if (pandaAnimator != null)
+        {
+            pandaAnimator.Play(walkAnimation);
+        }
         Debug.Log("StartWalk animation");
     }
 
     public void StartSexing()
     {
         Debug.Log("StartSexing animation");
-        pandaAnimator.Play(sexAnimation);
+        if (pandaAnimator != null)
+        {
+            pandaAnimator.Play(sexAnimation);
+        }
         sexParticle.Emit(20);
     }
 
     public void StartDeath()
     {
         Debug.Log("StartDeath animation");
-        pandaAnimator.Play(deathAnimation);
+        if (pandaAnimator != null)
+        {
+            pandaAnimator.Play(deathAnimation);
+        }
         deathParticle.Emit(20);
     }
 }
