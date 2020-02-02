@@ -38,7 +38,7 @@ public class BaseConsumable : MonoBehaviour, IConsumable
     void IConsumable.Consume(IPanda panda)
     {
         DoAction(panda);
-        GameManager.instance.ConsumableManager.Consume(this);
+        //GameManager.instance.ConsumableManager.Consume(this);
     }
 
     public virtual void DoAction(IPanda panda)
