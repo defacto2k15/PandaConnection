@@ -1227,6 +1227,7 @@ MonoBehaviour:
   consumableRange: {fileID: 8808639815505029387}
   consumablePrice: {fileID: 4133304285613534775}
   buyButon: {fileID: 2076294195430271918}
+  exitButton: {fileID: 510806674508058574}
 --- !u!1 &2945477917741956760
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,7 +3031,7 @@ PrefabInstance:
     - target: {fileID: 6807590108396198222, guid: cac0fd674b91f0043809b5b7d226345b,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: 'Buy:'
       objectReference: {fileID: 0}
     - target: {fileID: 8916424082744846628, guid: cac0fd674b91f0043809b5b7d226345b,
         type: 3}
@@ -3178,6 +3179,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 6028277026223893995}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &510806674508058574 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6106320287635776037, guid: 69ff3c5dfab29964da195bcbd2c56a38,
+    type: 3}
+  m_PrefabInstance: {fileID: 6028277026223893995}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6613259947380592987
 PrefabInstance:
   m_ObjectHideFlags: 0
