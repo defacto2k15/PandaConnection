@@ -585,6 +585,21 @@ PrefabInstance:
       propertyPath: _stats.gender
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.bodyTypeTrait
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.primaryBodyColorTrait
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.secondaryColorTrait
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2426071198132870505, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_Name
@@ -593,7 +608,7 @@ PrefabInstance:
     - target: {fileID: 2426071198132870505, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2426071198132870510, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}

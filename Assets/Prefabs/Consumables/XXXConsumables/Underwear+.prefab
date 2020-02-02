@@ -47,5 +47,5 @@ MonoBehaviour:
   m_name: Underwear+
   m_price: 150
   range: 5
-  m_eroNutritionalValue: 7
-  timeGivingNutrition: 10
+  m_eroNutritionalValue: 5
+  timeGivingNutrition: 20

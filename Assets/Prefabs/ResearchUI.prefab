@@ -217,10 +217,10 @@ MonoBehaviour:
   - {fileID: 403741978367414794}
   m_bought: 0
   m_cost: 300
-  m_details: Your pandas are more resistance to sickness!! Sick!
-  m_researchName: More HP upgrade
+  m_details: You started exporting your poo....i mean your excelent Tea! Great!
+  m_researchName: More Cash
   value: 20
-  statType: 0
+  statType: 4
 --- !u!114 &403741978367414794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1234,9 +1234,9 @@ MonoBehaviour:
   - {fileID: 1896553481483301446}
   m_bought: 0
   m_cost: 300
-  m_details: Unlocks option to buy hp drug, it lets you regenerate your pandas Hp
-    while eating! Heroes never die!
-  m_researchName: Hp drug unlock
+  m_details: Unlocks option to buy super food drug! Its amazing Wow never hungry
+    again here i go!
+  m_researchName: Food drug++ unlock
   itemPrefab: {fileID: -8295652081798239358, guid: 79ff7516126680d48a4e9b7edc769c54,
     type: 3}
 --- !u!1 &4448391122127808701
@@ -1314,9 +1314,9 @@ MonoBehaviour:
   - {fileID: 3954976013054820893}
   m_bought: 0
   m_cost: 350
-  m_details: Unlocks option to buy even better Hp drug! Sience wonder when one stop
-    being Panda and start being Zombie well some mysteries are better left untouched.
-  m_researchName: Hp drug+ unlocked
+  m_details: Unlocks option to buy super "Hugging" drug! Wow just a thought makes
+    me want to hug everyone!
+  m_researchName: '"Hugging" drug++ unlock'
   itemPrefab: {fileID: -8295652081798239358, guid: a6d137bd1d48e344681164a18ec89d03,
     type: 3}
 --- !u!114 &2950198910111576537
@@ -4585,12 +4585,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 97219e20da0ec2c48837f9d3752b6e3b,
+      objectReference: {fileID: 21300000, guid: 316ccdd42c5f1f94482b9ab9cfd1c1b1,
         type: 3}
     - target: {fileID: 6201178605520908818, guid: 353ee1492082f2947a31f55e2a983b59,
         type: 3}
       propertyPath: m_Name
-      value: More HP
+      value: More Cash
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4120944243760803028, guid: 353ee1492082f2947a31f55e2a983b59, type: 3}
@@ -4993,7 +4993,7 @@ PrefabInstance:
     - target: {fileID: 6201178605520908818, guid: 353ee1492082f2947a31f55e2a983b59,
         type: 3}
       propertyPath: m_Name
-      value: HpDrug+
+      value: EroDrug++
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4120944243760803028, guid: 353ee1492082f2947a31f55e2a983b59, type: 3}
@@ -5056,12 +5056,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 42a16e4d2323323439b481223a97c7d2,
+      objectReference: {fileID: 21300000, guid: 4ed03e34985ad1f44bd4ed30a3962fe3,
         type: 3}
     - target: {fileID: 6201178605520908818, guid: 353ee1492082f2947a31f55e2a983b59,
         type: 3}
       propertyPath: m_Name
-      value: HpDrug
+      value: Food drug++
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4120944243760803028, guid: 353ee1492082f2947a31f55e2a983b59, type: 3}

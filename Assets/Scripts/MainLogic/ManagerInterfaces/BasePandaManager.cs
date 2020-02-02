@@ -26,7 +26,7 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
 
     internal void ChangeCashMultiplier(int value)
     {
-        throw new NotImplementedException();
+        GameManager.instance.crowdManager.cashMultiplayer += value;
     }
 
     public void Unselect(int slot)
@@ -51,12 +51,12 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
 
     internal void BoostMaxFood(int value)
     {
-        throw new NotImplementedException();
+        MaximumFullness += value;
     }
 
     internal void BoostMaxEro(int value)
     {
-        throw new NotImplementedException();
+        MaximumEro += value;
     }
 
     public float GetMaximumFullness()

@@ -5486,9 +5486,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChildPandaCreator: {fileID: 0}
-  _SexEroCost: 10
-  _SexTime: 5
-  _EroThresholdForSex: 10
+  _SexEroCost: 70
+  _SexTime: 3
+  _EroThresholdForSex: 95
   _flag: {fileID: 2426071198132870502}
 --- !u!1 &3973155738135888280
 GameObject:

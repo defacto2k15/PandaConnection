@@ -111,9 +111,6 @@ MonoBehaviour:
   - consumablePrefab: {fileID: 3848149340301170095, guid: 5f427aebf93806f409cb4d98b742946b,
       type: 3}
     quantity: 1
-  - consumablePrefab: {fileID: 3848149340301170095, guid: 6fbd6e33f6da6b64eabf6955082ec8ca,
-      type: 3}
-    quantity: 1
   m_startingDrugConsumables: []
   m_startingEroticConsumables: []
 --- !u!114 &1610549589895209740
@@ -159,6 +156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ee94c3d7f5fe94dac42a0d12888092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  giveMoneyTimeInterval: 5
+  giveMoneyTimeInterval: 1
   minMoneyToGive: 1
   maxMoneyToGive: 200
+  wantedPandasNumber: 50
+  wantedMutationsNumber: 100
+  cashMultiplayer: 100

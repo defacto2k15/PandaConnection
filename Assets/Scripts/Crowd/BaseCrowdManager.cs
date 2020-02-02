@@ -9,6 +9,7 @@ public class BaseCrowdManager : MonoBehaviour
     public float maxMoneyToGive = 200.0f;
     public float wantedPandasNumber = 50.0f;
     public float wantedMutationsNumber = 100.0f;
+    public float cashMultiplayer = 100;
 
     private void Awake()
     {
@@ -34,7 +35,6 @@ public class BaseCrowdManager : MonoBehaviour
         float appreciationCoefficient = Mathf.Min(pandasSeenCoefficient + genesMutatedCoefficient, 1.0f);
 
         Debug.Log($"AppreciationCoefficient: {appreciationCoefficient}");
-        return (int)Mathf.Lerp(minMoneyToGive, maxMoneyToGive, appreciationCoefficient);
+        return (int)Mathf.Lerp(minMoneyToGive, maxMoneyToGive, appreciationCoefficient * cashMultiplayer / 100f);
     }
 }
-
