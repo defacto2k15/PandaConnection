@@ -33,7 +33,7 @@ namespace Assets.Scripts.AI
                 {
                     if (UnityEngine.Random.Range(0, 1) < SpectatorSpawnChance)
                     {
-                        var spectator = Instantiate(SpectatorPerfab, SpectatorsSpawnPoint.transform.position, Quaternion.identity);
+                        var spectator = Instantiate(SpectatorPerfab, SpectatorsSpawnPoint.transform.position, SpectatorsSpawnPoint.transform.rotation);
                         var behaviourExecutor = spectator.GetComponentNotNull<BehaviorExecutor>();
                         behaviourExecutor.SetBehaviorParam("photoArea", PhotoArea);
                         behaviourExecutor.SetBehaviorParam("spectatorGoal", SpectatorGoal);
