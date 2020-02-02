@@ -105,4 +105,6 @@ public class PandaSpriteSwitcheroo : MonoBehaviour
     public Sprite eye2Triangle;
     public Sprite eye1Crazy;
     public Sprite eye2Crazy;
+
+    public Sprite blankSprite;
 }
