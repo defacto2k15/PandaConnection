@@ -38,6 +38,7 @@ public class FoodPlaceSeeker : MonoBehaviour
             return;
         }
         var newPosition = Util.CalculateRaycastPosition();
+        //Debug.Log(newPosition);
         this.transform.position = new Vector3(newPosition.x, this.transform.position.y, newPosition.z);
         bool canPlace = (Consumable?.CanPlace()).GetValueOrDefault();
         if (canPlace)
@@ -57,7 +58,7 @@ public class FoodPlaceSeeker : MonoBehaviour
                 GameObject.Destroy(this.gameObject);
             }
         }
-        else if (Input.GetMouseButtonDown(1))
+        else if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Escape))
         {
             GameObject.Destroy(this.gameObject);
         }
