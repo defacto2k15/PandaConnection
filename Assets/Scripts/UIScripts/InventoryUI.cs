@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InventoryUI : MonoBehaviour
 {
+    public Button backToMenuButton;
     public Button gotoShopButton;
     public Button gotoResearchButton;
     public Button showButton;
     public Button showDetailMatingButton;
+
+    SceneField menuScene;
 
     [SerializeField]
     protected InventoryConsumableItemUI m_consumablePrefab;
@@ -36,6 +40,12 @@ public class InventoryUI : MonoBehaviour
         showDetailMatingButton.onClick.AddListener(ShowDetailMating);
         gotoShopButton.onClick.AddListener(GoToShop);
         gotoResearchButton.onClick.AddListener(GoToResearch);
+        backToMenuButton.onClick.AddListener(BackToMenu);
+    }
+
+    private void BackToMenu()
+    {
+        SceneManager.LoadScene(menuScene, LoadSceneMode.Single);
     }
 
     private void GoToShop()
