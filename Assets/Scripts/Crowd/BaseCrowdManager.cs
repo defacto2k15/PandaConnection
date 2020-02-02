@@ -34,7 +34,7 @@ public class BaseCrowdManager : MonoBehaviour
 
         float appreciationCoefficient = Mathf.Min(pandasSeenCoefficient + genesMutatedCoefficient, 1.0f);
 
-        Debug.Log($"AppreciationCoefficient: {appreciationCoefficient}");
+        //Debug.Log($"AppreciationCoefficient: {appreciationCoefficient}");
         return (int)Mathf.Lerp(minMoneyToGive, maxMoneyToGive, appreciationCoefficient * cashMultiplayer / 100f);
     }
 }

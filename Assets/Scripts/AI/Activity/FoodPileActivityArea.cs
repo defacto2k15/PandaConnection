@@ -63,7 +63,7 @@ namespace Assets.Scripts.AI
                     if (((IConsumable)foodToEat.Drug).CanConsume(panda))
                     {
                         Debug.Log("Consuming drug: " + foodToEat.Drug);
-                        ((IConsumable)foodToEat.Drug).Consume(panda);
+                        (foodToEat.Drug).DoAction(panda);
                     }
                 }
             }
