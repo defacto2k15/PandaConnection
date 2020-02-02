@@ -3017,7 +3017,7 @@ GameObject:
   - component: {fileID: 5375512188575857438}
   - component: {fileID: 7295269148403836225}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
