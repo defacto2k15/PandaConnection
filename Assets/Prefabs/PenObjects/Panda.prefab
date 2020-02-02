@@ -5469,7 +5469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb528dbe62cb7634281cbfc2133426ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeBetweenFullnessChanges: 3
+  TimeBetweenFullnessChanges: 7
   FullnessChangeDelta: -1
   DyingTime: 5
 --- !u!114 &7488642622346133328
@@ -5618,7 +5618,7 @@ MonoBehaviour:
   ChildPandaCreator: {fileID: 0}
   _SexEroCost: -80
   _SexTime: 5
-  _EroThresholdForSex: 95
+  _EroThresholdForSex: 80
   _flag: {fileID: 2426071198132870502}
 --- !u!1 &3973155738135888280
 GameObject:
