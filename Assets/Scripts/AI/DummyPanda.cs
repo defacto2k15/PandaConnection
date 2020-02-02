@@ -88,7 +88,6 @@ namespace Assets.Scripts.AI
             if (!GetStats().Genotype.Any())
             {
                 GetStats().CreateGenotypeFromPhenotype();
-
             }
             Color secondaryColor = Color.white;
             switch (GetStats().Phenotype.secondaryColorTrait)
@@ -159,17 +158,17 @@ namespace Assets.Scripts.AI
                     pandaSprites.bodyRenderer2.sprite = pandaSprites.slimBody2;
                     pandaSprites.bodyRenderer3.sprite = pandaSprites.slimBody3;
                     pandaSprites.bodyRendererLines.sprite = pandaSprites.slimBodyLines;
-                    pandaSprites.bodyRendererFat.sprite = null;
-                    pandaSprites.bodyRendererLinesFat.sprite = null;
+                    //  pandaSprites.bodyRendererFat.sprite = null;
+                    //  pandaSprites.bodyRendererLinesFat.sprite = null;
                     break;
 
                 case PandaLogic.Genetics.BodyTypeTrait.Fat:
                     pandaSprites.bodyRendererFat.sprite = pandaSprites.fatBody;
                     pandaSprites.bodyRendererLinesFat.sprite = pandaSprites.fatBodyLines;
-                    pandaSprites.bodyRenderer1.sprite = null;
-                    pandaSprites.bodyRenderer2.sprite = null;
-                    pandaSprites.bodyRenderer3.sprite = null;
-                    pandaSprites.bodyRendererLines.sprite = null;
+                    //  pandaSprites.bodyRenderer1.sprite = null;
+                    //  pandaSprites.bodyRenderer2.sprite = null;
+                    //  pandaSprites.bodyRenderer3.sprite = null;
+                    //  pandaSprites.bodyRendererLines.sprite = null;
                     break;
             }
 
@@ -178,7 +177,7 @@ namespace Assets.Scripts.AI
                 case PandaLogic.Genetics.NoseMouthTypeTrait.Heart:
                     pandaSprites.mouthLine.sprite = pandaSprites.mouthHeart;
                     pandaSprites.noseLine.sprite = pandaSprites.noseHeart;
-                    pandaSprites.mouthColor.sprite = null;
+                    //   pandaSprites.mouthColor.sprite = null;
                     break;
 
                 case PandaLogic.Genetics.NoseMouthTypeTrait.Normal:
@@ -190,25 +189,25 @@ namespace Assets.Scripts.AI
                 case PandaLogic.Genetics.NoseMouthTypeTrait.Pig:
                     pandaSprites.mouthLine.sprite = pandaSprites.mouthPig;
                     pandaSprites.noseLine.sprite = pandaSprites.nosePig;
-                    pandaSprites.mouthColor.sprite = null;
+                    //   pandaSprites.mouthColor.sprite = null;
                     break;
 
                 case PandaLogic.Genetics.NoseMouthTypeTrait.Pink:
                     pandaSprites.mouthLine.sprite = pandaSprites.mouthPink;
                     pandaSprites.noseLine.sprite = pandaSprites.nosePink;
-                    pandaSprites.mouthColor.sprite = null;
+                    //   pandaSprites.mouthColor.sprite = null;
                     break;
 
                 case PandaLogic.Genetics.NoseMouthTypeTrait.Small:
                     pandaSprites.mouthLine.sprite = pandaSprites.mouthSmall;
                     pandaSprites.noseLine.sprite = pandaSprites.noseSmall;
-                    pandaSprites.mouthColor.sprite = null;
+                    //  pandaSprites.mouthColor.sprite = null;
                     break;
 
                 case PandaLogic.Genetics.NoseMouthTypeTrait.Triangle:
                     pandaSprites.mouthLine.sprite = pandaSprites.mouthTriangle;
                     pandaSprites.noseLine.sprite = pandaSprites.noseTriangle;
-                    pandaSprites.mouthColor.sprite = null;
+                    //   pandaSprites.mouthColor.sprite = null;
                     break;
             }
 
@@ -235,7 +234,7 @@ namespace Assets.Scripts.AI
                     break;
 
                 case PandaLogic.Genetics.TailTypeTrait.Pig:
-                    pandaSprites.tailColor.sprite = null;
+                    //   pandaSprites.tailColor.sprite = null;
                     pandaSprites.tailLine.sprite = pandaSprites.tailPigLine;
                     break;
             }
@@ -278,8 +277,8 @@ namespace Assets.Scripts.AI
                     pandaSprites.earLeftLine.sprite = pandaSprites.earLeftLineCurved;
                     pandaSprites.earRightColor.sprite = pandaSprites.earRightColorCurved;
                     pandaSprites.earRightLine.sprite = pandaSprites.earRightLineCurved;
-                    pandaSprites.earRightFilling.sprite = null;
-                    pandaSprites.earLeftFilling.sprite = null;
+                    //    pandaSprites.earRightFilling.sprite = null;
+                    //    pandaSprites.earLeftFilling.sprite = null;
                     break;
 
                 case PandaLogic.Genetics.EarTypeTrait.Long:
@@ -287,8 +286,8 @@ namespace Assets.Scripts.AI
                     pandaSprites.earLeftLine.sprite = pandaSprites.earLeftLineLong;
                     pandaSprites.earRightColor.sprite = pandaSprites.earRightColorLong;
                     pandaSprites.earRightLine.sprite = pandaSprites.earRightLineLong;
-                    pandaSprites.earRightFilling.sprite = null;
-                    pandaSprites.earLeftFilling.sprite = null;
+                    //  pandaSprites.earRightFilling.sprite = null;
+                    //  pandaSprites.earLeftFilling.sprite = null;
                     break;
 
                 case PandaLogic.Genetics.EarTypeTrait.Small:
@@ -296,8 +295,8 @@ namespace Assets.Scripts.AI
                     pandaSprites.earLeftLine.sprite = pandaSprites.earLeftLineSmall;
                     pandaSprites.earRightColor.sprite = pandaSprites.earRightColorSmall;
                     pandaSprites.earRightLine.sprite = pandaSprites.earRightLineSmall;
-                    pandaSprites.earRightFilling.sprite = null;
-                    pandaSprites.earLeftFilling.sprite = null;
+                    //   pandaSprites.earRightFilling.sprite = null;
+                    //    pandaSprites.earLeftFilling.sprite = null;
                     break;
             }
 

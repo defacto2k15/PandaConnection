@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 5e9a61ca01ec4184c857015c46408558
 ScriptedImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5022988261602134536
+    second: okoPrawe5
+  - first:
+      213: -7634982856486997550
+    second: okoPrawo2
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -93,8 +99,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 333
-      y: 3918
+      x: 1163
+      y: 1314
       width: 44
       height: 47
     spriteID: 9768b1743d577e24d81c75fd466fdcdd
@@ -319,7 +325,7 @@ ScriptedImporter:
     - {x: 0, y: 16}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -925, y: 2949}
+    uvTransform: {x: -95, y: 345}
   - name: nos-line2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -327,8 +333,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 615
-      y: 2166
+      x: 1055
+      y: 3222
       width: 74
       height: 43
     spriteID: b24356d0ca82ff94b9849574eda48b0f
@@ -678,7 +684,7 @@ ScriptedImporter:
     - {x: 0, y: 21}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -139, y: 1451}
+    uvTransform: {x: 297, y: 2512}
   - name: buziak-line
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -686,8 +692,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 402
-      y: 2276
+      x: 1225
+      y: 351
       width: 102
       height: 65
     spriteID: 799ccb12db9a48d40a73a1e8946ee80c
@@ -1022,7 +1028,7 @@ ScriptedImporter:
     - {x: 0, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -343, y: 1619}
+    uvTransform: {x: 475, y: -306}
   - name: buziak-kolor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1030,8 +1036,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 698
-      y: 2226
+      x: 1335
+      y: 351
       width: 28
       height: 25
     spriteID: bbdf0e87d757bd94887ae232af8db20e
@@ -1190,7 +1196,7 @@ ScriptedImporter:
     - {x: 0, y: 10}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -79, y: 1559}
+    uvTransform: {x: 553, y: -316}
   - name: rumieniec2
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1198,8 +1204,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 402
-      y: 2226
+      x: 817
+      y: 4045
       width: 288
       height: 42
     spriteID: 99d97975e217405498bf231bb0b11ec7
@@ -1650,7 +1656,7 @@ ScriptedImporter:
     - {x: 25, y: 39}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -258, y: 1516}
+    uvTransform: {x: 157, y: 3335}
   - name: oko-prawe-line
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1658,8 +1664,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 646
-      y: 1339
+      x: 1158
+      y: 1387
       width: 56
       height: 57
     spriteID: 9bd814593480a4f4abe49c5672c13908
@@ -1928,7 +1934,7 @@ ScriptedImporter:
     - {x: 0, y: 20}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -222, y: 604}
+    uvTransform: {x: 292, y: 652}
   - name: oko-lewe-line
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1936,8 +1942,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 345
-      y: 3991
+      x: 1312
+      y: 256
       width: 49
       height: 48
     spriteID: 22b4bf50460c15e4f9c64813a65dc415
@@ -2163,7 +2169,7 @@ ScriptedImporter:
     - {x: 0, y: 17}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -337, y: 3240}
+    uvTransform: {x: 632, y: -493}
   - name: oko-lewe-kolor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2171,8 +2177,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 615
-      y: 1958
+      x: 675
+      y: 1939
       width: 93
       height: 99
     spriteID: a168991bb94e0454eb73743bdde81793
@@ -2506,7 +2512,7 @@ ScriptedImporter:
     - {x: 0, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -46, y: 1235}
+    uvTransform: {x: 14, y: 1216}
   - name: oko-prawe-kolor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2514,8 +2520,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 615
-      y: 2065
+      x: 675
+      y: 2046
       width: 94
       height: 93
     spriteID: 346a92e0b7faf2f4e9ba9e147288d8e8
@@ -2839,7 +2845,7 @@ ScriptedImporter:
     - {x: 0, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -237, y: 1348}
+    uvTransform: {x: -177, y: 1329}
   - name: ucho- prawe-line
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2847,8 +2853,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3804
+      x: 1055
+      y: 3082
       width: 130
       height: 132
     spriteID: 0c10a31053d2c054f9989bd3ac4cd219
@@ -3151,7 +3157,7 @@ ScriptedImporter:
     - {x: 0, y: 24}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -946, y: 2942}
+    uvTransform: {x: 105, y: 2220}
   - name: ucho-lewe-line
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3159,8 +3165,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 205
-      y: 3867
+      x: 1035
+      y: 1263
       width: 120
       height: 116
     spriteID: 560808311cd9972469702326c9110b19
@@ -3463,7 +3469,7 @@ ScriptedImporter:
     - {x: 0, y: 24}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -389, y: 2983}
+    uvTransform: {x: 441, y: 379}
   - name: "ucho-lewe-\u0142atka"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3471,8 +3477,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 646
-      y: 1261
+      x: 1146
+      y: 1516
       width: 69
       height: 70
     spriteID: a5cf6208ff79f254d90f91b19a75e4ce
@@ -3775,7 +3781,7 @@ ScriptedImporter:
     - {x: 0, y: 24}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 18, y: 366}
+    uvTransform: {x: 518, y: 621}
   - name: "ucho-prawe-\u0142atka"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3783,8 +3789,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 646
-      y: 1177
+      x: 734
+      y: 1457
       width: 72
       height: 76
     spriteID: e996f717c53136c4d8e3fc56544c74d2
@@ -4098,7 +4104,7 @@ ScriptedImporter:
     - {x: 0, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -316, y: 302}
+    uvTransform: {x: -228, y: 582}
   - name: ucho-prawe-kolor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4106,8 +4112,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 205
-      y: 3737
+      x: 1035
+      y: 1133
       width: 126
       height: 122
     spriteID: ef1795d654a3cd746b5651f23cb680a0
@@ -4452,7 +4458,7 @@ ScriptedImporter:
     - {x: 0, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -747, y: 2872}
+    uvTransform: {x: 83, y: 268}
   - name: ucho-lewe-kolor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4460,8 +4466,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 615
-      y: 1843
+      x: 1105
+      y: 3667
       width: 104
       height: 107
     spriteID: 726b37abb50bd134db6565bf0542f0a9
@@ -4805,7 +4811,7 @@ ScriptedImporter:
     - {x: 0, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 12, y: 954}
+    uvTransform: {x: 502, y: 2778}
   - name: "g\u0142owa-LINE"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4813,8 +4819,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1443
+      x: 817
+      y: 4
       width: 400
       height: 392
     spriteID: 8e45f35c8b0a99943b410c0228e6465b
@@ -5139,7 +5145,7 @@ ScriptedImporter:
     - {x: 0, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -623, y: 835}
+    uvTransform: {x: 190, y: -604}
   - name: "g\u0142owa-kolor"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5147,8 +5153,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1843
+      x: 817
+      y: 404
       width: 390
       height: 379
     spriteID: 39f0f6274fdec6f4d8537332f7eddc4b
@@ -5505,7 +5511,7 @@ ScriptedImporter:
     - {x: 0, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -625, y: 1236}
+    uvTransform: {x: 188, y: -203}
   - name: noga-lewa
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -5513,8 +5519,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 420
-      y: 670
+      x: 556
+      y: 2570
       width: 201
       height: 466
     spriteID: f6b760ad005a08b4fa5ae92db565e759
@@ -6914,7 +6920,7 @@ ScriptedImporter:
     - {x: 10, y: 127}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -325, y: 204}
+    uvTransform: {x: -189, y: 2104}
   - name: nogalewakolor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -6922,8 +6928,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 205
-      y: 3270
+      x: 646
+      y: 3610
       width: 161
       height: 459
     spriteID: 775247d76be01594b8f0f5ab6a887e9c
@@ -7421,7 +7427,7 @@ ScriptedImporter:
     - {x: 0, y: 29}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -547, y: 2792}
+    uvTransform: {x: -106, y: 3132}
   - name: noga-tylna
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -7429,8 +7435,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 412
-      y: 1443
+      x: 817
+      y: 2537
       width: 220
       height: 391
     spriteID: 31830086c4cd0134c95117005449d294
@@ -7946,7 +7952,7 @@ ScriptedImporter:
     - {x: 46, y: 14}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -890, y: 875}
+    uvTransform: {x: -485, y: 1969}
   - name: noga-tylna-kolor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -7954,8 +7960,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 402
-      y: 1843
+      x: 817
+      y: 3284
       width: 205
       height: 375
     spriteID: c805e441a40a51242b28ca9f60a53b02
@@ -8380,7 +8386,7 @@ ScriptedImporter:
     - {x: 0, y: 26}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -909, y: 1265}
+    uvTransform: {x: -494, y: 2706}
   - name: noga-prawa
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -8388,8 +8394,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 2714
+      x: 817
+      y: 1133
       width: 210
       height: 548
     spriteID: 970181bc8475b8549b77a330a1c503ae
@@ -9977,7 +9983,7 @@ ScriptedImporter:
     - {x: 144, y: 75}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -942, y: 2383}
+    uvTransform: {x: -129, y: 802}
   - name: nogaprawakolor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -9985,8 +9991,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3270
+      x: 817
+      y: 2003
       width: 193
       height: 526
     spriteID: 7284cb4bda4341641aba939b4d8306ff
@@ -10434,7 +10440,7 @@ ScriptedImporter:
     - {x: 39, y: 16}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -953, y: 2926}
+    uvTransform: {x: -140, y: 1659}
   - name: "tu\u0142\xF3w-linie"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -10443,7 +10449,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 1273
       width: 722
       height: 658
     spriteID: c0133404e76233143a664b775ee470ca
@@ -12126,7 +12132,7 @@ ScriptedImporter:
     - {x: 152, y: 98}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -727, y: -596}
+    uvTransform: {x: -727, y: 673}
   - name: "cie\u0144"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -12135,7 +12141,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1177
+      y: 3610
       width: 634
       height: 258
     spriteID: 15cb562a9bf44a041a22fa512e92ac73
@@ -12573,7 +12579,7 @@ ScriptedImporter:
     - {x: 29, y: 0}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -806, y: 562}
+    uvTransform: {x: -806, y: 2995}
   - name: tulowkolor4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -12582,7 +12588,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 670
+      y: 3103
       width: 408
       height: 499
     spriteID: 5f03578f569dd1545af82d3e7079dbcf
@@ -13000,7 +13006,7 @@ ScriptedImporter:
     - {x: 0, y: 29}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1028, y: 58}
+    uvTransform: {x: -1028, y: 2491}
   - name: tuluwkolor3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -13008,8 +13014,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 222
-      y: 2714
+      x: 1018
+      y: 2003
       width: 156
       height: 488
     spriteID: de9b4fdd706e150478baa30f51b1d93e
@@ -13436,7 +13442,7 @@ ScriptedImporter:
     - {x: 0, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -750, y: 2110}
+    uvTransform: {x: 46, y: 1399}
   - name: "tu\u0142\xF3w-kolor"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -13444,8 +13450,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 2230
+      x: 420
+      y: 3103
       width: 310
       height: 476
     spriteID: f012ed555674c8c46b0d59ceaecd34e4
@@ -13872,7 +13878,7 @@ ScriptedImporter:
     - {x: 0, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -722, y: 1628}
+    uvTransform: {x: -306, y: 2501}
   - name: ogon-line
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -13880,8 +13886,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 3944
+      x: 1045
+      y: 2694
       width: 143
       height: 111
     spriteID: 93f961889a362f64397f03f69361a354
@@ -14265,7 +14271,7 @@ ScriptedImporter:
     - {x: 0, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1286, y: 2919}
+    uvTransform: {x: -245, y: 1669}
   - name: ogon-kolor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -14273,8 +14279,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 205
-      y: 3991
+      x: 1045
+      y: 2813
       width: 132
       height: 100
     spriteID: 1d3cc3da712ff7f48b964dc957a2ff1d
@@ -14627,7 +14633,7 @@ ScriptedImporter:
     - {x: 0, y: 24}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1094, y: 2958}
+    uvTransform: {x: -254, y: 1780}
   - name: nos-line
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -14635,8 +14641,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 333
-      y: 3867
+      x: 1163
+      y: 1263
       width: 50
       height: 43
     spriteID: 3f1d114718534734eba0baa6bc223c25
@@ -14903,7 +14909,7 @@ ScriptedImporter:
     - {x: 0, y: 18}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -433, y: 3162}
+    uvTransform: {x: 397, y: 558}
   - name: rumieniec1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -14911,8 +14917,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 402
-      y: 2349
+      x: 556
+      y: 3044
       width: 228
       height: 28
     spriteID: c8da0acfd10ee4e43afb89d63e784d26
@@ -15211,7 +15217,931 @@ ScriptedImporter:
     - {x: 2, y: 25}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -285, y: 1632}
+    uvTransform: {x: -131, y: 2327}
+  - name: choroba
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 805
+      height: 616
+    spriteID: b4560ba27c5968942befeb9227b98273
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -641, y: -452}
+  - name: ozdoba2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1055
+      y: 2936
+      width: 125
+      height: 138
+    spriteID: 60482ecd9f1c497419bcf5b8b4417a04
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 313, y: 2154}
+  - name: nosprosi
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 675
+      y: 2253
+      width: 96
+      height: 85
+    spriteID: 1f8b92fc56fe6064aba604b57e8c7db3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -78, y: 1571}
+  - name: nos5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 675
+      y: 2523
+      width: 59
+      height: 38
+    spriteID: 6f424f76be462c94383c21ea71c42343
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -92, y: 1811}
+  - name: nos4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1312
+      y: 316
+      width: 46
+      height: 25
+    spriteID: 4b47b90af7ebf764080041d0545bed15
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 543, y: -398}
+  - name: nos3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1137
+      y: 3222
+      width: 65
+      height: 44
+    spriteID: b4e8578e145d0844db03b5a2498f15d8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 376, y: 2512}
+  - name: buziak8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1225
+      y: 424
+      width: 84
+      height: 63
+    spriteID: 808a29c3c7192d24e8c46558672ec7f0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 473, y: -235}
+  - name: buziak7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1225
+      y: 164
+      width: 143
+      height: 84
+    spriteID: 734e5ad5271cf594bb6070745f43689b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 488, y: -471}
+  - name: buziak6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 675
+      y: 2346
+      width: 104
+      height: 75
+    spriteID: ee018a2a8b1749b4690e40d73b20bf54
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -74, y: 1698}
+  - name: buziak5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1113
+      y: 4045
+      width: 84
+      height: 44
+    spriteID: 8e7cf505546f74744881db1e6ce12242
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 358, y: 3369}
+  - name: buziak4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 742
+      y: 2523
+      width: 50
+      height: 39
+    spriteID: adb60c67d853710438221833c6eebd38
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -26, y: 1844}
+  - name: buziaknajsmutniejszy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1317
+      y: 424
+      width: 49
+      height: 53
+    spriteID: 4b76c765e51f17f41a33ea4bdb7aba43
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: -241}
+  - name: buziaksmutny
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1225
+      y: 495
+      width: 80
+      height: 56
+    spriteID: 999e441820aa3b2418b52ca798d9634d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 468, y: -172}
+  - name: okolprawe3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1146
+      y: 1594
+      width: 64
+      height: 59
+    spriteID: e0a2856662d7d1848be7f2881721ed11
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 476, y: 844}
+  - name: okolewe3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1158
+      y: 1453
+      width: 58
+      height: 54
+    spriteID: 705762de93993534598f73b63a4b18bf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 287, y: 709}
+  - name: okolewe2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1225
+      y: 111
+      width: 85
+      height: 45
+    spriteID: 7a9be570057028b448aa1364274afece
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 556, y: -665}
+  - name: okoprawe2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1035
+      y: 1641
+      width: 81
+      height: 33
+    spriteID: f8e5edc3e3ac01c45b2e8593d951ff08
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 185, y: 859}
+  - name: okolewe5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1226
+      y: 10
+      width: 83
+      height: 90
+    spriteID: b82690ae5b2a0684b9988da38886ee86
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 562, y: -717}
+  - name: okoprawe5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 734
+      y: 1370
+      width: 72
+      height: 79
+    spriteID: f8c1cd60c9f84354aa684595c4b07c4c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 67, y: 636}
+  - name: ucho4leweline
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 456
+      y: 3876
+      width: 136
+      height: 168
+    spriteID: 4584ae463923f8b4a932cbf5bc7f14d6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -121, y: 2991}
+  - name: ucho4lewekol
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1045
+      y: 2537
+      width: 114
+      height: 149
+    spriteID: 77ac3b615ab686b4892f8f58f8ea2751
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 457, y: 1641}
+  - name: ucho4praweline
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 250
+      y: 3876
+      width: 198
+      height: 174
+    spriteID: 8e2615855a613f84e9bbe09a8ae5421d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -696, y: 3014}
+  - name: ucho4prawekolor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 3493
+      width: 172
+      height: 152
+    spriteID: 5b88dacc2befab14ca7481fc91f02554
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 85, y: 2618}
+  - name: ucho3leweline
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1035
+      y: 1516
+      width: 103
+      height: 117
+    spriteID: fecf99dfea6c1c545927fdfb07062cea
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 415, y: 636}
+  - name: uchoprawe3kol
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 675
+      y: 2429
+      width: 81
+      height: 86
+    spriteID: 8e46fc42bd997f9489b0e2293a33ac0f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 44, y: 1533}
+  - name: ucho3praweline
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1035
+      y: 1387
+      width: 115
+      height: 121
+    spriteID: 2ee0b76368619934482687e81b79ce24
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 91, y: 529}
+  - name: ucho3lewekol
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 675
+      y: 2147
+      width: 88
+      height: 98
+    spriteID: 7c1fc7a0a2ad91946ba2559fcdcabe04
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -281, y: 1278}
+  - name: ucho2praweline
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1105
+      y: 3782
+      width: 91
+      height: 111
+    spriteID: 1a369a11fffb73b4ba5dbec9853d2ecc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 168, y: 2926}
+  - name: cuho2prawekolor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 734
+      y: 1273
+      width: 72
+      height: 89
+    spriteID: 15d145f26b60d1244928cedbdff49281
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -214, y: 408}
+  - name: ucho2line
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 817
+      y: 3911
+      width: 390
+      height: 126
+    spriteID: a0056308990b5c047b373060d0988d3c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 187, y: 3041}
+  - name: ucho2kol
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1225
+      y: 256
+      width: 79
+      height: 87
+    spriteID: 602dc0d5a8f33564dbb9d777616ba3a6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 588, y: -627}
+  - name: "tu\u0142\xF3wgrubyline"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 628
+      width: 747
+      height: 637
+    spriteID: 2a391bc489188cc42bad83790c9c8de6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -684, y: 152}
+  - name: "tu\u0142\xF3wgrubykolor"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1939
+      width: 663
+      height: 623
+    spriteID: de3dd5e2ad46e8d4687d4e535b6684fb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -751, y: 1452}
+  - name: ogon5line
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 817
+      y: 791
+      width: 379
+      height: 334
+    spriteID: d3507c73e9a44b344ba2bd571c627e1b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -460, y: -114}
+  - name: ogon5kolor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 817
+      y: 1689
+      width: 342
+      height: 306
+    spriteID: dd1c8879d36b14848af66b4ff58f059a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -483, y: 769}
+  - name: ogon4linenokolor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 3284
+      width: 176
+      height: 201
+    spriteID: f3fbb7d9300702243b975402e04b7332
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -253, y: 2234}
+  - name: ogon3line
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 817
+      y: 3667
+      width: 280
+      height: 236
+    spriteID: 142d1a53cca7dce4a90806ff961a6a38
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -437, y: 2667}
+  - name: ogon3kolor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3876
+      width: 238
+      height: 205
+    spriteID: acf753ea9b3fe2f4ba890c4e678d95da
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1276, y: 2859}
+  - name: ogon2line
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 817
+      y: 2936
+      width: 230
+      height: 340
+    spriteID: 83a58171b89bb4140810e324bd4ebe60
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -484, y: 1907}
+  - name: ogon2kolor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 348
+      y: 2797
+      width: 200
+      height: 298
+    spriteID: 5336db2d375572f40bff09501fdfe19e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -980, y: 1746}
+  - name: okoPrawe5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1414
+      y: 1
+      width: 109
+      height: 95
+    spriteID: 8f57f3cf9c2ca4ab0800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  - name: okoPrawo2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1390
+      y: 105
+      width: 109
+      height: 58
+    spriteID: 2d135ec3b871b0690800000000000000
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
   platformSettings:
   - name: Default
     overridden: 1
@@ -15242,20 +16172,34 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: ozdoba
+  - name: dodatki
     spriteName: 
     isGroup: 1
     parentIndex: -1
     spriteID: 00000000000000000000000000000000
     layerID: 55
     mosaicPosition: {x: 0, y: 0}
+  - name: choroba
+    spriteName: choroba
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b4560ba27c5968942befeb9227b98273
+    layerID: 111
+    mosaicPosition: {x: 4, y: 4}
+  - name: ozdoba2
+    spriteName: ozdoba2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 60482ecd9f1c497419bcf5b8b4417a04
+    layerID: 112
+    mosaicPosition: {x: 1055, y: 2936}
   - name: ozdoba
     spriteName: ozdoba
     isGroup: 0
     parentIndex: 0
     spriteID: 9768b1743d577e24d81c75fd466fdcdd
     layerID: 54
-    mosaicPosition: {x: 333, y: 3918}
+    mosaicPosition: {x: 1163, y: 1314}
   - name: nos
     spriteName: 
     isGroup: 1
@@ -15263,20 +16207,48 @@ ScriptedImporter:
     spriteID: 00000000000000000000000000000000
     layerID: 52
     mosaicPosition: {x: 0, y: 0}
+  - name: nosprosi
+    spriteName: nosprosi
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 1f8b92fc56fe6064aba604b57e8c7db3
+    layerID: 79
+    mosaicPosition: {x: 675, y: 2253}
+  - name: nos5
+    spriteName: nos5
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 6f424f76be462c94383c21ea71c42343
+    layerID: 78
+    mosaicPosition: {x: 675, y: 2523}
+  - name: nos4
+    spriteName: nos4
+    isGroup: 0
+    parentIndex: 4
+    spriteID: 4b47b90af7ebf764080041d0545bed15
+    layerID: 77
+    mosaicPosition: {x: 1312, y: 316}
+  - name: nos3
+    spriteName: nos3
+    isGroup: 0
+    parentIndex: 4
+    spriteID: b4e8578e145d0844db03b5a2498f15d8
+    layerID: 76
+    mosaicPosition: {x: 1137, y: 3222}
   - name: nos-line2
     spriteName: nos-line2
     isGroup: 0
-    parentIndex: 2
+    parentIndex: 4
     spriteID: b24356d0ca82ff94b9849574eda48b0f
     layerID: 75
-    mosaicPosition: {x: 615, y: 2166}
+    mosaicPosition: {x: 1055, y: 3222}
   - name: nos-line
     spriteName: nos-line
     isGroup: 0
-    parentIndex: 2
+    parentIndex: 4
     spriteID: 3f1d114718534734eba0baa6bc223c25
     layerID: 19
-    mosaicPosition: {x: 333, y: 3867}
+    mosaicPosition: {x: 1163, y: 1263}
   - name: buziak
     spriteName: 
     isGroup: 1
@@ -15284,20 +16256,69 @@ ScriptedImporter:
     spriteID: 00000000000000000000000000000000
     layerID: 34
     mosaicPosition: {x: 0, y: 0}
+  - name: buziak8
+    spriteName: buziak8
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 808a29c3c7192d24e8c46558672ec7f0
+    layerID: 86
+    mosaicPosition: {x: 1225, y: 424}
+  - name: buziak7
+    spriteName: buziak7
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 734e5ad5271cf594bb6070745f43689b
+    layerID: 85
+    mosaicPosition: {x: 1225, y: 164}
+  - name: buziak6
+    spriteName: buziak6
+    isGroup: 0
+    parentIndex: 11
+    spriteID: ee018a2a8b1749b4690e40d73b20bf54
+    layerID: 84
+    mosaicPosition: {x: 675, y: 2346}
+  - name: buziak5
+    spriteName: buziak5
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 8e7cf505546f74744881db1e6ce12242
+    layerID: 83
+    mosaicPosition: {x: 1113, y: 4045}
+  - name: buziak4
+    spriteName: buziak4
+    isGroup: 0
+    parentIndex: 11
+    spriteID: adb60c67d853710438221833c6eebd38
+    layerID: 82
+    mosaicPosition: {x: 742, y: 2523}
+  - name: buziaknajsmutniejszy
+    spriteName: buziaknajsmutniejszy
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 4b76c765e51f17f41a33ea4bdb7aba43
+    layerID: 81
+    mosaicPosition: {x: 1317, y: 424}
+  - name: buziaksmutny
+    spriteName: buziaksmutny
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 999e441820aa3b2418b52ca798d9634d
+    layerID: 80
+    mosaicPosition: {x: 1225, y: 495}
   - name: buziak-line
     spriteName: buziak-line
     isGroup: 0
-    parentIndex: 5
+    parentIndex: 11
     spriteID: 799ccb12db9a48d40a73a1e8946ee80c
     layerID: 18
-    mosaicPosition: {x: 402, y: 2276}
+    mosaicPosition: {x: 1225, y: 351}
   - name: buziak-kolor
     spriteName: buziak-kolor
     isGroup: 0
-    parentIndex: 5
+    parentIndex: 11
     spriteID: bbdf0e87d757bd94887ae232af8db20e
     layerID: 36
-    mosaicPosition: {x: 698, y: 2226}
+    mosaicPosition: {x: 1335, y: 351}
   - name: "ocz\u0119ta"
     spriteName: 
     isGroup: 1
@@ -15308,45 +16329,87 @@ ScriptedImporter:
   - name: rumieniec2
     spriteName: rumieniec2
     isGroup: 0
-    parentIndex: 8
+    parentIndex: 21
     spriteID: 99d97975e217405498bf231bb0b11ec7
     layerID: 38
-    mosaicPosition: {x: 402, y: 2226}
+    mosaicPosition: {x: 817, y: 4045}
   - name: rumieniec1
     spriteName: rumieniec1
     isGroup: 0
-    parentIndex: 8
+    parentIndex: 21
     spriteID: c8da0acfd10ee4e43afb89d63e784d26
     layerID: 37
-    mosaicPosition: {x: 402, y: 2349}
+    mosaicPosition: {x: 556, y: 3044}
+  - name: okolprawe3
+    spriteName: okolprawe3
+    isGroup: 0
+    parentIndex: 21
+    spriteID: e0a2856662d7d1848be7f2881721ed11
+    layerID: 90
+    mosaicPosition: {x: 1146, y: 1594}
+  - name: okolewe3
+    spriteName: okolewe3
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 705762de93993534598f73b63a4b18bf
+    layerID: 89
+    mosaicPosition: {x: 1158, y: 1453}
+  - name: okolewe2
+    spriteName: okolewe2
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 7a9be570057028b448aa1364274afece
+    layerID: 88
+    mosaicPosition: {x: 1225, y: 108}
+  - name: okoprawe2
+    spriteName: okoprawe2
+    isGroup: 0
+    parentIndex: 21
+    spriteID: f8e5edc3e3ac01c45b2e8593d951ff08
+    layerID: 87
+    mosaicPosition: {x: 1035, y: 1641}
   - name: oko-prawe-line
     spriteName: oko-prawe-line
     isGroup: 0
-    parentIndex: 8
+    parentIndex: 21
     spriteID: 9bd814593480a4f4abe49c5672c13908
     layerID: 17
-    mosaicPosition: {x: 646, y: 1339}
+    mosaicPosition: {x: 1158, y: 1387}
   - name: oko-lewe-line
     spriteName: oko-lewe-line
     isGroup: 0
-    parentIndex: 8
+    parentIndex: 21
     spriteID: 22b4bf50460c15e4f9c64813a65dc415
     layerID: 16
-    mosaicPosition: {x: 345, y: 3991}
+    mosaicPosition: {x: 1312, y: 256}
+  - name: okolewe5
+    spriteName: okolewe5
+    isGroup: 0
+    parentIndex: 21
+    spriteID: b82690ae5b2a0684b9988da38886ee86
+    layerID: 92
+    mosaicPosition: {x: 1225, y: 4}
+  - name: okoprawe5
+    spriteName: okoprawe5
+    isGroup: 0
+    parentIndex: 21
+    spriteID: f8c1cd60c9f84354aa684595c4b07c4c
+    layerID: 91
+    mosaicPosition: {x: 734, y: 1370}
   - name: oko-lewe-kolor
     spriteName: oko-lewe-kolor
     isGroup: 0
-    parentIndex: 8
+    parentIndex: 21
     spriteID: a168991bb94e0454eb73743bdde81793
     layerID: 21
-    mosaicPosition: {x: 615, y: 1958}
+    mosaicPosition: {x: 675, y: 1939}
   - name: oko-prawe-kolor
     spriteName: oko-prawe-kolor
     isGroup: 0
-    parentIndex: 8
+    parentIndex: 21
     spriteID: 346a92e0b7faf2f4e9ba9e147288d8e8
     layerID: 32
-    mosaicPosition: {x: 615, y: 2065}
+    mosaicPosition: {x: 675, y: 2046}
   - name: uszy
     spriteName: 
     isGroup: 1
@@ -15354,48 +16417,132 @@ ScriptedImporter:
     spriteID: 00000000000000000000000000000000
     layerID: 39
     mosaicPosition: {x: 0, y: 0}
+  - name: ucho4leweline
+    spriteName: ucho4leweline
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 4584ae463923f8b4a932cbf5bc7f14d6
+    layerID: 104
+    mosaicPosition: {x: 456, y: 3876}
+  - name: ucho4lewekol
+    spriteName: ucho4lewekol
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 77ac3b615ab686b4892f8f58f8ea2751
+    layerID: 105
+    mosaicPosition: {x: 1045, y: 2537}
+  - name: ucho4praweline
+    spriteName: ucho4praweline
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 8e2615855a613f84e9bbe09a8ae5421d
+    layerID: 101
+    mosaicPosition: {x: 250, y: 3876}
+  - name: ucho4prawekolor
+    spriteName: ucho4prawekolor
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 5b88dacc2befab14ca7481fc91f02554
+    layerID: 103
+    mosaicPosition: {x: 1030, y: 3493}
+  - name: ucho3leweline
+    spriteName: ucho3leweline
+    isGroup: 0
+    parentIndex: 34
+    spriteID: fecf99dfea6c1c545927fdfb07062cea
+    layerID: 98
+    mosaicPosition: {x: 1035, y: 1516}
+  - name: uchoprawe3kol
+    spriteName: uchoprawe3kol
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 8e46fc42bd997f9489b0e2293a33ac0f
+    layerID: 99
+    mosaicPosition: {x: 675, y: 2429}
+  - name: ucho3praweline
+    spriteName: ucho3praweline
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 2ee0b76368619934482687e81b79ce24
+    layerID: 97
+    mosaicPosition: {x: 1035, y: 1387}
+  - name: ucho3lewekol
+    spriteName: ucho3lewekol
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 7c1fc7a0a2ad91946ba2559fcdcabe04
+    layerID: 100
+    mosaicPosition: {x: 675, y: 2147}
+  - name: ucho2praweline
+    spriteName: ucho2praweline
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 1a369a11fffb73b4ba5dbec9853d2ecc
+    layerID: 95
+    mosaicPosition: {x: 1105, y: 3782}
+  - name: cuho2prawekolor
+    spriteName: cuho2prawekolor
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 15d145f26b60d1244928cedbdff49281
+    layerID: 96
+    mosaicPosition: {x: 734, y: 1273}
+  - name: ucho2line
+    spriteName: ucho2line
+    isGroup: 0
+    parentIndex: 34
+    spriteID: a0056308990b5c047b373060d0988d3c
+    layerID: 93
+    mosaicPosition: {x: 817, y: 3911}
+  - name: ucho2kol
+    spriteName: ucho2kol
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 602dc0d5a8f33564dbb9d777616ba3a6
+    layerID: 94
+    mosaicPosition: {x: 1225, y: 256}
   - name: ucho- prawe-line
     spriteName: ucho- prawe-line
     isGroup: 0
-    parentIndex: 15
+    parentIndex: 34
     spriteID: 0c10a31053d2c054f9989bd3ac4cd219
     layerID: 7
-    mosaicPosition: {x: 4, y: 3804}
+    mosaicPosition: {x: 1055, y: 3082}
   - name: ucho-lewe-line
     spriteName: ucho-lewe-line
     isGroup: 0
-    parentIndex: 15
+    parentIndex: 34
     spriteID: 560808311cd9972469702326c9110b19
     layerID: 8
-    mosaicPosition: {x: 205, y: 3867}
+    mosaicPosition: {x: 1035, y: 1263}
   - name: "ucho-lewe-\u0142atka"
     spriteName: "ucho-lewe-\u0142atka"
     isGroup: 0
-    parentIndex: 15
+    parentIndex: 34
     spriteID: a5cf6208ff79f254d90f91b19a75e4ce
     layerID: 45
-    mosaicPosition: {x: 646, y: 1261}
+    mosaicPosition: {x: 1146, y: 1516}
   - name: "ucho-prawe-\u0142atka"
     spriteName: "ucho-prawe-\u0142atka"
     isGroup: 0
-    parentIndex: 15
+    parentIndex: 34
     spriteID: e996f717c53136c4d8e3fc56544c74d2
     layerID: 44
-    mosaicPosition: {x: 646, y: 1177}
+    mosaicPosition: {x: 734, y: 1457}
   - name: ucho-prawe-kolor
     spriteName: ucho-prawe-kolor
     isGroup: 0
-    parentIndex: 15
+    parentIndex: 34
     spriteID: ef1795d654a3cd746b5651f23cb680a0
     layerID: 43
-    mosaicPosition: {x: 205, y: 3737}
+    mosaicPosition: {x: 1035, y: 1133}
   - name: ucho-lewe-kolor
     spriteName: ucho-lewe-kolor
     isGroup: 0
-    parentIndex: 15
+    parentIndex: 34
     spriteID: 726b37abb50bd134db6565bf0542f0a9
     layerID: 41
-    mosaicPosition: {x: 615, y: 1843}
+    mosaicPosition: {x: 1105, y: 3667}
   - name: "g\u0142owa"
     spriteName: 
     isGroup: 1
@@ -15406,17 +16553,17 @@ ScriptedImporter:
   - name: "g\u0142owa-LINE"
     spriteName: "g\u0142owa-LINE"
     isGroup: 0
-    parentIndex: 22
+    parentIndex: 53
     spriteID: 8e45f35c8b0a99943b410c0228e6465b
     layerID: 6
-    mosaicPosition: {x: 4, y: 1443}
+    mosaicPosition: {x: 817, y: 4}
   - name: "g\u0142owa-kolor"
     spriteName: "g\u0142owa-kolor"
     isGroup: 0
-    parentIndex: 22
+    parentIndex: 53
     spriteID: 39f0f6274fdec6f4d8537332f7eddc4b
     layerID: 46
-    mosaicPosition: {x: 4, y: 1843}
+    mosaicPosition: {x: 817, y: 404}
   - name: nogi
     spriteName: 
     isGroup: 1
@@ -15427,45 +16574,45 @@ ScriptedImporter:
   - name: noga-lewa
     spriteName: noga-lewa
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 56
     spriteID: f6b760ad005a08b4fa5ae92db565e759
     layerID: 61
-    mosaicPosition: {x: 420, y: 670}
+    mosaicPosition: {x: 556, y: 2570}
   - name: nogalewakolor
     spriteName: nogalewakolor
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 56
     spriteID: 775247d76be01594b8f0f5ab6a887e9c
     layerID: 67
-    mosaicPosition: {x: 205, y: 3270}
+    mosaicPosition: {x: 646, y: 3610}
   - name: noga-tylna
     spriteName: noga-tylna
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 56
     spriteID: 31830086c4cd0134c95117005449d294
     layerID: 63
-    mosaicPosition: {x: 412, y: 1443}
+    mosaicPosition: {x: 817, y: 2537}
   - name: noga-tylna-kolor
     spriteName: noga-tylna-kolor
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 56
     spriteID: c805e441a40a51242b28ca9f60a53b02
     layerID: 65
-    mosaicPosition: {x: 402, y: 1843}
+    mosaicPosition: {x: 817, y: 3284}
   - name: noga-prawa
     spriteName: noga-prawa
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 56
     spriteID: 970181bc8475b8549b77a330a1c503ae
     layerID: 58
-    mosaicPosition: {x: 4, y: 2714}
+    mosaicPosition: {x: 817, y: 1133}
   - name: nogaprawakolor
     spriteName: nogaprawakolor
     isGroup: 0
-    parentIndex: 25
+    parentIndex: 56
     spriteID: 7284cb4bda4341641aba939b4d8306ff
     layerID: 66
-    mosaicPosition: {x: 4, y: 3270}
+    mosaicPosition: {x: 817, y: 2003}
   - name: "Tu\u0142\xF3w"
     spriteName: 
     isGroup: 1
@@ -15476,38 +16623,52 @@ ScriptedImporter:
   - name: "tu\u0142\xF3w-linie"
     spriteName: "tu\u0142\xF3w-linie"
     isGroup: 0
-    parentIndex: 32
+    parentIndex: 63
     spriteID: c0133404e76233143a664b775ee470ca
     layerID: 70
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 1273}
+  - name: "tu\u0142\xF3wgrubyline"
+    spriteName: "tu\u0142\xF3wgrubyline"
+    isGroup: 0
+    parentIndex: 63
+    spriteID: 2a391bc489188cc42bad83790c9c8de6
+    layerID: 108
+    mosaicPosition: {x: 4, y: 628}
+  - name: "tu\u0142\xF3wgrubykolor"
+    spriteName: "tu\u0142\xF3wgrubykolor"
+    isGroup: 0
+    parentIndex: 63
+    spriteID: de3dd5e2ad46e8d4687d4e535b6684fb
+    layerID: 110
+    mosaicPosition: {x: 4, y: 1939}
   - name: "cie\u0144"
     spriteName: "cie\u0144"
     isGroup: 0
-    parentIndex: 32
+    parentIndex: 63
     spriteID: 15cb562a9bf44a041a22fa512e92ac73
     layerID: 74
-    mosaicPosition: {x: 4, y: 1177}
+    mosaicPosition: {x: 4, y: 3610}
   - name: tulowkolor4
     spriteName: tulowkolor4
     isGroup: 0
-    parentIndex: 32
+    parentIndex: 63
     spriteID: 5f03578f569dd1545af82d3e7079dbcf
     layerID: 73
-    mosaicPosition: {x: 4, y: 670}
+    mosaicPosition: {x: 4, y: 3103}
   - name: tuluwkolor3
     spriteName: tuluwkolor3
     isGroup: 0
-    parentIndex: 32
+    parentIndex: 63
     spriteID: de9b4fdd706e150478baa30f51b1d93e
     layerID: 72
-    mosaicPosition: {x: 222, y: 2714}
+    mosaicPosition: {x: 1018, y: 2003}
   - name: "tu\u0142\xF3w-kolor"
     spriteName: "tu\u0142\xF3w-kolor"
     isGroup: 0
-    parentIndex: 32
+    parentIndex: 63
     spriteID: f012ed555674c8c46b0d59ceaecd34e4
     layerID: 71
-    mosaicPosition: {x: 4, y: 2230}
+    mosaicPosition: {x: 420, y: 3103}
   - name: ogon
     spriteName: 
     isGroup: 1
@@ -15515,20 +16676,69 @@ ScriptedImporter:
     spriteID: 00000000000000000000000000000000
     layerID: 50
     mosaicPosition: {x: 0, y: 0}
+  - name: ogon5line
+    spriteName: ogon5line
+    isGroup: 0
+    parentIndex: 71
+    spriteID: d3507c73e9a44b344ba2bd571c627e1b
+    layerID: 118
+    mosaicPosition: {x: 817, y: 791}
+  - name: ogon5kolor
+    spriteName: ogon5kolor
+    isGroup: 0
+    parentIndex: 71
+    spriteID: dd1c8879d36b14848af66b4ff58f059a
+    layerID: 119
+    mosaicPosition: {x: 817, y: 1689}
+  - name: ogon4linenokolor
+    spriteName: ogon4linenokolor
+    isGroup: 0
+    parentIndex: 71
+    spriteID: f3fbb7d9300702243b975402e04b7332
+    layerID: 117
+    mosaicPosition: {x: 1030, y: 3284}
+  - name: ogon3line
+    spriteName: ogon3line
+    isGroup: 0
+    parentIndex: 71
+    spriteID: 142d1a53cca7dce4a90806ff961a6a38
+    layerID: 115
+    mosaicPosition: {x: 817, y: 3667}
+  - name: ogon3kolor
+    spriteName: ogon3kolor
+    isGroup: 0
+    parentIndex: 71
+    spriteID: acf753ea9b3fe2f4ba890c4e678d95da
+    layerID: 116
+    mosaicPosition: {x: 4, y: 3876}
+  - name: ogon2line
+    spriteName: ogon2line
+    isGroup: 0
+    parentIndex: 71
+    spriteID: 83a58171b89bb4140810e324bd4ebe60
+    layerID: 113
+    mosaicPosition: {x: 817, y: 2936}
+  - name: ogon2kolor
+    spriteName: ogon2kolor
+    isGroup: 0
+    parentIndex: 71
+    spriteID: 5336db2d375572f40bff09501fdfe19e
+    layerID: 114
+    mosaicPosition: {x: 4, y: 2570}
   - name: ogon-line
     spriteName: ogon-line
     isGroup: 0
-    parentIndex: 38
+    parentIndex: 71
     spriteID: 93f961889a362f64397f03f69361a354
     layerID: 13
-    mosaicPosition: {x: 4, y: 3944}
+    mosaicPosition: {x: 1045, y: 2694}
   - name: ogon-kolor
     spriteName: ogon-kolor
     isGroup: 0
-    parentIndex: 38
+    parentIndex: 71
     spriteID: 1d3cc3da712ff7f48b964dc957a2ff1d
     layerID: 49
-    mosaicPosition: {x: 205, y: 3991}
+    mosaicPosition: {x: 1045, y: 2813}
   characterData:
     bones:
     - name: bone_1
