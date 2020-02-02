@@ -26,4 +26,14 @@ public class ShopUI : BaseConsumablesListUI
     {
         return GameManager.instance.ShopManager.GetAvailableConsumables().Where(x => x is BaseFoodConsumable).ToList();
     }
+
+    public void Show()
+    {
+        this.gameObject.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        this.gameObject.SetActive(false);
+    }
 }

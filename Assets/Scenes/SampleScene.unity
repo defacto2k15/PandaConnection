@@ -128,46 +128,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3030471630020235903, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 752.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3030471630020235903, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3030471630020235903, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3030471630020235903, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3030471630020235903, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3030471630020235903, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -9.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3030471630020235903, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 411
-      objectReference: {fileID: 0}
-    - target: {fileID: 3030471630020235903, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 965
-      objectReference: {fileID: 0}
+    - target: {fileID: 778249706, guid: 96ecdb9980ea5ad43b35ea80397be4b5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d824551993e2db7468ae0d027b0bdf3b, type: 2}
     - target: {fileID: 3030471630893189736, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -277,11 +241,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventoryConsumablesUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 3030471630893189748, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ecdb9980ea5ad43b35ea80397be4b5, type: 3}
@@ -447,7 +406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &767831504
 MonoBehaviour:
   m_ObjectHideFlags: 0

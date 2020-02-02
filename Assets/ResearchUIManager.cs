@@ -19,4 +19,14 @@ public class ResearchUIManager : MonoBehaviour
         buyButton.onClick.AddListener(clicked.Buy);
         buyButton.interactable = clicked.IsBuyable() && !clicked.Bought;
     }
+
+    public void Show()
+    {
+        this.gameObject.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        this.gameObject.SetActive(false);
+    }
 }

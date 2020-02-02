@@ -90,8 +90,8 @@ namespace Assets.Scripts.AI
         {
             var spawnedFood = GameObject.Instantiate<BaseFoodConsumable>(food, this.transform);
             
-            FoodConsumables.Add(new FoodWithItsAmount() { Amount = (int)food.timeGivingNutrition, Food = spawnedFood });
-            spawnedFood.timeGivingNutrition = 1;
+            FoodConsumables.Add(new FoodWithItsAmount() { Amount = Mathf.CeilToInt(spawnedFood.timeGivingNutrition), Food = spawnedFood });
+            spawnedFood.timeGivingNutrition = Mathf.CeilToInt(spawnedFood.timeGivingNutrition);
             this.GetComponentInChildren<FoodPileForceField>().UpdateRadius();
         }
 
