@@ -19,19 +19,19 @@ public class PandaRepresentation : MonoBehaviour
     public TMPro.TMP_Text bodyType;
     public TMPro.TMP_Text specialType;
     
-    public void LoadPanda(IPanda panda)
+    public void LoadPanda(PandaStats stats)
     {
-        pandaName.text = panda.GetStats().name;
-        gender.text = panda.GetStats().gender.ToString();
-        primaryColor.SetText(panda.GetStats().Phenotype.primaryBodyColorTrait.ToString());
-        secendaryColor.SetText(panda.GetStats().Phenotype.secondaryColorTrait.ToString());
-        eyeColor.SetText(panda.GetStats().Phenotype.eyeColorTrait.ToString());
-        eyeType.SetText(panda.GetStats().Phenotype.eyesTypeTrait.ToString());
-        earType.SetText(panda.GetStats().Phenotype.earTypeTrait.ToString());
-        mouthNoseType.SetText(panda.GetStats().Phenotype.noseMouthTypeTrait.ToString());
-        tailType.SetText(panda.GetStats().Phenotype.tailTypeTrait.ToString());
-        bodyType.SetText(panda.GetStats().Phenotype.bodyTypeTrait.ToString());
-        specialType.SetText(panda.GetStats().Phenotype.specialTrait.ToString());
+        pandaName.text = stats.name;
+        gender.text = stats.gender.ToString();
+        primaryColor.SetText(stats.Phenotype.primaryBodyColorTrait.ToString());
+        secendaryColor.SetText(stats.Phenotype.secondaryColorTrait.ToString());
+        eyeColor.SetText(stats.Phenotype.eyeColorTrait.ToString());
+        eyeType.SetText(stats.Phenotype.eyesTypeTrait.ToString());
+        earType.SetText(stats.Phenotype.earTypeTrait.ToString());
+        mouthNoseType.SetText(stats.Phenotype.noseMouthTypeTrait.ToString());
+        tailType.SetText(stats.Phenotype.tailTypeTrait.ToString());
+        bodyType.SetText(stats.Phenotype.bodyTypeTrait.ToString());
+        specialType.SetText(stats.Phenotype.specialTrait.ToString());
     }
 
     internal void Clear()
