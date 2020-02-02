@@ -9,6 +9,9 @@ public class ResearchUIManager : MonoBehaviour
     public TMPro.TMP_Text price;
     public TMPro.TMP_Text desciption;
     public Button buyButton;
+    public Color activeColor;
+    public Color unactiveColor;
+    public Color boughtColor;
 
     public void ResearchClicked(IResearchItem clicked)
     {
