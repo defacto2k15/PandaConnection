@@ -12,7 +12,7 @@ public class InventoryUI : MonoBehaviour
     public Button showButton;
     public Button showDetailMatingButton;
 
-    SceneField menuScene;
+    public SceneField menuScene;
 
     [SerializeField]
     protected InventoryConsumableItemUI m_consumablePrefab;
