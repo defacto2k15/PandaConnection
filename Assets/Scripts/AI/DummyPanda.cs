@@ -19,6 +19,11 @@ namespace Assets.Scripts.AI
             return _stats;
         }
 
+        public void SetStats(PandaStats stats)
+        {
+            _stats = stats;
+        }
+
         public float GetHealth()
         {
             return Health;

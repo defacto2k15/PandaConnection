@@ -4996,6 +4996,11 @@ MonoBehaviour:
     name: 
     birthdate: 0
     gender: 0
+    Genotype: []
+    Phenotype:
+      LegLengthTrait: 0
+      EyeColorTrait: 0
+      TailTypeTrait: 0
 --- !u!114 &2426071198132870497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5135,6 +5140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4c940391cba70469d4cfab237ca376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChildPandaCreator: {fileID: 0}
   _SexEroCost: 10
   _SexTime: 5
   _EroThresholdForSex: 10

@@ -6,6 +6,8 @@ public interface IPanda
 {
     PandaStats GetStats();
 
+    void SetStats(PandaStats childStats);
+
     float GetHealth();
 
     void ChangeHealth(float deltaHealth);
