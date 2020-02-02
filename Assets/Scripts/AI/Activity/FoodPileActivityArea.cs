@@ -88,7 +88,10 @@ namespace Assets.Scripts.AI
             }
 
             _eatingPandas.Remove(panda);
-            Pile.ThereAreNoEatinPandasLeft();
+            if (!_eatingPandas.Any())
+            {
+                Pile.ThereAreNoEatinPandasLeft();
+            }
         }
 
         private bool CanApplyPile(IPanda panda)
