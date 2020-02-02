@@ -21,6 +21,11 @@ namespace Assets.Scripts.AI
             _eatingPandas = new List<IPanda>();
         }
 
+        void Start()
+        {
+
+        }
+
         void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag(TagNames.Panda))

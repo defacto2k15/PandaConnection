@@ -1180,6 +1180,11 @@ PrefabInstance:
       propertyPath: researchUIManager
       value: 
       objectReference: {fileID: 214334647}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: MinimumFullnessForMating
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d668c6c0e7439c94e9dd264319670ff8, type: 3}
 --- !u!1001 &1725285414702341445

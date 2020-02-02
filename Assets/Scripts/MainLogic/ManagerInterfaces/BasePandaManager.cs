@@ -6,6 +6,7 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
     [SerializeField] private float MaximumFullness;
     [SerializeField] private float MaximumEro;
     [SerializeField] private float MaximumHealth;
+    [SerializeField] private float MinimumFullnessForMating;
 
     public PandaStats ComputePairingStats(IPanda panda1, IPanda panda2)
     {
@@ -71,4 +72,10 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
     {
         return MaximumHealth;
     }
+
+    public float GetMinimumFullnessForMating()
+    {
+        return MinimumFullnessForMating;
+    }
+
 }

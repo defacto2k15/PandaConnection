@@ -109,7 +109,8 @@ namespace Assets.Scripts.AI.Activity
 
         public bool CanMateWith(IPanda otherPanda)
         {
-            return (!_flag.IsDuringActivity) && (otherPanda.GetGender() != _thisPanda.GetGender()) && (_thisPanda.GetEro() > _EroThresholdForSex);
+            return (!_flag.IsDuringActivity) && (otherPanda.GetGender() != _thisPanda.GetGender()) && (_thisPanda.GetEro() > _EroThresholdForSex)
+                && _thisPanda.GetFullness() > GameManager.instance.pandaManager.GetMinimumFullnessForMating();
         }
     }
 }
