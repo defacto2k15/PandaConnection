@@ -5157,6 +5157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstSelectedToken: {fileID: 533960555843373231}
   secondSelectedToken: {fileID: 2748567149495838108}
+  animationCenter: {fileID: 99833376}
   Fullness: 50
   Ero: 0
   Health: 0

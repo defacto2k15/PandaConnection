@@ -11,7 +11,7 @@ namespace Assets.Scripts.AI
     {
         public SpriteRenderer firstSelectedToken;
         public SpriteRenderer secondSelectedToken;
-
+        public PandaAnimationsCenter animationCenter;
         [SerializeField] public float Fullness;
         [SerializeField] public float Ero;
         [SerializeField] public float Health;
@@ -49,8 +49,6 @@ namespace Assets.Scripts.AI
             Fullness += deltaFood;
             Fullness = Mathf.Clamp(Fullness, 0, GameManager.instance.pandaManager.GetMaximumFullness());
         }
-
-
 
         public void GetBodyPartSize(BodyPart part)
         {
@@ -350,9 +348,11 @@ namespace Assets.Scripts.AI
                 case 1:
                     firstSelectedToken.gameObject.SetActive(true);
                     break;
+
                 case 2:
                     secondSelectedToken.gameObject.SetActive(true);
                     break;
+
                 default:
                     break;
             }
@@ -365,9 +365,11 @@ namespace Assets.Scripts.AI
                 case 1:
                     firstSelectedToken.gameObject.SetActive(false);
                     break;
+
                 case 2:
                     secondSelectedToken.gameObject.SetActive(false);
                     break;
+
                 default:
                     break;
             }
