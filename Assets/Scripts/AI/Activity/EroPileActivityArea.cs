@@ -98,6 +98,10 @@ namespace Assets.Scripts.AI
                     Debug.Log("Using ERO");
                     _eroConsumable.DoAction(panda);
                     yield return new WaitForSeconds(_tickDurationInSeconds);
+                    if (panda == null)
+                    {
+                        break;
+                    }
                 }
             }
 

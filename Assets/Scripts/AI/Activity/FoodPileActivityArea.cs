@@ -65,6 +65,10 @@ namespace Assets.Scripts.AI
                 Debug.Log("EATING: " + foodToEat.Food);
                 yield return new WaitForSeconds(foodToEat.Food.timeGivingNutrition);
                 Debug.Log("EATEN: " + foodToEat.Food);
+                if (panda == null)
+                {
+                    break;
+                }
                 dummyPanda.StopAnimationState(PandaAnimationState.Eating);
                 ((IConsumable)foodToEat.Food).Consume(panda);
                 if (foodToEat.Drug != null)
@@ -78,7 +82,11 @@ namespace Assets.Scripts.AI
                 navmeshAgent.isStopped =false;
             }
 
-            activityFlag.RemoveActivity(this);
+            if (!(panda == null))
+            {
+                activityFlag.RemoveActivity(this);
+            }
+
             _eatingPandas.Remove(panda);
             Pile.ThereAreNoEatinPandasLeft();
         }
