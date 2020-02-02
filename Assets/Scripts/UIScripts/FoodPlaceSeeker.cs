@@ -16,7 +16,7 @@ public class FoodPlaceSeeker : MonoBehaviour
     {
         //magiczny float ze skalowania range dla food pile
         var range = Consumable.GetRange() * 2.3046f;
-        rangeIndicator.transform.localScale = Vector3.one*Consumable.GetRange()* 2.3046f;
+        rangeIndicator.transform.localScale = Vector3.one * Consumable.GetRange();// * 2.3046f;
 
         //retard singleton
         if (instance == null)

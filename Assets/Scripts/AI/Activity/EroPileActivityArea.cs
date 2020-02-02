@@ -40,7 +40,7 @@ namespace Assets.Scripts.AI
         private void Init()
         {
             _sphereCollider = this.GetComponentNotNull<CapsuleCollider>();
-            _rangeSignalizer.localScale = Vector3.one * _eroConsumable.Range * this.transform.localScale.x * 2.2f;
+            _rangeSignalizer.localScale = Vector3.one * _eroConsumable.Range * this.transform.localScale.x;// * 2.2f;
             _sphereCollider.radius = _eroConsumable.Range;
             _meshRenderer = this.GetComponentNotNull<MeshRenderer>();
             _usingPandas = new List<IPanda>();
