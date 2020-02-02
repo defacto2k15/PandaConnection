@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using Assets.Scripts.Sounds;
 
 public class ShopUI : BaseConsumablesListUI
 {
@@ -44,17 +45,20 @@ public class ShopUI : BaseConsumablesListUI
 
     public void Resume()
     {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuClick);
         Time.timeScale = 1;
         Hide();
     }
 
     public void Hide()
     {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuClick);
         this.gameObject.SetActive(false);
     }
 
     private void BuyConsumable()
     {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuClick);
         if (currentConsumable != null && currentConsumable.GetPrice() < GameManager.instance.MoneyManager.GetCurrentMoney())
         {
             GameManager.instance.ShopManager.BuyConsumable(currentConsumable);

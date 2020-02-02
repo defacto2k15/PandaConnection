@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assets.Scripts.Sounds;
 using Assets.Scripts.Utils;
 using UnityEngine;
 using UnityEngine.AI;
@@ -63,7 +64,10 @@ namespace Assets.Scripts.AI
 
                 dummyPanda.StartAnimationState(PandaAnimationState.Eating);
                 Debug.Log("EATING: " + foodToEat.Food);
-                yield return new WaitForSeconds(foodToEat.Food.timeGivingNutrition);
+
+                var foodTimeGivingNutrition = foodToEat.Food.timeGivingNutrition;
+                SoundManager.instance.PlaySustainedTheme(dummyPanda.gameObject, SoundType.Eating, foodTimeGivingNutrition+0.3f );
+                yield return new WaitForSeconds(foodTimeGivingNutrition);
                 Debug.Log("EATEN: " + foodToEat.Food);
                 if (panda == null)
                 {

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Sounds;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -45,6 +46,7 @@ public class ResearchButtonUI : MonoBehaviour
 
     private void ShowDetails()
     {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuClick);
         GameManager.instance.researchUIManager.ResearchClicked(researchItem);
     }
 }

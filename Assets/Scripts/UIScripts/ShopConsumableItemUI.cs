@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Sounds;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,6 +28,7 @@ public class ShopConsumableItemUI : BaseConsumableItemUI
 
     public override void DoAction()
     {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuClick);
         this.GetComponentInParent<ShopUI>().ShowDetailsFor(Consumable);
     }
 }

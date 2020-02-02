@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Assets.Scripts.PandaLogic.Genetics;
+using Assets.Scripts.Sounds;
 using Assets.Scripts.Utils;
 using UnityEngine;
 using UnityEngine.AI;
@@ -95,11 +96,13 @@ namespace Assets.Scripts.AI.Activity
             _thisPanda.GetComponentNotNull<NavMeshAgent>().isStopped = true;
             _thisPanda.StartAnimationState(PandaAnimationState.Sexing);
             Debug.Log("Fucky-fucky");
+                SoundManager.instance.PlaySustainedTheme(_thisPanda.gameObject, SoundType.Sex, _SexTime+0.3f );
             yield return new WaitForSeconds(_SexTime); 
             _thisPanda.GetComponentNotNull<NavMeshAgent>().isStopped = false;
             _thisPanda.StopAnimationState(PandaAnimationState.Sexing);
             if (_thisPanda.GetGender() == Gender.Female)
             {
+                SoundManager.instance.PlayOneShotSound(SoundType.Yay);
                 Debug.Log("Created child");
                 ChildPandaCreator.InstantianteChild(_thisPanda.gameObject, otherPandaMatingActivityArea._thisPanda.gameObject);
             }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Sounds;
 using UnityEngine;
 
 public class FoodPlaceSeeker : MonoBehaviour
@@ -54,12 +55,14 @@ public class FoodPlaceSeeker : MonoBehaviour
         {
             if (canPlace)
             {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuClick);
                 GameManager.instance.ConsumableManager.Consume(Consumable);
                 GameObject.Destroy(this.gameObject);
             }
         }
         else if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Escape))
         {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuClick);
             GameObject.Destroy(this.gameObject);
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Sounds;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -33,23 +34,32 @@ public class MenuCanvas : MonoBehaviour
         exitButton.onClick.AddListener(Exit);
     }
 
+    void Start()
+    {
+        SoundManager.instance.PlayBackgroundTheme(SoundType.OpeningTheme);
+    }
+
     private void Exit()
     {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuAcceptBig);
         Application.Quit();
     }
 
     private void StartGame()
     {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuAcceptBig);
         StartCoroutine(UnloadScene());
     }
 
     private void StartGameMiddle()
     {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuAcceptBig);
         StartCoroutine(StartMiddle());
     }
 
     private IEnumerator UnloadScene()
     {
+        SoundManager.instance.PlayBackgroundTheme(SoundType.BackgroundTheme);
         SceneManager.LoadScene(startGameUIScene, LoadSceneMode.Additive);
         SceneManager.LoadScene(startGameAIScene, LoadSceneMode.Additive);
         yield return null;
@@ -58,6 +68,7 @@ public class MenuCanvas : MonoBehaviour
 
     private IEnumerator StartMiddle()
     {
+        SoundManager.instance.PlayBackgroundTheme(SoundType.BackgroundTheme);
         SceneManager.LoadScene(middleGameAIScene, LoadSceneMode.Additive);
         SceneManager.LoadScene(middleGameUIScene, LoadSceneMode.Additive);
         yield return null;

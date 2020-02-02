@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Sounds;
 using UnityEngine;
 
 public class InventoryConsumableItemUI : BaseConsumableItemUI
@@ -26,6 +27,7 @@ public class InventoryConsumableItemUI : BaseConsumableItemUI
 
     public override void DoAction()
     {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuClick);
         //TODO: spawnuje 3d klocek do ustawienia w swiecie. potem ten klocek lazi za myszka,
         //daje uzytkownikowi jakies info czy w tym miejscu mozna go stawiac, jak sie go postawi to dopiero on wywoluje konsumpcje i zdjecie itemu.
         //na razie obchodze ten proces, i po prostu wywoluje konsumpcje

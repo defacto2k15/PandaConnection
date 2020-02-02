@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.PandaLogic.Genetics;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Sounds;
 using UnityEngine;
 
 public class PandaStatisticsUI : MonoBehaviour
@@ -43,6 +44,7 @@ public class PandaStatisticsUI : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
+        SoundManager.instance.PlayOneShotSound(SoundType.MenuClick);
             if (choosingTwoPandas)
             {
                 if (firstPanda == panda)

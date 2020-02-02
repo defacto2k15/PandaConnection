@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assets.Scripts.Sounds;
 using UnityEngine;
 
 namespace Assets.Scripts.AI
@@ -23,14 +24,23 @@ namespace Assets.Scripts.AI
 
         public void StartAnimationState(PandaAnimationState state)
         {
+            if (state != PandaAnimationState.Walking)
+            {
+                SoundManager.instance.TryStopSustainedTheme(gameObject, SoundType.Walking);
+            }
+
             _animationState = state;
-            _animationStateToAction[state].Invoke();
+            _animationStateToAction[_animationState].Invoke();
+
+            if (state == PandaAnimationState.Walking)
+            {
+                SoundManager.instance.PlaySustainedTheme(gameObject, SoundType.Walking, 99999);
+            }
         }
 
         public void StopAnimationState(PandaAnimationState state)
         {
-            _animationState = PandaAnimationState.Walking;
-            _animationStateToAction[_animationState].Invoke();
+            StartAnimationState(PandaAnimationState.Walking);
         }
 
         public PandaStats GetStats()
@@ -387,6 +397,8 @@ namespace Assets.Scripts.AI
             {
                 GameManager.instance.pandaManager.pandasOnDisplay.Remove(this);
             }
+
+            SoundManager.instance.TryStopSustainedTheme(gameObject, SoundType.Walking);
         }
 
         public void Select(int i)

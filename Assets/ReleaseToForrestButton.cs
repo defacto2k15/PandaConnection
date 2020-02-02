@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Sounds;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,6 +24,8 @@ public class ReleaseToForrestButton : MonoBehaviour
     {
         if ((currentPanda as MonoBehaviour).isActiveAndEnabled)
         {
+
+                SoundManager.instance.PlayOneShotSound( SoundType.Yay);
             currentPanda.GoToForest();
             GameManager.instance.pandaManager.pandasReleasedToForrest++;
             progress.fillAmount = (float)GameManager.instance.pandaManager.pandasReleasedToForrest / (float)GameManager.instance.pandaManager.pandasToWin;

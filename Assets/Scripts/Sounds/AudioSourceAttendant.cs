@@ -1,9 +1,11 @@
 ﻿using System.Collections;
+using Assets.Scripts.Utils;
 using UnityEngine;
 using UnityEngine.Assertions;
 
 namespace Assets.Scripts.Sounds
 {
+    [RequireComponent(typeof(AudioSource))]
     public class AudioSourceAttendant : MonoBehaviour
     {
         public SoundType Type;
@@ -13,14 +15,27 @@ namespace Assets.Scripts.Sounds
 
         private float _timerResetMoment;
         private float _timerLength;
+        private AudioSource _source; 
 
         void Awake()
         {
+            _timerResetMoment = Time.time;
+            _source = this.GetComponentNotNull<AudioSource>();
             if (IsSustained)
             {
                 _timerLength = 1;
                 StartCoroutine(TimerLoop());
             }
+            else
+            { 
+                StartCoroutine(DestroyAtEnd());
+            }
+        }
+
+        private IEnumerator DestroyAtEnd()
+        {
+            yield return new WaitForSeconds(_source.clip.length);
+            StopAndDestroy();
         }
 
         public void StopAndDestroy()

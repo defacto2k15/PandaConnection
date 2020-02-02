@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assets.Scripts.Sounds;
 using Assets.Scripts.Utils;
 using UnityEngine;
 
@@ -53,6 +54,8 @@ namespace Assets.Scripts.AI.Activity
             _flag.AddActivity(this);
             _panda.StartAnimationState(PandaAnimationState.Dying);
             Debug.Log("Staring death of panda becouse of hunger");
+
+                SoundManager.instance.PlayOneShotSound( SoundType.Dying);
             yield return new WaitForSeconds(DyingTime);
             Debug.Log("Killing panda becouse of hunger");
             GameObject.Destroy(gameObject);

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assets.Scripts.Sounds;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -27,6 +28,7 @@ namespace Assets.Scripts.AI
             {
                 if (FlashingEnabled)
                 {
+                    SoundManager.instance.PlayOneShotSound(SoundType.Snap);
                     Instantiate(ParticleSystemPrefab, ParticleSpawnPosition.transform.position, Quaternion.identity);
                 }
 

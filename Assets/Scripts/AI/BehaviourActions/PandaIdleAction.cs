@@ -32,19 +32,44 @@ namespace Assets.Scripts.AI.BehaviourActions
             var idleElapsedTime = Time.time - _idleStartTime;
             if (idleElapsedTime < IdleDuration)
             {
-                AnimatePanda(idleElapsedTime);
                 return TaskStatus.RUNNING;
             }
             else
             {
-                gameObject.GetComponentNotNull<DummyPanda>().StopAnimationState(PandaAnimationState.Idle);
                 return TaskStatus.COMPLETED;
             }
         }
 
-        private void AnimatePanda(float elapsedTime)
+        public override void OnEnd()
         {
-            // gameObject.transform.RotateAround(gameObject.transform.position, gameObject.transform.up, Time.deltaTime*300);
+            EndAnimation();
+        }
+
+        private void EndAnimation()
+        {
+            gameObject.GetComponentNotNull<DummyPanda>().StopAnimationState(PandaAnimationState.Idle);
+        }
+
+        public override TaskStatus OnLatentEnd()
+        {
+            EndAnimation();
+            return base.OnLatentEnd();
+        }
+
+        public override TaskStatus OnLatentFailedEnd()
+        {
+            EndAnimation();
+            return base.OnLatentFailedEnd();
+        }
+
+        public override void OnFailedEnd()
+        {
+            EndAnimation();
+        }
+
+        public override void OnAbort()
+        {
+            EndAnimation();
         }
     }
 }
