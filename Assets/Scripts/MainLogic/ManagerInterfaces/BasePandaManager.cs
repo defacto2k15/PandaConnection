@@ -83,4 +83,8 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
     public List<IPanda> pandasOnDisplay = new List<IPanda>();
 
     public int timeGenesMutated = 0;
+
+    public int pandasReleasedToForrest = 0;
+
+    public int pandasToWin = 25;
 }

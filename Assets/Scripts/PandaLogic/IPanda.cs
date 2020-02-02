@@ -26,4 +26,6 @@ public interface IPanda
 
     void Select(int i);
     void Deselect(int i);
+
+    void GoToForest();
 }

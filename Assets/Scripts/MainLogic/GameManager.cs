@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour
 
     public BasePandaManager pandaManager;
     public ResearchUIManager researchUIManager;
+    public ShopUI shopUIManager;
     public PandaStatisticsUI pandaStatisticsUI;
     public NotificationManager notificationManager;
 

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
+    public Button gotoShopButton;
+    public Button gotoResearchButton;
     public Button showButton;
     public Button showDetailMatingButton;
 
@@ -32,6 +34,20 @@ public class InventoryUI : MonoBehaviour
         RefreshConsumablesList();
         showButton.onClick.AddListener(Show);
         showDetailMatingButton.onClick.AddListener(ShowDetailMating);
+        gotoShopButton.onClick.AddListener(GoToShop);
+        gotoResearchButton.onClick.AddListener(GoToResearch);
+    }
+
+
+
+    private void GoToShop()
+    {
+        GameManager.instance.shopUIManager.gameObject.SetActive(true);
+    }
+
+    private void GoToResearch()
+    {
+        GameManager.instance.researchUIManager.gameObject.SetActive(true);
     }
 
     protected virtual List<IConsumable> GetDrugConsumables()

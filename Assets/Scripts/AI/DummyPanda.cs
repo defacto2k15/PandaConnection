@@ -391,6 +391,7 @@ namespace Assets.Scripts.AI
                 default:
                     break;
             }
+            GameManager.instance.notificationManager.OnPandaSelected(this);
         }
 
         public void Deselect(int i)
@@ -408,6 +409,12 @@ namespace Assets.Scripts.AI
                 default:
                     break;
             }
+        }
+
+        public void GoToForest()
+        {
+            //TODO: bezpiecznie wycofac sie ze wszystkich obecnych interacji
+            this.gameObject.SetActive(false);
         }
     }
 
