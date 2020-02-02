@@ -83,8 +83,13 @@ namespace Assets.Scripts.AI
             Ero = Mathf.Clamp(Ero, 0, GameManager.instance.pandaManager.GetMaximumEro());
         }
 
-        public void Awake()
+        public void Start()
         {
+            if (!GetStats().Genotype.Any())
+            {
+                GetStats().CreateGenotypeFromPhenotype();
+
+            }
             Color secondaryColor = Color.white;
             switch (GetStats().Phenotype.secondaryColorTrait)
             {

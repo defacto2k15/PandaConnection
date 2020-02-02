@@ -85,7 +85,7 @@ namespace Assets.Scripts.PandaLogic.Genetics
 
         private OneValueGene MutateGene(OneValueGene gene)
         {
-            return new OneValueGene(){Trait = gene.Trait, Value = (float) (gene.Value + _random.NextDouble()*_mutationStrength)};
+            return new OneValueGene(){Trait = gene.Trait, Value = (float) (gene.Value + (_random.NextDouble()-0.5)*2*_mutationStrength)};
         }
 
         private Phenotype CreatePhenotype(List<Gene> newGenotype)

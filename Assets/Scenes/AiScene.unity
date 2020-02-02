@@ -602,9 +602,15 @@ MonoBehaviour:
       FatherGene: 0.2
       MotherGene: 0.3
     Phenotype:
-      LegLengthTrait: 0
-      EyeColorTrait: 0
-      TailTypeTrait: 0
+      eyesTypeTrait: 0
+      eyeColorTrait: 0
+      earTypeTrait: 0
+      specialTrait: 0
+      tailTypeTrait: 0
+      noseMouthTypeTrait: 0
+      bodyTypeTrait: 0
+      primaryBodyColorTrait: 0
+      secondaryColorTrait: 0
   MotherStats:
     name: 
     birthdate: 0
@@ -620,18 +626,30 @@ MonoBehaviour:
       FatherGene: 0
       MotherGene: 0.1
     Phenotype:
-      LegLengthTrait: 2
-      EyeColorTrait: 1
-      TailTypeTrait: 0
+      eyesTypeTrait: 0
+      eyeColorTrait: 0
+      earTypeTrait: 0
+      specialTrait: 0
+      tailTypeTrait: 0
+      noseMouthTypeTrait: 0
+      bodyTypeTrait: 0
+      primaryBodyColorTrait: 0
+      secondaryColorTrait: 0
   ChildStats:
     name: 
     birthdate: 0
     gender: 0
     Genotype: []
     Phenotype:
-      LegLengthTrait: 0
-      EyeColorTrait: 0
-      TailTypeTrait: 0
+      eyesTypeTrait: 0
+      eyeColorTrait: 0
+      earTypeTrait: 0
+      specialTrait: 0
+      tailTypeTrait: 0
+      noseMouthTypeTrait: 0
+      bodyTypeTrait: 0
+      primaryBodyColorTrait: 0
+      secondaryColorTrait: 0
 --- !u!114 &1311028072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1439,8 +1457,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
+      propertyPath: _stats.Genotype.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
       propertyPath: Ero
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.eyesTypeTrait
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2426071198132870505, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}

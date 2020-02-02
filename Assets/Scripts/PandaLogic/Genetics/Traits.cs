@@ -4,19 +4,13 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Assets.Scripts.PandaLogic.Genetics;
 using UnityEngine;
 using UnityEngine.Assertions;
 
 namespace Assets.Scripts.PandaLogic.Genetics
 {
-    [SingleTraitAttribute(GeneticTrait.EyeColor)]
-    public enum EyeColorTrait2
-    {
-        [TraitSingleValueCharacteristic(1, 0f)] Brown,
-        [TraitSingleValueCharacteristic(1, 0.5f)] Blue,
-        [TraitSingleValueCharacteristic(2, 1f)] Red
-    }
-
+    [SingleTraitAttribute(GeneticTrait.EyeType)]
     public enum EyesTypeTrait
     {
         [TraitSingleValueCharacteristic(3, 0f)] Normal,
@@ -34,7 +28,7 @@ namespace Assets.Scripts.PandaLogic.Genetics
         [TraitSingleValueCharacteristic(1, 2f)] White
     }
 
-    [SingleTraitAttribute(GeneticTrait.Eartype)]
+    [SingleTraitAttribute(GeneticTrait.EarType)]
     public enum EarTypeTrait
     {
         [TraitSingleValueCharacteristic(3, 0f)] Nomral,
@@ -103,7 +97,7 @@ namespace Assets.Scripts.PandaLogic.Genetics
 
 public enum GeneticTrait
 {
-    EyeType, EyeColor, Eartype, Specialtype, Tailtype, NoseMouthSype, BodyType, PrimaryColor, SecendaryColor
+     EyeType, EyeColor, EarType, Specialtype, Tailtype, NoseMouthSype, BodyType, PrimaryColor, SecendaryColor
 }
 
 public class SingleTraitAttribute : System.Attribute
@@ -176,6 +170,34 @@ public static class TraitUtils
             }
         }
         Assert.IsTrue(false, $"Fail: In Phenotype class i cannot find field of enum type {enumValue}");
+    }
+
+    public static List<Gene> CreateGenotypeFromPhenotype(Phenotype phenotype, List<Gene> oldGenotype)
+    {
+        var newGenotype = new List<Gene>();
+        var allTraitTypes = ReflectionUtils.GetTypesWithHelpAttribute(Assembly.GetCallingAssembly(), typeof(SingleTraitAttribute))
+            .Select(c=> new {c=c, ata = c.GetCustomAttribute<SingleTraitAttribute>()})
+            .ToList();
+
+        foreach (var fieldInfo in phenotype.GetType().GetFields())
+        {
+            var currentQuantisizedValue = fieldInfo.GetValue(phenotype);
+            var name = Enum.GetName(fieldInfo.FieldType, currentQuantisizedValue);
+            var attribute = fieldInfo.FieldType.GetField(name).GetCustomAttributes(false).OfType<TraitSingleValueCharacteristic>().SingleOrDefault();
+
+
+            var traitWeAreLookingFor = allTraitTypes.SingleOrDefault(c => c.c == fieldInfo.FieldType);
+            Assert.IsNotNull(traitWeAreLookingFor, "Cannot find enum with SingleTraitAttribute of type "+fieldInfo.FieldType);
+            
+            newGenotype.Add(new Gene()
+            {
+                FatherGene = attribute.ContinuousValue,
+                MotherGene = attribute.ContinuousValue,
+                Trait = traitWeAreLookingFor.ata.Trait
+            });
+        }
+
+        return newGenotype;
     }
 }
 

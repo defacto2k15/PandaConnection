@@ -13,6 +13,11 @@ public class PandaStats
     public Gender gender;
     public List<Gene> Genotype;
     public Phenotype Phenotype;
+
+    public void CreateGenotypeFromPhenotype()
+    {
+        Genotype = TraitUtils.CreateGenotypeFromPhenotype(Phenotype, Genotype);
+    }
 }
 
 public enum BodyPart
