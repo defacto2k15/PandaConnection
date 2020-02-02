@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_icon: {fileID: 21300000, guid: 285d8aaa51cea5743b2dac94e1797b70, type: 3}
   m_name: Bamboo
-  m_price: 10
+  m_price: 20
   range: 4
   mySprite: {fileID: 21300000, guid: 31fe8692da5ea1b49b90dbdb2a591ecd, type: 3}
-  m_foodNutritionalValue: 10
-  timeGivingNutrition: 3
+  m_foodNutritionalValue: 3
+  timeGivingNutrition: 10
