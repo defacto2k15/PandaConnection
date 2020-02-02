@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryUI : MonoBehaviour
 {
+    public Button showButton;
+    public Button showDetailMatingButton;
+
     [SerializeField]
     protected InventoryConsumableItemUI m_consumablePrefab;
 
@@ -26,6 +30,8 @@ public class InventoryUI : MonoBehaviour
     {
         GameManager.instance.notificationManager.OnConsumablesChanged += RefreshConsumablesList;
         RefreshConsumablesList();
+        showButton.onClick.AddListener(Show);
+        showDetailMatingButton.onClick.AddListener(ShowDetailMating);
     }
 
     protected virtual List<IConsumable> GetDrugConsumables()
@@ -140,13 +146,23 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
+    public void ShowDetailMating()
+    {
+        Hide();
+    }
+
+
     public void Show()
     {
-        this.gameObject.SetActive(true);
+        this.GetComponent<Animator>().Play("Show");
+        GameManager.instance.GoCameraLeft();
+        GameManager.instance.pandaStatisticsUI.Show();
     }
 
     public void Hide()
     {
-        this.gameObject.SetActive(false);
+        this.GetComponent<Animator>().Play("Hide");
+        GameManager.instance.GoCameraRight();
+        GameManager.instance.pandaStatisticsUI.Hide();
     }
 }

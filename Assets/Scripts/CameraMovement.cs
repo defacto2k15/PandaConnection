@@ -41,5 +41,7 @@ public class CameraMovement : MonoBehaviour
         }
 
         myCam.orthographicSize += Input.mouseScrollDelta.y;
+
+        myCam.orthographicSize = Mathf.Clamp(myCam.orthographicSize, 1, 16);
     }
 }

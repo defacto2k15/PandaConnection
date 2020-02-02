@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2966fd275e0e7374a9dbd8434576af54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pandaStatisticsUI: {fileID: 0}
   foodPileMask:
     serializedVersion: 2
     m_Bits: 512
@@ -125,7 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00dfc177db332874fbd5f85aaba68522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_startingConsumables: []
+  m_startingConsumables:
+  - {fileID: 3848149340301170095, guid: 5f427aebf93806f409cb4d98b742946b, type: 3}
 --- !u!114 &8231352850314746878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3d3862602d8f04e8fed60b1015c215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaximumFullness: 10000
-  MaximumEro: 1000
-  MaximumHealth: 0
+  MaximumFullness: 100
+  MaximumEro: 100
+  MaximumHealth: 100

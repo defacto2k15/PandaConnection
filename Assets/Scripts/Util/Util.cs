@@ -59,7 +59,7 @@ public class Util
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 1000, GameManager.instance.pandaMask))
         {
-            var selectedPanda = hit.collider.GetComponentInParent<IPanda>();
+            var selectedPanda = hit.collider.GetComponent<IPanda>();
             return selectedPanda;
         }
 

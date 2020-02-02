@@ -9,6 +9,9 @@ namespace Assets.Scripts.AI
 {
     public class DummyPanda : MonoBehaviour, IPanda
     {
+        public SpriteRenderer firstSelectedToken;
+        public SpriteRenderer secondSelectedToken;
+
         [SerializeField] public float Fullness;
         [SerializeField] public float Ero;
         [SerializeField] public float Health;
@@ -47,15 +50,7 @@ namespace Assets.Scripts.AI
             Fullness = Mathf.Clamp(Fullness, 0, GameManager.instance.pandaManager.GetMaximumFullness());
         }
 
-        public void GetPrimaryColor()
-        {
-            throw new NotImplementedException();
-        }
 
-        public void GetSecondaryColor()
-        {
-            throw new NotImplementedException();
-        }
 
         public void GetBodyPartSize(BodyPart part)
         {
@@ -344,6 +339,36 @@ namespace Assets.Scripts.AI
                     pandaSprites.eyeLine1.sprite = pandaSprites.eye1Normal;
                     pandaSprites.eyeLine2.sprite = pandaSprites.eye2Normal;
 
+                    break;
+            }
+        }
+
+        public void Select(int i)
+        {
+            switch (i)
+            {
+                case 1:
+                    firstSelectedToken.gameObject.SetActive(true);
+                    break;
+                case 2:
+                    secondSelectedToken.gameObject.SetActive(true);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public void Deselect(int i)
+        {
+            switch (i)
+            {
+                case 1:
+                    firstSelectedToken.gameObject.SetActive(false);
+                    break;
+                case 2:
+                    secondSelectedToken.gameObject.SetActive(false);
+                    break;
+                default:
                     break;
             }
         }

@@ -20,11 +20,10 @@ public interface IPanda
 
     void ChangeFullness(float deltaFood);
 
-    void GetPrimaryColor();
-
-    void GetSecondaryColor();
-
     void GetBodyPartSize(BodyPart part);
     bool IsNotFull();
     Gender GetGender();
+
+    void Select(int i);
+    void Deselect(int i);
 }

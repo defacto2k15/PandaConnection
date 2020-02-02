@@ -46,6 +46,6 @@ MonoBehaviour:
   m_icon: {fileID: 21300000, guid: 21e1253675f3fab4fa6538408f5a750e, type: 3}
   m_name: BambooCake
   m_price: 30
-  range: 2
-  m_foodNutritionalValue: 1
-  timeGivingNutrition: 0.2
+  range: 4
+  m_foodNutritionalValue: 5
+  timeGivingNutrition: 5

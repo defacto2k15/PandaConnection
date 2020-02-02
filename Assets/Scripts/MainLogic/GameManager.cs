@@ -1,10 +1,13 @@
 ﻿using Assets.Scripts.AI;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public PandaStatisticsUI pandaStatisticsUI;
+
     private Camera _mainCamera;
 
     public Camera mainCamera
@@ -75,5 +78,32 @@ public class GameManager : MonoBehaviour
         {
             GameObject.Destroy(this.gameObject);
         }
+    }
+
+    internal void GoCameraLeft()
+    {
+        StartCoroutine(MoveCamera(11f));
+    }
+
+    internal void GoCameraRight()
+    {
+        StartCoroutine(MoveCamera(-11f));
+    }
+
+    private IEnumerator MoveCamera(float movement)
+    {
+        var moveTime = 0.95f;
+        float timeElapsed = 0;
+        var desiredZ = mainCamera.transform.position.z + movement;
+        var startingZ = mainCamera.transform.position.z;
+        while (timeElapsed < moveTime)
+        {
+            timeElapsed += Time.deltaTime;
+            var newposition = mainCamera.transform.position;
+            newposition.z = Mathf.Lerp(startingZ, desiredZ, timeElapsed / moveTime);
+            mainCamera.transform.position = newposition;
+            yield return null;
+        }
+        mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y, desiredZ);
     }
 }
