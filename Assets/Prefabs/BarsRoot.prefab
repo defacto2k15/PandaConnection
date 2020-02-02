@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _type: 1
-  _color0: {r: 0.06140983, g: 1, b: 0, a: 1}
-  _color1: {r: 1, g: 0, b: 0, a: 1}
+  _color0: {r: 1, g: 0, b: 0, a: 1}
+  _color1: {r: 0.12094951, g: 1, b: 0, a: 1}
   _valueToColorCurve:
     serializedVersion: 2
     m_Curve:

@@ -26,7 +26,12 @@ namespace Assets.Scripts.AI
 
         void Update()
         {
-            var horizontalVelocity = _agent.velocity.z;
+            AlignOrientationToVelocity(_agent.velocity);
+        }
+
+        public void AlignOrientationToVelocity(Vector3 velocity)
+        {
+            var horizontalVelocity = velocity.z;
             float horizontalMultiplier = Mathf.Sign(horizontalVelocity);
             if (Mathf.Abs(horizontalVelocity) > 0.1)
             {
@@ -35,7 +40,7 @@ namespace Assets.Scripts.AI
             }
 
             var localZScaleSign = Mathf.Sign(_objectToChangeOrientation.transform.localScale.z);
-            var verticalVelocity = _agent.velocity.x;
+            var verticalVelocity = velocity.x;
             if (Mathf.Abs(verticalVelocity ) > 0.1)
             {
                 float verticalMultiplier = Mathf.Sign(verticalVelocity);
@@ -51,8 +56,6 @@ namespace Assets.Scripts.AI
                 }
 
             }
-
         }
-
     }
 }

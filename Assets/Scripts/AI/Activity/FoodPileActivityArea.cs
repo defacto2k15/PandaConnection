@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Assets.Scripts.Utils;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Assertions;
 
 namespace Assets.Scripts.AI
@@ -48,15 +49,23 @@ namespace Assets.Scripts.AI
             Assert.IsFalse(_eatingPandas.Contains(panda));
             _eatingPandas.Add(panda);
             activityFlag.AddActivity(this);
+
+            var dummyPanda = (panda as DummyPanda);
+            var navmeshAgent = dummyPanda.GetComponentNotNull<NavMeshAgent>();
             while (CanApplyPile(panda) && PandaIsHungry(panda))
             {
+                navmeshAgent.velocity = Vector3.zero;
+                navmeshAgent.isStopped = true;
+                dummyPanda.GetComponentNotNull<PandaSpriteOrientationChanger>()
+                    .AlignOrientationToVelocity((transform.position - dummyPanda.transform.position).normalized);
+                //UpdateNavmeshAgent(panda);
                 var foodToEat = Pile.RetriveFoodFromPile();
 
-                (panda as DummyPanda).StartAnimationState(PandaAnimationState.Eating);
+                dummyPanda.StartAnimationState(PandaAnimationState.Eating);
                 Debug.Log("EATING: " + foodToEat.Food);
                 yield return new WaitForSeconds(foodToEat.Food.timeGivingNutrition);
                 Debug.Log("EATEN: " + foodToEat.Food);
-                (panda as DummyPanda).StopAnimationState(PandaAnimationState.Eating);
+                dummyPanda.StopAnimationState(PandaAnimationState.Eating);
                 ((IConsumable)foodToEat.Food).Consume(panda);
                 if (foodToEat.Drug != null)
                 {
@@ -66,6 +75,7 @@ namespace Assets.Scripts.AI
                         (foodToEat.Drug).DoAction(panda);
                     }
                 }
+                navmeshAgent.isStopped =false;
             }
 
             activityFlag.RemoveActivity(this);
