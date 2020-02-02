@@ -9,35 +9,101 @@ using UnityEngine.Assertions;
 
 namespace Assets.Scripts.PandaLogic.Genetics
 {
-    [SingleTraitAttribute(GeneticTrait.LegLength)]
-    public enum LegLengthTrait
+    [SingleTraitAttribute(GeneticTrait.EyeColor)]
+    public enum EyeColorTrait2
     {
-        [TraitSingleValueCharacteristic(1, 0f)]Short,
-        [TraitSingleValueCharacteristic(1, 0.5f)]Medium,
-        [TraitSingleValueCharacteristic(2, 1f)]Long
+        [TraitSingleValueCharacteristic(1, 0f)] Brown,
+        [TraitSingleValueCharacteristic(1, 0.5f)] Blue,
+        [TraitSingleValueCharacteristic(2, 1f)] Red
+    }
+
+    public enum EyesTypeTrait
+    {
+        [TraitSingleValueCharacteristic(3, 0f)] Normal,
+        [TraitSingleValueCharacteristic(2, 0.5f)] Triangle,
+        [TraitSingleValueCharacteristic(1, 1.5f)] Crazy,
+        [TraitSingleValueCharacteristic(2, 1f)] Big
     }
 
     [SingleTraitAttribute(GeneticTrait.EyeColor)]
     public enum EyeColorTrait
     {
-        [TraitSingleValueCharacteristic(1, 0f)]Brown,
-        [TraitSingleValueCharacteristic(1, 0.5f)]Blue,
-        [TraitSingleValueCharacteristic(2, 1f)]Red
+        [TraitSingleValueCharacteristic(2, 0f)] Brown,
+        [TraitSingleValueCharacteristic(3, 0.5f)] Blue,
+        [TraitSingleValueCharacteristic(2, 1f)] Red,
+        [TraitSingleValueCharacteristic(1, 2f)] White
     }
 
-    [SingleTraitAttribute(GeneticTrait.TailType)]
+    [SingleTraitAttribute(GeneticTrait.Eartype)]
+    public enum EarTypeTrait
+    {
+        [TraitSingleValueCharacteristic(3, 0f)] Nomral,
+        [TraitSingleValueCharacteristic(2, 1f)] Small,
+        [TraitSingleValueCharacteristic(1, 2f)] Curved,
+        [TraitSingleValueCharacteristic(2, 3f)] Long
+    }
+
+    [SingleTraitAttribute(GeneticTrait.Specialtype)]
+    public enum SpecialTrait
+    {
+        [TraitSingleValueCharacteristic(3, 0f)] Without,
+        [TraitSingleValueCharacteristic(2, 1f)] Butt,
+        [TraitSingleValueCharacteristic(2, 2f)] Face,
+        [TraitSingleValueCharacteristic(1, 3f)] Both
+    }
+
+    [SingleTraitAttribute(GeneticTrait.Tailtype)]
     public enum TailTypeTrait
     {
-       [TraitSingleValueCharacteristic(1, 0f)]Curvy,
-       [TraitSingleValueCharacteristic(1, 0.5f)] Straight,
-       [TraitSingleValueCharacteristic(2, 1f)] Looped
+        [TraitSingleValueCharacteristic(3, 0f)] Normal,
+        [TraitSingleValueCharacteristic(2, 0.5f)] Electric,
+        [TraitSingleValueCharacteristic(2, 1f)] Fuzzy,
+        [TraitSingleValueCharacteristic(1, 1.5f)] Pig,
+        [TraitSingleValueCharacteristic(1, 2f)] Cat
+    }
+
+    [SingleTraitAttribute(GeneticTrait.NoseMouthSype)]
+    public enum NoseMouthTypeTrait
+    {
+        [TraitSingleValueCharacteristic(4, 0f)] Normal,
+        [TraitSingleValueCharacteristic(3, 1f)] Pink,
+        [TraitSingleValueCharacteristic(3, 2f)] Heart,
+        [TraitSingleValueCharacteristic(2, 3f)] Small,
+        [TraitSingleValueCharacteristic(2, 4f)] Triangle,
+        [TraitSingleValueCharacteristic(1, 5f)] Pig
+    }
+
+    [SingleTraitAttribute(GeneticTrait.BodyType)]
+    public enum BodyTypeTrait
+    {
+        [TraitSingleValueCharacteristic(1, 0f)] Nomral,
+        [TraitSingleValueCharacteristic(1, 1f)] Fat
+    }
+
+    [SingleTraitAttribute(GeneticTrait.PrimaryColor)]
+    public enum PrimaryBodyColorTrait
+    {
+        [TraitSingleValueCharacteristic(3, 0f)] Black,
+        [TraitSingleValueCharacteristic(2, 1f)] White,
+        [TraitSingleValueCharacteristic(3, 2f)] Brown,
+        [TraitSingleValueCharacteristic(2, 3f)] Gray,
+        [TraitSingleValueCharacteristic(1, 4f)] Yellow
+    }
+
+    [SingleTraitAttribute(GeneticTrait.SecendaryColor)]
+    public enum SecondaryColorTrait
+    {
+        [TraitSingleValueCharacteristic(3, 0f)] Black,
+        [TraitSingleValueCharacteristic(2, 1f)] White,
+        [TraitSingleValueCharacteristic(3, 2f)] Brown,
+        [TraitSingleValueCharacteristic(2, 3f)] Gray,
+        [TraitSingleValueCharacteristic(3, 4f)] Yellow
     }
 }
 
-
 public enum GeneticTrait
 {
-    LegLength, EyeColor, TailType
+    EyeType, EyeColor, Eartype, Specialtype, Tailtype, NoseMouthSype, BodyType, PrimaryColor, SecendaryColor
 }
 
 public class SingleTraitAttribute : System.Attribute
@@ -47,7 +113,7 @@ public class SingleTraitAttribute : System.Attribute
     public SingleTraitAttribute(GeneticTrait trait)
     {
         _trait = trait;
-    }   
+    }
 
     public GeneticTrait Trait => _trait;
 }
@@ -79,18 +145,18 @@ public static class TraitUtils
         var searchedType = searchedTraitTypes.First();
         var enumValues = Enum.GetValues(searchedType);
 
-        var enumValuesWithAttribute = new List<object>( enumValues.Cast<object>()).Select(c =>
-        {
-            var name = Enum.GetName(searchedType, c);
-            var attribute = searchedType.GetField(name).GetCustomAttributes(false).OfType<TraitSingleValueCharacteristic>().SingleOrDefault();
-            Assert.IsNotNull(attribute, $"Cannot find attribute SingleTraitAttribute in enum {searchedType} value {c}");
+        var enumValuesWithAttribute = new List<object>(enumValues.Cast<object>()).Select(c =>
+       {
+           var name = Enum.GetName(searchedType, c);
+           var attribute = searchedType.GetField(name).GetCustomAttributes(false).OfType<TraitSingleValueCharacteristic>().SingleOrDefault();
+           Assert.IsNotNull(attribute, $"Cannot find attribute SingleTraitAttribute in enum {searchedType} value {c}");
 
-            return new
-            {
-                enumValue = c,
-                attribute = attribute
-            };
-        }).ToList();
+           return new
+           {
+               enumValue = c,
+               attribute = attribute
+           };
+       }).ToList();
         var closestValue = enumValuesWithAttribute.OrderBy(c => Mathf.Abs(floatValue - c.attribute.ContinuousValue)).First();
         return new TraitValueQueryResult()
         {
@@ -110,7 +176,6 @@ public static class TraitUtils
             }
         }
         Assert.IsTrue(false, $"Fail: In Phenotype class i cannot find field of enum type {enumValue}");
-
     }
 }
 
