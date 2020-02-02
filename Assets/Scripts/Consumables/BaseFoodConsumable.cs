@@ -9,7 +9,7 @@ public class BaseFoodConsumable : BaseConsumable
     public float range;
 
     [SerializeField]
-    private float m_foodNutritionalValue;
+    public float m_foodNutritionalValue;
 
     [SerializeField]
     public float timeGivingNutrition;
@@ -21,7 +21,7 @@ public class BaseFoodConsumable : BaseConsumable
 
     public override bool CanPlace()
     {
-        return Util.RaycastFoodPile()==null && Util.RaycastEroPile()==null && Util.CalculateRaycastPosition().z>-2000;
+        return Util.RaycastFoodPile() == null && Util.RaycastEroPile() == null && Util.CalculateRaycastPosition().z > -2000;
     }
 
     public override void PlaceInWorld()

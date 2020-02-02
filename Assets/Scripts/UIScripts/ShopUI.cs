@@ -12,7 +12,6 @@ public class ShopUI : BaseConsumablesListUI
     public TMPro.TMP_Text consumablePrice;
     public Button buyButon;
 
-
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -36,7 +35,6 @@ public class ShopUI : BaseConsumablesListUI
         return GameManager.instance.ShopManager.GetAvailableConsumables().Where(x => x is BaseFoodConsumable).ToList();
     }
 
-
     public void Show()
     {
         this.gameObject.SetActive(true);
@@ -55,11 +53,22 @@ public class ShopUI : BaseConsumablesListUI
         }
     }
 
-
     public void ShowDetailsFor(IConsumable consumable)
     {
         currentConsumable = consumable;
-        consumableRange.SetText($"Range: { consumable.GetRange()}");
+        if (consumable as BaseEroConsumable)
+        {
+            consumableRange.SetText($"Range: { consumable.GetRange()} \n Ero value: {(consumable as BaseEroConsumable).MEroNutritionalValue } \n Time working: {(consumable as BaseEroConsumable).TimeGivingNutrition }");
+        }
+        else
+        if (consumable as BaseFoodConsumable)
+        {
+            consumableRange.SetText($"Range: { consumable.GetRange()} \n Food value: {(consumable as BaseFoodConsumable).m_foodNutritionalValue } \n Time working: {(consumable as BaseFoodConsumable).timeGivingNutrition }");
+        }
+        else
+        {
+            consumableRange.SetText($"Type: {(consumable as BaseDrugConsumable).drugType} \n Potency: { (consumable as BaseDrugConsumable).m_drugValue}");
+        }
         consumablePrice.SetText($"Price: {consumable.GetPrice()}");
         consumableName.SetText(consumable.GetName());
         buyButon.interactable = true;

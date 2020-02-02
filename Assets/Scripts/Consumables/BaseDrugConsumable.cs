@@ -6,10 +6,10 @@ using UnityEngine;
 public class BaseDrugConsumable : BaseConsumable
 {
     [SerializeField]
-    private int m_drugValue;
+    public int m_drugValue;
 
     [SerializeField]
-    private DrugType drugType;
+    public DrugType drugType;
 
     public enum DrugType
     {
@@ -45,7 +45,7 @@ public class BaseDrugConsumable : BaseConsumable
     public override void PlaceInWorld()
     {
         var foodPile = Util.RaycastFoodPile();
-        if (foodPile == null || foodPile.Drug!=null)
+        if (foodPile == null || foodPile.Drug != null)
         {
             Debug.LogError("My method failed - no foodpile to place or drug already on pile");
             return;

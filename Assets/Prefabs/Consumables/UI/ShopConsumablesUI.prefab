@@ -214,7 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1165,7 +1165,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!114 &2945477916972844983
 MonoBehaviour:
@@ -2427,7 +2427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2937,6 +2937,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 99885867413324184, guid: cac0fd674b91f0043809b5b7d226345b,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4098100918278204952, guid: cac0fd674b91f0043809b5b7d226345b,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -3022,6 +3027,11 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 84.65
       objectReference: {fileID: 0}
+    - target: {fileID: 6807590108396198222, guid: cac0fd674b91f0043809b5b7d226345b,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8916424082744846628, guid: cac0fd674b91f0043809b5b7d226345b,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -3051,6 +3061,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSize
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916424082744846628, guid: cac0fd674b91f0043809b5b7d226345b,
+        type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cac0fd674b91f0043809b5b7d226345b, type: 3}

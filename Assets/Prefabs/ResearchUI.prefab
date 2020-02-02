@@ -6627,6 +6627,11 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 84.65
       objectReference: {fileID: 0}
+    - target: {fileID: 6807590108396198222, guid: cac0fd674b91f0043809b5b7d226345b,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8916424082744846628, guid: cac0fd674b91f0043809b5b7d226345b,
         type: 3}
       propertyPath: m_fontSize
@@ -6636,6 +6641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.lineCount
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8916424082744846628, guid: cac0fd674b91f0043809b5b7d226345b,
+        type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cac0fd674b91f0043809b5b7d226345b, type: 3}

@@ -38,16 +38,16 @@ public class InventoryUI : MonoBehaviour
         gotoResearchButton.onClick.AddListener(GoToResearch);
     }
 
-
-
     private void GoToShop()
     {
         GameManager.instance.shopUIManager.gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
 
     private void GoToResearch()
     {
         GameManager.instance.researchUIManager.gameObject.SetActive(true);
+        Time.timeScale = 0;
     }
 
     protected virtual List<IConsumable> GetDrugConsumables()
@@ -98,7 +98,7 @@ public class InventoryUI : MonoBehaviour
             {
                 spawnedItems.RemoveAt(i);
             }
-            else if (!consumablesList.Exists(x=>x.GetName()==spawnedItems[i].Consumable.GetName()))
+            else if (!consumablesList.Exists(x => x.GetName() == spawnedItems[i].Consumable.GetName()))
             {
                 spawnedItems[i].StartConsumeAnimation();
             }
@@ -166,7 +166,6 @@ public class InventoryUI : MonoBehaviour
     {
         Hide();
     }
-
 
     public void Show()
     {
