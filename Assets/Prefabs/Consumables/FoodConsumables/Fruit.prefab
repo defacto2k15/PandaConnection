@@ -47,6 +47,6 @@ MonoBehaviour:
   m_name: Fruit basket
   m_price: 40
   range: 3
-  mySprite: {fileID: 21300000, guid: b24ed813767b8c14bbec7a870872fa20, type: 3}
+  mySprite: {fileID: 21300000, guid: c6619a8546e217e469d3ff37373c2677, type: 3}
   m_foodNutritionalValue: 5
   timeGivingNutrition: 10

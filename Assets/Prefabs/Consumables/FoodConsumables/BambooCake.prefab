@@ -47,6 +47,6 @@ MonoBehaviour:
   m_name: BambooCake
   m_price: 80
   range: 5
-  mySprite: {fileID: 21300000, guid: 71c715cf2a455f44ebc04d3335a9bc98, type: 3}
+  mySprite: {fileID: 21300000, guid: 2f7c9847d4ed41e419ab07d7e5d2a7bb, type: 3}
   m_foodNutritionalValue: 10
   timeGivingNutrition: 10
