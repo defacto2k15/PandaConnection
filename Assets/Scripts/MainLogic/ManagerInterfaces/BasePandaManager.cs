@@ -8,6 +8,7 @@ public class BasePandaManager : MonoBehaviour, IPandaManager
     [SerializeField] private float MaximumEro;
     [SerializeField] private float MaximumHealth;
     [SerializeField] private float MinimumFullnessForMating;
+    public List<string> randomNames = new List<string>();
 
     public PandaStats ComputePairingStats(IPanda panda1, IPanda panda2)
     {

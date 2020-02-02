@@ -600,7 +600,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 20
+    maxNumParticles: 3
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -746,7 +746,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.52
+      value: 1.01
       mode: 0
       spread: 0
       speed:
@@ -5162,7 +5162,7 @@ MonoBehaviour:
   secondSelectedToken: {fileID: 2748567149495838108}
   animationCenter: {fileID: 99833376}
   Fullness: 50
-  Ero: 0
+  Ero: 50
   Health: 0
   _stats:
     name: 
@@ -5533,8 +5533,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChildPandaCreator: {fileID: 0}
-  _SexEroCost: 70
-  _SexTime: 3
+  _SexEroCost: -80
+  _SexTime: 5
   _EroThresholdForSex: 95
   _flag: {fileID: 2426071198132870502}
 --- !u!1 &3973155738135888280
@@ -6219,7 +6219,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 20
+    maxNumParticles: 5
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -6365,7 +6365,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.52
+      value: 0.94
       mode: 0
       spread: 0
       speed:

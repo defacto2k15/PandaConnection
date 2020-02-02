@@ -46,6 +46,6 @@ MonoBehaviour:
   m_icon: {fileID: 21300000, guid: 9647773288701bd47b47ec28c6f20811, type: 3}
   m_name: Bamboo
   m_price: 10
-  range: 2
+  range: 4
   m_foodNutritionalValue: 10
   timeGivingNutrition: 3

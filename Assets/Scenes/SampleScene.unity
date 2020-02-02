@@ -1202,6 +1202,111 @@ PrefabInstance:
       propertyPath: pandaStatisticsUI
       value: 
       objectReference: {fileID: 171065782}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[0]
+      value: Mikolaj
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[1]
+      value: Alice
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[2]
+      value: X
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[3]
+      value: Y
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[4]
+      value: Z
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[5]
+      value: Dolly
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[6]
+      value: Help Me
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[7]
+      value: Creature
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[8]
+      value: Lovecraft
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[9]
+      value: OwO
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[10]
+      value: XoX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[11]
+      value: Father
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[12]
+      value: Mother
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[13]
+      value: Lu Bow
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[14]
+      value: Xie Xie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[15]
+      value: Hikari
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[16]
+      value: Onomatopeja
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[17]
+      value: Mr.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[18]
+      value: Miss.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231352850314746878, guid: d668c6c0e7439c94e9dd264319670ff8,
+        type: 3}
+      propertyPath: randomNames.Array.data[19]
+      value: Little
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d668c6c0e7439c94e9dd264319670ff8, type: 3}
 --- !u!1001 &1725285414702341445

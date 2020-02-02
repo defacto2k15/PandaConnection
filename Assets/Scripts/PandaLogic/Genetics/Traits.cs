@@ -14,8 +14,6 @@ namespace Assets.Scripts.PandaLogic.Genetics
     public enum EyesTypeTrait
     {
         [TraitSingleValueCharacteristic(3, 0f)] Normal,
-        [TraitSingleValueCharacteristic(2, 0.5f)] Triangle,
-        [TraitSingleValueCharacteristic(1, 1.5f)] Crazy,
         [TraitSingleValueCharacteristic(2, 1f)] Big
     }
 
@@ -97,7 +95,7 @@ namespace Assets.Scripts.PandaLogic.Genetics
 
 public enum GeneticTrait
 {
-     EyeType, EyeColor, EarType, Specialtype, Tailtype, NoseMouthSype, BodyType, PrimaryColor, SecendaryColor
+    EyeType, EyeColor, EarType, Specialtype, Tailtype, NoseMouthSype, BodyType, PrimaryColor, SecendaryColor
 }
 
 public class SingleTraitAttribute : System.Attribute
@@ -176,7 +174,7 @@ public static class TraitUtils
     {
         var newGenotype = new List<Gene>();
         var allTraitTypes = ReflectionUtils.GetTypesWithHelpAttribute(Assembly.GetCallingAssembly(), typeof(SingleTraitAttribute))
-            .Select(c=> new {c=c, ata = c.GetCustomAttribute<SingleTraitAttribute>()})
+            .Select(c => new { c = c, ata = c.GetCustomAttribute<SingleTraitAttribute>() })
             .ToList();
 
         foreach (var fieldInfo in phenotype.GetType().GetFields())
@@ -185,10 +183,9 @@ public static class TraitUtils
             var name = Enum.GetName(fieldInfo.FieldType, currentQuantisizedValue);
             var attribute = fieldInfo.FieldType.GetField(name).GetCustomAttributes(false).OfType<TraitSingleValueCharacteristic>().SingleOrDefault();
 
-
             var traitWeAreLookingFor = allTraitTypes.SingleOrDefault(c => c.c == fieldInfo.FieldType);
-            Assert.IsNotNull(traitWeAreLookingFor, "Cannot find enum with SingleTraitAttribute of type "+fieldInfo.FieldType);
-            
+            Assert.IsNotNull(traitWeAreLookingFor, "Cannot find enum with SingleTraitAttribute of type " + fieldInfo.FieldType);
+
             newGenotype.Add(new Gene()
             {
                 FatherGene = attribute.ContinuousValue,

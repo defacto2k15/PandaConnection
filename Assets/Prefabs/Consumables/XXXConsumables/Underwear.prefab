@@ -46,6 +46,6 @@ MonoBehaviour:
   m_icon: {fileID: 21300000, guid: f152c20112169bd4a852c802ab827fa1, type: 3}
   m_name: Underwear
   m_price: 100
-  range: 3
+  range: 4
   m_eroNutritionalValue: 3
   timeGivingNutrition: 20

@@ -93,6 +93,7 @@ namespace Assets.Scripts.AI
 
         public void Start()
         {
+            GetStats().name = GameManager.instance.pandaManager.randomNames[UnityEngine.Random.Range(0, GameManager.instance.pandaManager.randomNames.Count)];
             _animationStateToAction = new Dictionary<PandaAnimationState, Action>()
             {
                 {PandaAnimationState.Idle, animationCenter.StartIdle},
@@ -347,17 +348,17 @@ namespace Assets.Scripts.AI
                     pandaSprites.eyeLine1.sprite = pandaSprites.eye1Big;
                     pandaSprites.eyeLine2.sprite = pandaSprites.eye2Big;
                     break;
+                /*
+            case PandaLogic.Genetics.EyesTypeTrait.Crazy:
+                pandaSprites.eyeLine1.sprite = pandaSprites.eye1Crazy;
+                pandaSprites.eyeLine2.sprite = pandaSprites.eye2Crazy;
+                break;
 
-                case PandaLogic.Genetics.EyesTypeTrait.Crazy:
-                    pandaSprites.eyeLine1.sprite = pandaSprites.eye1Crazy;
-                    pandaSprites.eyeLine2.sprite = pandaSprites.eye2Crazy;
-                    break;
-
-                case PandaLogic.Genetics.EyesTypeTrait.Triangle:
-                    pandaSprites.eyeLine1.sprite = pandaSprites.eye1Triangle;
-                    pandaSprites.eyeLine2.sprite = pandaSprites.eye2Triangle;
-                    break;
-
+            case PandaLogic.Genetics.EyesTypeTrait.Triangle:
+                pandaSprites.eyeLine1.sprite = pandaSprites.eye1Triangle;
+                pandaSprites.eyeLine2.sprite = pandaSprites.eye2Triangle;
+                break;
+                */
                 case PandaLogic.Genetics.EyesTypeTrait.Normal:
                     pandaSprites.eyeLine1.sprite = pandaSprites.eye1Normal;
                     pandaSprites.eyeLine2.sprite = pandaSprites.eye2Normal;
@@ -370,7 +371,7 @@ namespace Assets.Scripts.AI
 
         private void OnDestroy()
         {
-            if(GameManager.instance!=null && GameManager.instance.pandaManager != null)
+            if (GameManager.instance != null && GameManager.instance.pandaManager != null)
             {
                 GameManager.instance.pandaManager.pandasOnDisplay.Remove(this);
             }

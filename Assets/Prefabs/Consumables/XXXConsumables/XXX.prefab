@@ -46,6 +46,6 @@ MonoBehaviour:
   m_icon: {fileID: 21300000, guid: b4a0bbef64da88946a1e13da5b04a706, type: 3}
   m_name: XXX
   m_price: 60
-  range: 1
+  range: 3
   m_eroNutritionalValue: 10
   timeGivingNutrition: 10

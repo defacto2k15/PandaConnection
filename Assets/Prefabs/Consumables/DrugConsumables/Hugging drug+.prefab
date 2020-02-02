@@ -46,5 +46,5 @@ MonoBehaviour:
   m_icon: {fileID: 21300000, guid: 4a2017e8d917d4f41855d73b7d625b59, type: 3}
   m_name: '"Hugging" drug+'
   m_price: 50
-  m_drugValue: 10
+  m_drugValue: 15
   drugType: 1

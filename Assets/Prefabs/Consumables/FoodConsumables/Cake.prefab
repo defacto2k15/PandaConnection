@@ -46,6 +46,6 @@ MonoBehaviour:
   m_icon: {fileID: 21300000, guid: 46117c3464606de4fa299af13154366a, type: 3}
   m_name: Cake
   m_price: 20
-  range: 2
+  range: 4
   m_foodNutritionalValue: 15
   timeGivingNutrition: 3
