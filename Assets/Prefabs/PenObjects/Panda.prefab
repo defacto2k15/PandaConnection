@@ -10666,7 +10666,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.09
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -15182,8 +15182,8 @@ ParticleSystemRenderer:
   m_SortingOrder: 63
   m_RenderMode: 0
   m_SortMode: 0
-  m_MinParticleSize: 0.005
-  m_MaxParticleSize: 0.01
+  m_MinParticleSize: 0.04
+  m_MaxParticleSize: 0.06
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
