@@ -135,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHighlighted: 1
   tabToShow: {fileID: 0}
-  highlightedColor: {r: 0.9294118, g: 0.9294118, b: 0.9294118, a: 1}
+  highlightedColor: {r: 0.5176471, g: 0.82745105, b: 0.9843138, a: 1}
   unhighlightedColor: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
 --- !u!1 &6950479350568189977
 GameObject:
