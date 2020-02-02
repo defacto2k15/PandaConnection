@@ -453,6 +453,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9026353352438658923, guid: 96ecdb9980ea5ad43b35ea80397be4b5,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ecdb9980ea5ad43b35ea80397be4b5, type: 3}
 --- !u!114 &171065782 stripped
