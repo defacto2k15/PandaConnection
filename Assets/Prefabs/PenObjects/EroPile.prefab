@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4654504190687029687}
   - component: {fileID: 7908859060884898077}
   m_Layer: 0
-  m_Name: New Sprite (1)
+  m_Name: mySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -193,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _eroConsumable: {fileID: 0}
   _tickDurationInSeconds: 1
+  foodSprite: {fileID: 7908859060884898077}
   _rangeSignalizer: {fileID: 8147741453792567623}
 --- !u!136 &5394329104701774329
 CapsuleCollider:

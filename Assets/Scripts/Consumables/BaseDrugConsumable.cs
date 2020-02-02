@@ -8,6 +8,8 @@ public class BaseDrugConsumable : BaseConsumable
     [SerializeField]
     public int m_drugValue;
 
+    public Color drugColor;
+
     [SerializeField]
     public DrugType drugType;
 
@@ -51,5 +53,6 @@ public class BaseDrugConsumable : BaseConsumable
             return;
         }
         foodPile.Drug = this;
+        foodPile.foodSprite.color = drugColor;
     }
 }

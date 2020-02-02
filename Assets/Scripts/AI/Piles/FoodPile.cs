@@ -10,25 +10,25 @@ namespace Assets.Scripts.AI
     {
         [SerializeField] private List<FoodWithItsAmount> FoodConsumables;
         public BaseDrugConsumable Drug;
+        public SpriteRenderer foodSprite;
 
         public float MaxRange
         {
             get
             {
-
-            if (! FoodConsumables.Any())
-            {
-                return 0;
-            }
-            else
-            {
-                var result = FoodConsumables.Max(c => c.Food.range);
-                return result;
-            }
+                if (!FoodConsumables.Any())
+                {
+                    return 0;
+                }
+                else
+                {
+                    var result = FoodConsumables.Max(c => c.Food.range);
+                    return result;
+                }
             }
         }
 
-        void Update()
+        private void Update()
         {
             FoodConsumables = FoodConsumables.Where(c => c.Amount > 0).ToList();
         }
@@ -70,12 +70,11 @@ namespace Assets.Scripts.AI
 
         private static bool PandaCanConsumeFood(IPanda panda, FoodWithItsAmount c)
         {
-            return ((IConsumable) c.Food).CanConsume(panda);
+            return ((IConsumable)c.Food).CanConsume(panda);
         }
 
         public float RetriveAttractionForPanda(IPanda panda)
         {
-
             return FoodConsumables.Sum(c =>
             {
                 if (!PandaCanConsumeFood(panda, c))
@@ -89,7 +88,7 @@ namespace Assets.Scripts.AI
         public void PlaceFood(BaseFoodConsumable food)
         {
             var spawnedFood = GameObject.Instantiate<BaseFoodConsumable>(food, this.transform);
-            
+
             FoodConsumables.Add(new FoodWithItsAmount() { Amount = Mathf.CeilToInt(spawnedFood.timeGivingNutrition), Food = spawnedFood });
             spawnedFood.timeGivingNutrition = Mathf.CeilToInt(spawnedFood.timeGivingNutrition);
             this.GetComponentInChildren<FoodPileForceField>().UpdateRadius();

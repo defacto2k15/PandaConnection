@@ -47,4 +47,5 @@ MonoBehaviour:
   m_name: Food drug+
   m_price: 80
   m_drugValue: 8
+  drugColor: {r: 0.11779833, g: 1, b: 0, a: 1}
   drugType: 2

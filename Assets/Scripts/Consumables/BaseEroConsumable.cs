@@ -8,6 +8,8 @@ public class BaseEroConsumable : BaseConsumable
     [SerializeField]
     private int range;
 
+    public Sprite mySprite;
+
     [SerializeField]
     private int m_eroNutritionalValue;
 
@@ -27,7 +29,7 @@ public class BaseEroConsumable : BaseConsumable
 
     public override bool CanPlace()
     {
-        return Util.RaycastFoodPile()==null && Util.CalculateRaycastPosition().z>-2000;
+        return Util.RaycastFoodPile() == null && Util.CalculateRaycastPosition().z > -2000;
     }
 
     public override void PlaceInWorld()
@@ -36,6 +38,7 @@ public class BaseEroConsumable : BaseConsumable
         var eroPile = GameObject.Instantiate<EroPileActivityArea>(GameManager.instance.eroPilePrefab);
         eroPile.transform.position = place;
         eroPile.SetEroConsumable(this);
+        eroPile.foodSprite.sprite = mySprite;
     }
 
     public override float GetRange()

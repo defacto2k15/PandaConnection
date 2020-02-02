@@ -47,5 +47,6 @@ MonoBehaviour:
   m_name: Bamboo
   m_price: 10
   range: 4
+  mySprite: {fileID: 21300000, guid: 31fe8692da5ea1b49b90dbdb2a591ecd, type: 3}
   m_foodNutritionalValue: 10
   timeGivingNutrition: 3

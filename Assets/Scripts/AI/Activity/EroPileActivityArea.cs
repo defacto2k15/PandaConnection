@@ -13,6 +13,7 @@ namespace Assets.Scripts.AI
     {
         [SerializeField] private BaseEroConsumable _eroConsumable;
         [SerializeField] private float _tickDurationInSeconds;
+        public SpriteRenderer foodSprite;
 
         [SerializeField]
         private Transform _rangeSignalizer;

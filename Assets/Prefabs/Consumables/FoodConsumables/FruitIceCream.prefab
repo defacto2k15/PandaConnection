@@ -47,5 +47,6 @@ MonoBehaviour:
   m_name: FruitIceCream
   m_price: 60
   range: 2
+  mySprite: {fileID: 21300000, guid: f3720cf7e793aa045a86199679682597, type: 3}
   m_foodNutritionalValue: 10
   timeGivingNutrition: 10

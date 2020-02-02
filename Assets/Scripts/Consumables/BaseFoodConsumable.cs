@@ -8,6 +8,8 @@ public class BaseFoodConsumable : BaseConsumable
     [SerializeField]
     public float range;
 
+    public Sprite mySprite;
+
     [SerializeField]
     public float m_foodNutritionalValue;
 
@@ -30,6 +32,7 @@ public class BaseFoodConsumable : BaseConsumable
         var foodPile = GameObject.Instantiate<FoodPile>(GameManager.instance.foodPilePrefab);
         foodPile.transform.position = place;
         foodPile.PlaceFood(this);
+        foodPile.foodSprite.sprite = mySprite;
     }
 
     public override float GetRange()

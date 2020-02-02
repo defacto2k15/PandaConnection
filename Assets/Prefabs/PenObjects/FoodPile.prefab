@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 2358332363647241810}
   - component: {fileID: 5306428368102808548}
   m_Layer: 0
-  m_Name: New Sprite (1)
+  m_Name: mySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,6 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FoodConsumables: []
   Drug: {fileID: 0}
+  foodSprite: {fileID: 5306428368102808548}
 --- !u!114 &5829526294633941280
 MonoBehaviour:
   m_ObjectHideFlags: 0

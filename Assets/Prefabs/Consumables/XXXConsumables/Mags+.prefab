@@ -47,5 +47,6 @@ MonoBehaviour:
   m_name: Dirty Hugging Mags+
   m_price: 120
   range: 4
+  mySprite: {fileID: 21300000, guid: 5dadb0d295db0d4448aeb5f0d0b3568e, type: 3}
   m_eroNutritionalValue: 5
   timeGivingNutrition: 15

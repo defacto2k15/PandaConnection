@@ -47,5 +47,6 @@ MonoBehaviour:
   m_name: GeneticBamboo
   m_price: 70
   range: 5
+  mySprite: {fileID: 21300000, guid: 31fe8692da5ea1b49b90dbdb2a591ecd, type: 3}
   m_foodNutritionalValue: 20
   timeGivingNutrition: 10

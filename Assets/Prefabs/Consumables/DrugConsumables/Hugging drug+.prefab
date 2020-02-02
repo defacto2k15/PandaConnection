@@ -47,4 +47,5 @@ MonoBehaviour:
   m_name: '"Hugging" drug+'
   m_price: 50
   m_drugValue: 15
+  drugColor: {r: 1, g: 0, b: 0, a: 1}
   drugType: 1
