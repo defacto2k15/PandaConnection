@@ -25,7 +25,7 @@ namespace Assets.Scripts.AI
         public void UpdateRadius()
         {
             var range = _pile.MaxRange;
-            _radiusSignalizer.localScale = Vector3.one * range*this.transform.localScale.x;
+            _radiusSignalizer.localScale = Vector3.one * range;//*this.transform.localScale.x;
             _collider.radius = range;
         }
 
