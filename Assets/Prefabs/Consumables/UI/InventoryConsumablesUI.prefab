@@ -1270,6 +1270,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3030471630020235903}
     m_Modifications:
+    - target: {fileID: 5057469406191113543, guid: 69ff3c5dfab29964da195bcbd2c56a38,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 74984f0e16bb595479c740073638b2d7,
+        type: 3}
+    - target: {fileID: 5057469406191113543, guid: 69ff3c5dfab29964da195bcbd2c56a38,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5057469406191113543, guid: 69ff3c5dfab29964da195bcbd2c56a38,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5057469406191113543, guid: 69ff3c5dfab29964da195bcbd2c56a38,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6106320287635776037, guid: 69ff3c5dfab29964da195bcbd2c56a38,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
