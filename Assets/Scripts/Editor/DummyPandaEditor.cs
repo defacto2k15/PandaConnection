@@ -10,7 +10,7 @@ using UnityEngine;
 namespace Assets.Scripts.Editor
 {
     
-    [CustomEditor(typeof(DummyPanda))]
+    //[CustomEditor(typeof(DummyPanda))]
     public class DummyPandaEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()

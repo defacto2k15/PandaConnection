@@ -18,6 +18,22 @@ namespace Assets.Scripts.AI
         [SerializeField] private PandaStats _stats;
         public PandaSpriteSwitcheroo pandaSprites;
 
+        private PandaAnimationState _animationState;
+        private Dictionary<PandaAnimationState, Action> _animationStateToAction;
+
+        public void StartAnimationState(PandaAnimationState state)
+        {
+            _animationState = state;
+            _animationStateToAction[state].Invoke();
+        }
+
+        public void StopAnimationState(PandaAnimationState state)
+        {
+            _animationState = PandaAnimationState.Walking;
+            _animationStateToAction[state].Invoke();
+        }
+
+
         public PandaStats GetStats()
         {
             return _stats;
@@ -78,6 +94,16 @@ namespace Assets.Scripts.AI
 
         public void Start()
         {
+            _animationStateToAction = new Dictionary<PandaAnimationState, Action>()
+            {
+                {PandaAnimationState.Idle, animationCenter.StartIdle},
+                {PandaAnimationState.Eating, animationCenter.StartEat},
+                {PandaAnimationState.Sexing, animationCenter.StartSexing},
+                {PandaAnimationState.Dying, animationCenter.StartDeath},
+                {PandaAnimationState.Walking, animationCenter.StartWalk}
+            };
+            StartAnimationState(PandaAnimationState.Walking);
+
             if (!GetStats().Genotype.Any())
             {
                 GetStats().CreateGenotypeFromPhenotype();
@@ -374,5 +400,10 @@ namespace Assets.Scripts.AI
                     break;
             }
         }
+    }
+
+    public enum PandaAnimationState
+    {
+        Idle, Dying, Walking, Sexing, Eating
     }
 }

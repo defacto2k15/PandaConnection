@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assets.Scripts.Utils;
 using BBUnity.Actions;
 using Pada1.BBCore;
 using UnityEngine;
@@ -24,6 +25,7 @@ namespace Assets.Scripts.AI.BehaviourActions
         {
             _idleStartTime = Time.time;
             gameObject.GetComponentInChildren<Animator>().Play("pandaIdle");
+            gameObject.GetComponentNotNull<DummyPanda>().StartAnimationState(PandaAnimationState.Idle);
         }
 
         public override TaskStatus OnUpdate()
@@ -36,6 +38,7 @@ namespace Assets.Scripts.AI.BehaviourActions
             }
             else
             {
+                gameObject.GetComponentNotNull<DummyPanda>().StopAnimationState(PandaAnimationState.Idle);
                 return TaskStatus.COMPLETED;
             }
         }

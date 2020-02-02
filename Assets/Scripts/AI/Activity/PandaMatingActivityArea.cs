@@ -93,9 +93,11 @@ namespace Assets.Scripts.AI.Activity
             _thisPanda.ChangeEro(_SexEroCost);
             _thisPanda.GetComponentNotNull<NavMeshAgent>().velocity = Vector3.zero;
             _thisPanda.GetComponentNotNull<NavMeshAgent>().isStopped = true;
+            _thisPanda.StartAnimationState(PandaAnimationState.Sexing);
             Debug.Log("Fucky-fucky");
             yield return new WaitForSeconds(_SexTime); 
             _thisPanda.GetComponentNotNull<NavMeshAgent>().isStopped = false;
+            _thisPanda.StopAnimationState(PandaAnimationState.Sexing);
             if (_thisPanda.GetGender() == Gender.Female)
             {
                 Debug.Log("Created child");

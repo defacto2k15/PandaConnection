@@ -48,9 +48,11 @@ namespace Assets.Scripts.AI
             {
                 var foodToEat = Pile.RetriveFoodFromPile();
 
+                this.GetComponentNotNull<DummyPanda>().StartAnimationState(PandaAnimationState.Eating);
                 Debug.Log("EATING: " + foodToEat.Food);
                 yield return new WaitForSeconds(foodToEat.Food.timeGivingNutrition);
                 Debug.Log("EATEN: " +  foodToEat.Food);
+                this.GetComponentNotNull<DummyPanda>().StopAnimationState(PandaAnimationState.Eating);
                 ((IConsumable) foodToEat.Food).Consume(panda);
                 if (foodToEat.Drug != null)
                 {

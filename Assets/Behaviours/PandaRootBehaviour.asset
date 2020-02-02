@@ -50,7 +50,7 @@ MonoBehaviour:
     <children>\r\n        <elem>\r\n          <ActionNode id=\"27\" />\r\n       
     </elem>\r\n      </children>\r\n      <inputParams />\r\n      <outputParams
     />\r\n      <localParams />\r\n    </SequenceNode>\r\n    <ConditionEvalNode
-    id=\"13\" policy=\"WAIT_UNTIL_FALSE_AND_FAIL\" name=\"MyCondition/IsInForceFieldCondition\">\r\n     
+    id=\"13\" policy=\"WAIT_UNTIL_TRUE_AND_COMPLETE\" name=\"MyCondition/IsInForceFieldCondition\">\r\n     
     <inputParams>\r\n        <inputValues>\r\n          <entry name=\"ThisPanda\"
     type=\"UnityEngine.GameObject\" isBlackboard=\"True\" blackboard=\"ThisPanda\"
     />\r\n        </inputValues>\r\n      </inputParams>\r\n      <outputParams />\r\n     
@@ -58,7 +58,7 @@ MonoBehaviour:
     <children>\r\n        <elem>\r\n          <ActionNode id=\"21\" />\r\n       
     </elem>\r\n        <elem>\r\n          <ActionNode id=\"22\" />\r\n        </elem>\r\n     
     </children>\r\n      <inputParams />\r\n      <outputParams />\r\n      <localParams
-    />\r\n    </SequenceNode>\r\n    <ConditionEvalNode id=\"74\" policy=\"WAIT_UNTIL_TRUE_AND_COMPLETE\"
+    />\r\n    </SequenceNode>\r\n    <ConditionEvalNode id=\"74\" policy=\"WAIT_UNTIL_FALSE_AND_FAIL\"
     name=\"AlwaysTrue\">\r\n      <inputParams />\r\n      <outputParams />\r\n     
     <localParams />\r\n    </ConditionEvalNode>\r\n    <PrioritySelectorNode id=\"47\">\r\n     
     <children>\r\n        <elem>\r\n          <GuardAndNode>\r\n            <guard>\r\n             

@@ -580,6 +580,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.gender
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2426071198132870505, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: m_Name
@@ -650,6 +655,11 @@ PrefabInstance:
       propertyPath: blackboard.objectParams.Array.data[2]
       value: 
       objectReference: {fileID: 441137617}
+    - target: {fileID: 3408415838830275910, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: ChildPandaCreator
+      value: 
+      objectReference: {fileID: 1311028072}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8e976a1205e57243a0a785857799e2a, type: 3}
 --- !u!1 &1600976983
