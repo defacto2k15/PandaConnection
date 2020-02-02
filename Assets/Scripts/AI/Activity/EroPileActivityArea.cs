@@ -13,6 +13,8 @@ namespace Assets.Scripts.AI
     {
         [SerializeField] private BaseEroConsumable _eroConsumable;
         [SerializeField] private float _tickDurationInSeconds;
+        [SerializeField]
+        private Transform _rangeSignalizer;
         private CapsuleCollider _sphereCollider;
         private MeshRenderer _meshRenderer;
         private List<IPanda> _usingPandas;
@@ -35,6 +37,7 @@ namespace Assets.Scripts.AI
         private void Init()
         {
             _sphereCollider = this.GetComponentNotNull<CapsuleCollider>();
+            _rangeSignalizer.localScale = Vector3.one * _eroConsumable.Range;
             _sphereCollider.radius = _eroConsumable.Range;
             _meshRenderer = this.GetComponentNotNull<MeshRenderer>();
             _usingPandas = new List<IPanda>();
@@ -52,10 +55,7 @@ namespace Assets.Scripts.AI
 
         private void TryDestroyingActivityArea()
         {
-            if (!_isActive && !_usingPandas.Any())
-            {
-                GameObject.Destroy(gameObject);
-            }
+            GameObject.Destroy(gameObject);
         }
 
         void OnTriggerEnter(Collider other)
@@ -87,12 +87,13 @@ namespace Assets.Scripts.AI
 
         private IEnumerator Using(IPanda panda)
         {
-            while (_isActive && _usingPandas.Contains(panda))
+            float timeStarted = Time.time;
+            while (_isActive && _usingPandas.Contains(panda) && Time.time-timeStarted< _eroConsumable.TimeGivingNutrition)
             {
                 if (((IConsumable) _eroConsumable).CanConsume(panda))
                 {
                     Debug.Log("Using ERO");
-                    ((IConsumable) _eroConsumable).Consume(panda);
+                    _eroConsumable.DoAction(panda);
                     yield return new WaitForSeconds(_tickDurationInSeconds);
                 }
             }

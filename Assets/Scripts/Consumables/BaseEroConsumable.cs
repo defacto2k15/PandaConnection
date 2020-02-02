@@ -14,7 +14,7 @@ public class BaseEroConsumable : BaseConsumable
     [SerializeField]
     private int timeGivingNutrition;
 
-    protected override void DoAction(IPanda panda)
+    public override void DoAction(IPanda panda)
     {
         panda.ChangeEro(m_eroNutritionalValue);
     }
@@ -27,7 +27,7 @@ public class BaseEroConsumable : BaseConsumable
 
     public override bool CanPlace()
     {
-        return Util.RaycastFoodPile()==null;
+        return Util.RaycastFoodPile()==null && Util.CalculateRaycastPosition().z>-2000;
     }
 
     public override void PlaceInWorld()
@@ -36,5 +36,10 @@ public class BaseEroConsumable : BaseConsumable
         var eroPile = GameObject.Instantiate<EroPileActivityArea>(GameManager.instance.eroPilePrefab);
         eroPile.transform.position = place;
         eroPile.SetEroConsumable(this);
+    }
+
+    public override float GetRange()
+    {
+        return range;
     }
 }

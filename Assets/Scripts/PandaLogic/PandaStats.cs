@@ -11,6 +11,7 @@ public class PandaStats
     public int birthdate;
     public List<Tuple<IChromosome, IChromosome>> chromosomes;
     public Gender gender;
+    public List<Gene> Genotype;
     public Phenotype Phenotype;
 }
 

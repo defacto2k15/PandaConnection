@@ -22,7 +22,8 @@ namespace Assets.Scripts.AI
             }
             else
             {
-                return FoodConsumables.Max(c => c.Food.range);
+                var result = FoodConsumables.Max(c => c.Food.range);
+                return result;
             }
             }
         }

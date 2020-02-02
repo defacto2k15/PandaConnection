@@ -18,7 +18,7 @@ public class BaseDrugConsumable : BaseConsumable
         food
     }
 
-    protected override void DoAction(IPanda panda)
+    public override void DoAction(IPanda panda)
     {
         switch (drugType)
         {

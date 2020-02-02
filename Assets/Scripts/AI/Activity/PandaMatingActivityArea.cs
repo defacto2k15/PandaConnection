@@ -4,24 +4,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assets.Scripts.PandaLogic.Genetics;
 using Assets.Scripts.Utils;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace Assets.Scripts.AI.Activity
 {
     public class PandaMatingActivityArea : MonoBehaviour
     {
+        public ChildPandaCreator ChildPandaCreator;
         [SerializeField] private float _SexEroCost;
         [SerializeField] private float _SexTime;
         [SerializeField] private float _EroThresholdForSex;
 
         [SerializeField] private PandaActivityFlag _flag;
 
-        private IPanda _panda;
+        private DummyPanda _thisPanda;
+        private List<DummyPanda> _hotPandasInThisArea;
 
         void Awake()
         {
-            _panda = _flag.GetComponentNotNull<IPanda>();
+            _hotPandasInThisArea = new List<DummyPanda>();
+            _thisPanda = _flag.GetComponentNotNull<DummyPanda>();
         }
 
         void OnTriggerEnter(Collider other)
@@ -30,18 +35,48 @@ namespace Assets.Scripts.AI.Activity
             {
                 return;
             }
-            if (_panda.GetGender() == Gender.Male)
+            if (_thisPanda.GetGender() == Gender.Male)
             {
                 return;
             }
             if (other.gameObject.CompareTag(TagNames.Panda))
             {
-                var otherPanda = other.gameObject.GetComponentNotNull<IPanda>();
-                var otherPandaMatingActivity = other.gameObject.GetComponentInChildrenNotNull<PandaMatingActivityArea>();
-                if (CanMateWith(otherPanda) && otherPandaMatingActivity.CanMateWith(_panda))
+                var otherPanda = other.gameObject.GetComponentNotNull<DummyPanda>();
+                _hotPandasInThisArea.Add(otherPanda);
+            }
+        }
+
+        void OnTriggerExit(Collider other)
+        {
+            if (other.gameObject == gameObject)
+            {
+                return;
+            }
+            if (_thisPanda.GetGender() == Gender.Male)
+            {
+                return;
+            }
+            if (other.gameObject.CompareTag(TagNames.Panda))
+            {
+                var otherPanda = other.gameObject.GetComponentNotNull<DummyPanda>();
+                Assert.IsTrue(_hotPandasInThisArea.Remove(otherPanda));
+            }
+        }
+
+
+        void Update()
+        {
+            if (_hotPandasInThisArea.Any())
+            {
+                foreach (var otherPanda in _hotPandasInThisArea)
                 {
-                    StartMating(otherPandaMatingActivity);
-                    otherPandaMatingActivity.StartMating(this);
+                    var otherPandaMatingActivity = otherPanda.gameObject.GetComponentInChildrenNotNull<PandaMatingActivityArea>();
+                    if (CanMateWith(otherPanda) && otherPandaMatingActivity.CanMateWith(_thisPanda))
+                    {
+                        StartMating(otherPandaMatingActivity);
+                        otherPandaMatingActivity.StartMating(this);
+                        return;
+                    }
                 }
             }
         }
@@ -54,15 +89,21 @@ namespace Assets.Scripts.AI.Activity
         private IEnumerator MatingCoroutine(PandaMatingActivityArea otherPandaMatingActivityArea)
         {
             _flag.AddActivity(otherPandaMatingActivityArea);
-            _panda.ChangeEro(_SexEroCost);
+            _thisPanda.ChangeEro(_SexEroCost);
             Debug.Log("Fucky-fucky");
             yield return new WaitForSeconds(_SexTime); 
+            if (_thisPanda.GetGender() == Gender.Female)
+            {
+                Debug.Log("Created child");
+                ChildPandaCreator.InstantianteChild(_thisPanda.gameObject, otherPandaMatingActivityArea._thisPanda.gameObject);
+            }
+
             _flag.RemoveActivity(otherPandaMatingActivityArea);
         }
 
         public bool CanMateWith(IPanda otherPanda)
         {
-            return (!_flag.IsDuringActivity) && (otherPanda.GetGender() != _panda.GetGender()) && (_panda.GetEro() > _EroThresholdForSex);
+            return (!_flag.IsDuringActivity) && (otherPanda.GetGender() != _thisPanda.GetGender()) && (_thisPanda.GetEro() > _EroThresholdForSex);
         }
     }
 }

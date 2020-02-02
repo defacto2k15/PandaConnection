@@ -20,6 +20,11 @@ public class BaseConsumable : MonoBehaviour, IConsumable
         return true;
     }
 
+    public virtual float GetRange()
+    {
+        return 0;
+    }
+
     public virtual void PlaceInWorld()
     {
 
@@ -36,7 +41,7 @@ public class BaseConsumable : MonoBehaviour, IConsumable
         GameManager.instance.ConsumableManager.Consume(this);
     }
 
-    protected virtual void DoAction(IPanda panda)
+    public virtual void DoAction(IPanda panda)
     {
     }
 
