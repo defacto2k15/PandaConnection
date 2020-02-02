@@ -513,10 +513,11 @@ MonoBehaviour:
   - {fileID: 403741978367414794}
   m_bought: 0
   m_cost: 300
-  m_details: Your pandas are more resistance to sickness!! Sick!
-  m_researchName: More HP upgrade
-  value: 20
-  statType: 0
+  m_details: Your pandas are more vonurable to extra curriculum agenda about "Hugging"
+    Wowzers!
+  m_researchName: Less max ero unlock
+  value: -20
+  statType: 1
 --- !u!114 &403741978367414794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2814,10 +2815,9 @@ MonoBehaviour:
   - {fileID: 1896553481483301446}
   m_bought: 0
   m_cost: 300
-  m_details: Unlocks option to buy hp drug, it lets you regenerate your pandas Hp
-    while eating! Heroes never die!
-  m_researchName: Hp drug unlock
-  itemPrefab: {fileID: -8295652081798239358, guid: 79ff7516126680d48a4e9b7edc769c54,
+  m_details: Unlocks option to buy super food drug! Wow, never starve again! Amazing!
+  m_researchName: Food drug++ unlock
+  itemPrefab: {fileID: -8295652081798239358, guid: a6d137bd1d48e344681164a18ec89d03,
     type: 3}
 --- !u!1 &4448391122127808701
 GameObject:
@@ -2894,10 +2894,10 @@ MonoBehaviour:
   - {fileID: 3954976013054820893}
   m_bought: 0
   m_cost: 350
-  m_details: Unlocks option to buy even better Hp drug! Sience wonder when one stop
-    being Panda and start being Zombie well some mysteries are better left untouched.
-  m_researchName: Hp drug+ unlocked
-  itemPrefab: {fileID: -8295652081798239358, guid: a6d137bd1d48e344681164a18ec89d03,
+  m_details: Unlocks option to buy super "Hugging" drug! Its simply amazing, it makes
+    even meee wants to HUG EVERYONE OwO
+  m_researchName: '"Hugging" drug ++'
+  itemPrefab: {fileID: -8295652081798239358, guid: 79ff7516126680d48a4e9b7edc769c54,
     type: 3}
 --- !u!1 &4623083179149684008
 GameObject:
@@ -5896,7 +5896,7 @@ PrefabInstance:
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
       propertyPath: m_fontSize
-      value: 92.5
+      value: 92.55
       objectReference: {fileID: 0}
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
@@ -6144,7 +6144,7 @@ PrefabInstance:
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
       propertyPath: m_fontSize
-      value: 92.5
+      value: 92.55
       objectReference: {fileID: 0}
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
@@ -6510,7 +6510,7 @@ PrefabInstance:
     - target: {fileID: 4098100918278204952, guid: cac0fd674b91f0043809b5b7d226345b,
         type: 3}
       propertyPath: m_fontSize
-      value: 84.6
+      value: 84.65
       objectReference: {fileID: 0}
     - target: {fileID: 5023738959008812366, guid: cac0fd674b91f0043809b5b7d226345b,
         type: 3}
@@ -6625,7 +6625,7 @@ PrefabInstance:
     - target: {fileID: 6807590108396198222, guid: cac0fd674b91f0043809b5b7d226345b,
         type: 3}
       propertyPath: m_fontSize
-      value: 84.6
+      value: 84.65
       objectReference: {fileID: 0}
     - target: {fileID: 8916424082744846628, guid: cac0fd674b91f0043809b5b7d226345b,
         type: 3}
@@ -7163,7 +7163,7 @@ PrefabInstance:
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
       propertyPath: m_fontSize
-      value: 92.5
+      value: 92.55
       objectReference: {fileID: 0}
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
@@ -7614,7 +7614,7 @@ PrefabInstance:
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
       propertyPath: m_fontSize
-      value: 92.5
+      value: 92.55
       objectReference: {fileID: 0}
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
@@ -7862,7 +7862,7 @@ PrefabInstance:
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
       propertyPath: m_fontSize
-      value: 92.5
+      value: 92.55
       objectReference: {fileID: 0}
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
@@ -8042,7 +8042,7 @@ PrefabInstance:
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
       propertyPath: m_fontSize
-      value: 92.5
+      value: 92.55
       objectReference: {fileID: 0}
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
@@ -8201,12 +8201,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 97219e20da0ec2c48837f9d3752b6e3b,
+      objectReference: {fileID: 21300000, guid: f794b0696ddcc49438196ce048ad95f3,
         type: 3}
     - target: {fileID: 6201178605520908818, guid: 353ee1492082f2947a31f55e2a983b59,
         type: 3}
       propertyPath: m_Name
-      value: More HP
+      value: LessEro
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4120944243760803028, guid: 353ee1492082f2947a31f55e2a983b59, type: 3}
@@ -8358,7 +8358,7 @@ PrefabInstance:
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
       propertyPath: m_fontSize
-      value: 92.5
+      value: 92.55
       objectReference: {fileID: 0}
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
@@ -8538,7 +8538,7 @@ PrefabInstance:
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
       propertyPath: m_fontSize
-      value: 92.5
+      value: 92.55
       objectReference: {fileID: 0}
     - target: {fileID: 8934607409716977410, guid: 042813db0efa4374ea04fa1e9adf92ef,
         type: 3}
@@ -8964,12 +8964,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 42a16e4d2323323439b481223a97c7d2,
+      objectReference: {fileID: 21300000, guid: 4a2017e8d917d4f41855d73b7d625b59,
         type: 3}
     - target: {fileID: 6201178605520908818, guid: 353ee1492082f2947a31f55e2a983b59,
         type: 3}
       propertyPath: m_Name
-      value: HpDrug+
+      value: HuggingDrug++
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4120944243760803028, guid: 353ee1492082f2947a31f55e2a983b59, type: 3}
@@ -9032,12 +9032,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 42a16e4d2323323439b481223a97c7d2,
+      objectReference: {fileID: 21300000, guid: 4ed03e34985ad1f44bd4ed30a3962fe3,
         type: 3}
     - target: {fileID: 6201178605520908818, guid: 353ee1492082f2947a31f55e2a983b59,
         type: 3}
       propertyPath: m_Name
-      value: HpDrug
+      value: FoodDrug++
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4120944243760803028, guid: 353ee1492082f2947a31f55e2a983b59, type: 3}

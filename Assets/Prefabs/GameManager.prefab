@@ -68,6 +68,7 @@ MonoBehaviour:
   m_shopManager: {fileID: 1610549589895209740}
   pandaManager: {fileID: 8231352850314746878}
   researchUIManager: {fileID: 0}
+  shopUIManager: {fileID: 0}
   pandaStatisticsUI: {fileID: 0}
   notificationManager: {fileID: 976633311684230595}
 --- !u!114 &976633311684230592
@@ -144,6 +145,8 @@ MonoBehaviour:
   MaximumHealth: 100
   MinimumFullnessForMating: 15
   timeGenesMutated: 0
+  pandasReleasedToForrest: 0
+  pandasToWin: 25
 --- !u!114 &2504616203823143151
 MonoBehaviour:
   m_ObjectHideFlags: 0
