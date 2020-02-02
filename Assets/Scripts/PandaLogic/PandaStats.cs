@@ -34,8 +34,13 @@ public enum Gender
 [Serializable]
 public class Phenotype
 {
-    public LegLengthTrait LegLengthTrait;
-    public EyeColorTrait EyeColorTrait;
-    public TailTypeTrait TailTypeTrait;
+    public EyesTypeTrait eyesTypeTrait;
+    public EyeColorTrait eyeColorTrait;
+    public EarTypeTrait earTypeTrait;
+    public SpecialTrait specialTrait;
+    public TailTypeTrait tailTypeTrait;
+    public NoseMouthTypeTrait noseMouthTypeTrait;
+    public BodyTypeTrait bodyTypeTrait;
+    public PrimaryBodyColorTrait primaryBodyColorTrait;
+    public SecondaryColorTrait secondaryColorTrait;
 }
-

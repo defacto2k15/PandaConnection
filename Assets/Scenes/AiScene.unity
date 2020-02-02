@@ -563,6 +563,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1745130081240438727, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892727723794215405, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
       propertyPath: _stats.gender
@@ -572,6 +582,46 @@ PrefabInstance:
         type: 3}
       propertyPath: Ero
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.eyesTypeTrait
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.eyeColorTrait
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.earTypeTrait
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.tailTypeTrait
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.noseMouthTypeTrait
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.bodyTypeTrait
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.primaryBodyColorTrait
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426071198132870498, guid: e8e976a1205e57243a0a785857799e2a,
+        type: 3}
+      propertyPath: _stats.Phenotype.secondaryColorTrait
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2426071198132870505, guid: e8e976a1205e57243a0a785857799e2a,
         type: 3}
@@ -867,6 +917,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   foodPilePrefab: {fileID: 0}
+  eroPilePrefab: {fileID: 0}
   m_moneyManager: {fileID: 1981007572}
   m_consumableManager: {fileID: 1981007571}
   m_shopManager: {fileID: 1981007570}
