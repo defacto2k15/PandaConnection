@@ -19,6 +19,6 @@ public class ShopConsumableItemUI : BaseConsumableItemUI
 
     public override void DoAction()
     {
-        GameManager.instance.ShopManager.BuyConsumable(Consumable);
+        this.GetComponentInParent<ShopUI>().ShowDetailsFor(Consumable);
     }
 }
