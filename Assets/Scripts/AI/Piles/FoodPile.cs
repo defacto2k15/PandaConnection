@@ -89,7 +89,10 @@ namespace Assets.Scripts.AI
         public void PlaceFood(BaseFoodConsumable food)
         {
             var spawnedFood = GameObject.Instantiate<BaseFoodConsumable>(food, this.transform);
+            
             FoodConsumables.Add(new FoodWithItsAmount() { Amount = (int)food.timeGivingNutrition, Food = spawnedFood });
+            spawnedFood.timeGivingNutrition = 1;
+            this.GetComponentInChildren<FoodPileForceField>().UpdateRadius();
         }
 
         public void PlaceDrug(BaseDrugConsumable drug)

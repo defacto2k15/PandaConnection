@@ -5,8 +5,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private Camera _mainCamera;
 
-    public Camera mainCamera { get; set; }
+    public Camera mainCamera
+    {
+        get
+        {
+            if (_mainCamera == null)
+            {
+                _mainCamera = Camera.main;
+            }
+            return _mainCamera;
+        }
+    }
     public LayerMask foodPileMask;
     public LayerMask floorMask;
     public LayerMask pandaMask;
@@ -59,7 +70,6 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this);
-            mainCamera = Camera.main;
         }
         else
         {

@@ -22,10 +22,10 @@ namespace Assets.Scripts.AI
             UpdateRadius();
         }
 
-        private void UpdateRadius()
+        public void UpdateRadius()
         {
             var range = _pile.MaxRange;
-            _radiusSignalizer.localScale = Vector3.one * range;
+            _radiusSignalizer.localScale = Vector3.one * range*this.transform.localScale.x;
             _collider.radius = range;
         }
 
