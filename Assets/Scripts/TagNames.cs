@@ -10,5 +10,6 @@ namespace Assets.Scripts
     {
         public static string ForceField = "ForceField";
         public static string Panda = "Panda";
+        public static string Spectator = "Spectator";
     }
 }

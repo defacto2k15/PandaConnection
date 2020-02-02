@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ForceField
   - Panda
+  - Spectator
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - pen
   - foodPiles
   - pandas
-  - 
+  - spectator
   - 
   - 
   - 
